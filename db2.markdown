@@ -4,7 +4,7 @@ permalink: /db2.html
 layout: default
 ---
 
-## Data Bases 2 - Teaching material
+## Databases 2 - Teaching material
 
 This page lists the exercises of the course 21053-E1.
 
