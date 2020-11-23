@@ -1,0 +1,12 @@
+ <!ELEMENT SigmodRecord (issue)* >
+ <!ELEMENT issue (volume,number,articles) >
+ <!ELEMENT volume (#PCDATA)>
+ <!ELEMENT number (#PCDATA)>
+ <!ELEMENT articles (article)* >
+ <!ELEMENT article (title,initPage,endPage,authors) >
+ <!ELEMENT title (#PCDATA)>
+ <!ELEMENT initPage (#PCDATA)>
+ <!ELEMENT endPage (#PCDATA)>
+ <!ELEMENT authors (author)* >
+ <!ELEMENT author (#PCDATA)>
+ <!ATTLIST author position CDATA #IMPLIED>
