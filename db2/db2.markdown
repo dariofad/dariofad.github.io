@@ -15,11 +15,11 @@ Four slots have been planned:
 * (24/11) - Introduction to XML and XPath
 * (01/12) - XQuery
 * (15/12) - XQuery exercises
-* (??/12) - Summary exercise
+* (??/12) - TBA
 
 I will upload the text and the solution of all exercises discussed during the lesson.
 
-`EXE1` Introduction to XML and XPath (with exercises)
+`EXE1` Introduction to XML and XPath
 >
 1. [Slides](./db2_files/intro_xml_xpath.pdf)
 2. [Link](https://basex.org/) to BaseX
@@ -27,4 +27,7 @@ I will upload the text and the solution of all exercises discussed during the le
 4. [Link](./db2_files/factbook.zip) to the factbook.xml data collection
 5. [Text](./db2_files/xpath_t.pdf) and [solution](./db2_files/xpath_tas.pdf) of exercises
 
-___
+`EXE2` XPath exerices and introduction to XQuery
+>
+1. [Slides](./db2_files/intro_xquery.pdf)
+2. Running examples [data](./db2_files/examples_exe2.zip) 
