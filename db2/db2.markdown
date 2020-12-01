@@ -13,9 +13,9 @@ Feel free to send me an email to <dario.facchinetti@unibg.it>, but **please use 
 Four slots have been planned:
 
 * (24/11) - Introduction to XML and XPath
-* (01/12) - XQuery
+* (01/12) - Introduction to XQUERY
+* (09/12) - FLWOR expressions, delete, insert update
 * (15/12) - XQuery exercises
-* (??/12) - TBA
 
 I will upload the text and the solution of all exercises discussed during the lesson.
 
@@ -31,3 +31,14 @@ I will upload the text and the solution of all exercises discussed during the le
 >
 1. [Slides](./db2_files/intro_xquery.pdf)
 2. Running examples [data](./db2_files/examples_exe2.zip) 
+
+`EXE3` FLWOR expressions, delete, insert and update
+>
+1. [Slides](./db2_files/intro_xquery.pdf)
+
+`EXE4` XQUERY exercises
+>
+1. [Exercises](./db2_files/xquery_exercises_t.pdf) taken from exams
+2. [Solutions](./db2_files/xquery_exercises_tas.pdf)
+
+
