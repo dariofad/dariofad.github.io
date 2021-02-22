@@ -1,40 +1,15 @@
 <div class="row" style="clear:none; width: 100%;">
-  <div class="col-md-6" style="width: 30%; float: left;">
-    <b><h2 style="color: #424242;"> {{ include.cat }}</h2></b>
-  </div>
-  <div class="col-md-6" style="width: 100%;">
-    <h2>{{ include.rinstitution }}</h2>
-  </div>
+   <b><center><h2 style="color: #424242;"> {{ include.cat }}</h2></center></b>
 </div>
 <div class="row" style="clear:none; width: 100%;">
-  <div class="col-md-6" style="width: 30%; float: left;">
-    <h3> </h3>    
-  </div>
-  <div class="col-md-6" style="width: 100%;">
-    {{ include.rtitle }}
-  </div>
+    {{ include.rtitle }} - {{ include.rinstitution }}
 </div>
 <div class="row" style="clear:none; width: 100%;">
-  <div class="col-md-6" style="width: 30%; float: left;">
-    <h3> </h3>
-  </div>
-  <div class="col-md-6" style="width: 100%;">
     <b>{{ include.rdescr }}</b>
-  </div>
 </div>
-<div class="row" style="clear:none; width: 100%;">
-  <div class="col-md-6" style="width: 30%; float: left;">
-    <h3> </h3>    
-  </div>
-  <div class="col-md-6" style="width: 100%; font-family: monospace">
+<div class="row" style="font-family: monospace;">
     {{ include.rdata }}
-  </div>
 </div>
-<div class="row" style="clear:none; width: 100%;">
-  <div class="col-md-6" style="width: 30%; float: left;">
-    <h3> </h3>    
-  </div>
-  <div class="col-md-6" style="width: 100%; font-family: monospace">
+<div class="row" style="font-family: monospace;">
     {{ include.rgpa }}
-  </div>
 </div>

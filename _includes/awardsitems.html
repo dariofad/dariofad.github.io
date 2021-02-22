@@ -1,64 +1,17 @@
-<div style="clear: none;">
-  <div class="col-md-6" style="float: left; margin-right 1em; width: 30%">
-    <b><h2 style="color: #424242;"> {{ include.cat }}</h2></b>
-  </div>
-  <div style="margin-left 3em;">
-    <h2> {{ include.rinstitution}} </h2>
-  </div>
+<div class="row" style="clear:none; width: 100%;">  
+  <b><center><h2 style="color: #424242;"> {{ include.cat }}</h2></center></b>
 </div>
-<div style="clear: none;">
-  <div class="col-md-6" style="float: left; margin-right 1em; width: 30%">
-    <h2> </h2>
-  </div>
-  <div style="margin-left 3em;">
-    <b>{{ include.rname }}</b>
-  </div>
+<div class="row" style="clear:none; width: 100%;">
+  {{ include.rinstitution }}
 </div>
-<div style="clear: none;">
-  <div class="col-md-6" style="float: left; margin-right 1em; width: 30%">
-    <h2> </h2>
-  </div>
-  <div style="margin-left 3em;">
-    {{ include.rdept }}
-  </div>
+<div style="margin-left 3em;">
+  <b>{{ include.rname }}</b>
 </div>
-<div style="clear: none;">
-  <div class="col-md-6" style="float: left; margin-right 1em; width: 30%">
-    <h2> </h2>    
-  </div>
-  <div style="margin-left 3em; font-family: monospace">
-    {{  include.rdata }}
-  </div>
+<div style="margin-left 3em;">
+  {{ include.rdept }}
 </div>
-<div style="clear: none;">
-  <div class="col-md-6" style="float: left; margin-right 1em; width: 30%">
-    <h2> </h2>        
-  </div>
-  <div style="margin-left 3em;">
-    {{ include.rdescr1 }}    
-  </div>
+<div style="font-family: monospace">
+  {{  include.rdata }}
 </div>
-<div style="clear: none;">
-  <div class="col-md-6" style="float: left; margin-right 1em; width: 30%">
-    <h2> </h2>        
-  </div>
-  <div style="margin-left 3em;">
-    {{ include.rdescr2 }}
-  </div>
-</div>
-<div style="clear: none;">
-  <div class="col-md-6" style="float: left; margin-right 1em; width: 30%">
-    <h2> </h2>        
-  </div>
-  <div style="margin-left 3em;">
-    {{ include.rdescr3 }}    
-  </div>
-</div>
-<div style="clear: none;">
-  <div class="col-md-6" style="float: left; margin-right 1em; width: 30%">
-    <h2> </h2>        
-  </div>
-  <div style="margin-left 3em;">
-    {{ include.rdescr4 }}    
-  </div>
-</div>
+
+{{ include.rdescr }}
