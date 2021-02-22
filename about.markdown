@@ -64,19 +64,19 @@ rtopics3="Concurrency, scheduling, distributed databases, XQUERY"%}
 {% include otheritems.html
 cat="Other experiences"
 rexp1="Programming"
-ratth1="__AlgoExpert__ - Completed 100 problems in Python ([certificate](./resources/AlgoExpert_Certificate.pdf))"
+ratth1="- __AlgoExpert__ - Completed 100 problems in Python ([certificate](./resources/AlgoExpert_Certificate.pdf))"
 %}
 
 {% include otheritems.html
 cat="             "
 rexp1="Coding competitions"
-ratth1="__Google hash code 2019 Finals__ - Team: Unibg Seclab, [38th place](https://codingcompetitions.withgoogle.com/hashcode/archive/2019)"
+ratth1="- __Google hash code 2019 Finals__ - Team: Unibg Seclab, [38th place](https://codingcompetitions.withgoogle.com/hashcode/archive/2019)"
 %}
 
 {% include otheritems.html
 cat="             "
 rexp1="Thesis projects"
-ratth1="__Supervised 20+ thesis students__ - [Topics](https://seclab.unibg.it/tesi/)"
+ratth1="- __Supervised 20+ thesis students__ - [Topics](https://seclab.unibg.it/tesi/)"
 %}
 
 {% include softwareitems.html
@@ -94,15 +94,15 @@ rprogdescr4="The policy engine is the tool responsible for parsing the MOSAICrOW
 {% include skillsitems.html
 cat="Skills"
 rsubcat1="Software/Programming Languages that I use daily:"
-rlist1="Ubuntu, Emacs, EXWM, git, Python, LaTeX"
+rlist1="- Ubuntu, Emacs, EXWM, git, Python, LaTeX"
 rsubcat2="Policy/Programming Languages and tools that I've used occasionally:"
-rlist2="M4, TE, CIL, Java, C/C++, SPARQL, Make, Bazel, Docker"
+rlist2="- M4, TE, CIL, Java, C/C++, SPARQL, Make, Bazel, Docker"
 rsubcat3="Personal interest areas (software related):"
-rlist3="Linux (or any other derived OS), cryptography, SELinux, eshell/elisp"
+rlist3="- Linux (or any other derived OS), cryptography, SELinux, eshell/elisp`"
 rsubcat4="Languages:"
-rlist4="Italian (native), English"
+rlist4="- Italian (native), English"
 %}
-<br><br>
+
 {% include interestsitems.html
 cat="Interests"
 rlist="Traveling, reading Manga (when I'm not messing up with my Linux distro ( ⚆ _ ⚆ ) ), technology"
