@@ -73,7 +73,7 @@ client able to interact with a backend server via asynchronous calls
 using the Language Server Procol. The idea is that we can support many
 different languages by simply replacing the backend server, and thus
 have a configuration that is not language-specific. This basically
-meas we have to provide a server to Emacs whenever a Python source
+means we have to provide a server to Emacs whenever a Python source
 file in our project is read into a buffer. Anyway, unlike a
 traditional IDE, Emacs by itself is not aware of what a project is,
 and thus we have to send it some updates each time we open, close or
@@ -130,7 +130,7 @@ where `VIRTUALENV` is defined as `VIRTUALENV := python3 -m venv .direnv/$(VENVNA
 ### Python requirements and app execution
 
 At this point both the Emacs and non-Emacs users are working in the
-same venv. Thee only difference we have to keep in mind is that the
+same venv. The only difference we have to keep in mind is that the
 Emacs user's venv is activated by default.
 
 Now we have to provide a method to install Python requirements. To
@@ -185,7 +185,7 @@ removes it when the project is closed, keeping my global `PATH` clean.
 
 Anyway, I recommend to install software dependencies using Makefile
 rules. It is a bad practice to use `direnv` to perform time consuming
-operations. Not only if `direnv` takes to much Emacs may hang, but
+operations. Not only if `direnv` takes too much Emacs may hang, but
 also other programs might crash (e.g., git might crash if different
 commands are executed simultaneously, causing the local content to be
 corrupted). Therefore, I use `direnv` only to create the project
@@ -210,14 +210,17 @@ done
 
 ```
 
-Non-Emacs user can export `bin` to the global path running the
-`export_path` rule. However they will not benefit from the automatic
-unloading performed by `direnv`.
+Non-Emacs users can export `bin` to the global path adding to the
+Makefile the following line.
 
 ```bash
-export_path:
-	@ export PATH=$(ROOT_DIR)/$(LOCAL_BINARIES):'$$'PATH
+export PATH = $(shell printenv PATH):$(ROOT_DIR)/$(LOCAL_BINARIES)
 ```
+
+The last change won't affect `direnv` users, as it only adds a
+duplicate to the PATH. There also other solutions (e.g., exploiting
+the functionality provided by the dynamic linker), but this is the
+most straightforward to me.
 
 ### .envrc
 
@@ -249,7 +252,7 @@ done
 The final version of the `Makefile`.
 
 ```make
-.PHONY: all clean export_path remove_binaries install_binaries install run
+.PHONY: all clean remove_binaries install_binaries install run
 
 # literal to define whitespace
 space=$() $()
@@ -270,15 +273,15 @@ LOCAL_BINARIES := bin
 REQUIREMENTS   := requirements.txt      # insert here your python requirements
 APP            := app_launcher.py	# this file is used as the main app driver
 
+# add ./bin to the path
+export PATH = $(shell printenv PATH):$(ROOT_DIR)/$(LOCAL_BINARIES)
+
 all: run				# install python deps run the project
 
 clean:					# clean python dependencies
 	@ rm -rf $(VENV)
 	@ find . -path '*/__pycache__/*' -delete
 	@ find . -type d -name '__pycache__' -delete
-
-export_path:
-	@ export PATH=$(ROOT_DIR)/$(LOCAL_BINARIES):'$$'PATH
 
 remove_binaries:			# remove local binaries
 	@ rm -rf $(LOCAL_BINARIES)
@@ -296,7 +299,7 @@ install: $(REQUIREMENTS)		# install python venv (with all required packages)
 	$(PIP) $@ --upgrade pip
 	$(PIP) $@ -r $<
 
-run: install				# run project
+run: install 				# run project
 	@ echo $(PYTHON)
 	$(PYTHON) $(APP)
 ```
