@@ -34,9 +34,9 @@ plugins:
   - jekyll-feed
 
 header_pages:
-  - about
-  - pages/posts.html
-  - pages/teaching.html
+  - about.markdown
+  - pages/posts.md
+  - pages/teaching.md
 
 # Exclude from processing.
 # The following items will not be processed, by default.
