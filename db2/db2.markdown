@@ -2,6 +2,7 @@
 title: 
 permalink: /db2.html
 layout: default
+exclude: true
 ---
 
 ## Databases 2 - Teaching material
