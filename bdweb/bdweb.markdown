@@ -2,6 +2,7 @@
 title: 
 permalink: /bdweb.html
 layout: default
+exclude: true
 ---
 
 ## Databases and Web - Teaching material
