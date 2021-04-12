@@ -30,7 +30,8 @@ I will upload the text and the solution of all exercises discussed during the le
 >
 1. [Slides](https://drive.google.com/file/d/1O8_g2-buDLqkUnx0cmGX34RBa8FWJ3mQ/view?usp=sharing)
 2. [SQL solutions](https://drive.google.com/file/d/1BKrPz4DU-XqnBaAcjMXOTw3lyFE92J2H/view?usp=sharing)
-3. [Notes](https://drive.google.com/file/d/1u6HUTeR7hDi8iQN4WIwW9OBrGjqk6XPl/view?usp=sharing)
+3. [SQLiteDB_example](https://drive.google.com/file/d/1XZ-kwyiheTf5tllRohfYpNKpvjGxrbP8/view?usp=sharing)
+4. [Notes](https://drive.google.com/file/d/1u6HUTeR7hDi8iQN4WIwW9OBrGjqk6XPl/view?usp=sharing)
 
 
 <small> _The documents gathered in this web page have been provided by the contributing authors as a means to ensure timely dissemination of scholarly and technical work on a noncommercial basis. Copyright and all rights therein are maintained by the authors or by other copyright holders, notwithstanding that they have offered their works here electronically. It is understood that all persons copying this information will adhere to the terms and constraints invoked by each author's copyright. These works may not be reposted without the explicit permission of the copyright holder._</small>
