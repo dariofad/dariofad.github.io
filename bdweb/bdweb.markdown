@@ -26,4 +26,11 @@ I will upload the text and the solution of all exercises discussed during the le
 4. [Datalog solutions](https://drive.google.com/file/d/1puNPEH0br-WPton-V65cmLicd4AKvEO2/view?usp=sharing)
 5. [Notes](https://drive.google.com/file/d/1ZePyRrW8gX-kr_dp3rWnNF4OTnOXYSje/view?usp=sharing)
 
+`EXE2` Datalog execises, Introduction to SQL, SQL exercises
+>
+1. [Slides](https://drive.google.com/file/d/1O8_g2-buDLqkUnx0cmGX34RBa8FWJ3mQ/view?usp=sharing)
+2. [SQL solutions](https://drive.google.com/file/d/1BKrPz4DU-XqnBaAcjMXOTw3lyFE92J2H/view?usp=sharing)
+3. [Notes](https://drive.google.com/file/d/1u6HUTeR7hDi8iQN4WIwW9OBrGjqk6XPl/view?usp=sharing)
+
+
 <small> _The documents gathered in this web page have been provided by the contributing authors as a means to ensure timely dissemination of scholarly and technical work on a noncommercial basis. Copyright and all rights therein are maintained by the authors or by other copyright holders, notwithstanding that they have offered their works here electronically. It is understood that all persons copying this information will adhere to the terms and constraints invoked by each author's copyright. These works may not be reposted without the explicit permission of the copyright holder._</small>
