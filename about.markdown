@@ -40,12 +40,12 @@ rdata="2019-11-19" %}
 cat="Work Experience"
 rpartner="UNIBG"
 rtype="Autonomous collaborations"
-rdescr1="Development of a prototype for the management of a"
-rdescr2="security policy language in a Digital Data Market"
-rdata="2020-07-20 - 2020-11-20"
-rdescr3="Development of a prototype for the management of data in"
-rdescr4="a Digital Data Market"
-rdata3="2019-07-04 - 2019-11-04" %}
+rdescr0="Extension of a prototype for the management of a language for security policies in a Digital Data Market"
+rdata0="2021-05-03 - Present"
+rdescr1="Development of a prototype for the management of a security policy language in a Digital Data Market"
+rdata1="2020-07-20 - 2020-11-20"
+rdescr2="Development of a prototype for the management of data in a Digital Data Market"
+rdata2="2019-07-04 - 2019-11-04" %}
 
 {% include teachitems.html
 cat="            "
@@ -55,11 +55,15 @@ rcourse1="Introduction to programming in Python"
 ryear1="2018, 2020"
 rtopics1="Basic types, control-flow statements, functions, lists"
 rcourse2="Data Bases I"
-ryear2="2019, 2020"
-rtopics2="Structured Query Language"
+ryear2="2019, 2020, 2021"
+rtopics2="Structured Query Language, Conceptual and Logical database modeling"
 rcourse3="Data Bases II"
 ryear3="2019, 2020"
-rtopics3="Concurrency, scheduling, distributed databases, XQUERY"%}
+rtopics3="Concurrency, scheduling, distributed databases, XQUERY"
+rcourse4="Computer Security"
+ryear4="2021"
+rtopics4="Access Control, DAC, MAC, Capabilities (Linux & Android)"
+%}
 
 {% include otheritems.html
 cat="Other experiences"
@@ -81,12 +85,12 @@ ratth1="- __Supervised 20+ thesis students__ - [Topics](https://seclab.unibg.it/
 
 {% include softwareitems.html
 cat="Software Contributions"
-rprog1="Spark-based Mondrian"
-rprogdescr1="A Dockerized Apache Spark-based version of Mondrian, a sanitization algorithm to achieve <i>k-anonimity</i>. It is executed on a Spark cluster with a varying number of executors <a href='https://github.com/mosaicrown/mondrian'>(link)</a>."
-rprog2="dot-emacs"
-rprogdescr2="A minimal version of my <tt>.emacs</tt> files useful to anybody that wants to test Emacs with EXWM as its main driver <a href='https://github.com/dariofad/dot-emacs'>(link)</a> . To use it, you only have to install Emacs, <tt>use-package</tt> and <tt>xorg</tt>."
-rprog3="SEApp: Bringing Mandatory Access Control to Android Apps"
-rprogdescr3="A modification to AOSP to extend mandatory access control layer to Android apps <a href='https://github.com/matthewrossi/seapp'>(link)</a>."
+rprog1="SEApp: Bringing Mandatory Access Control to Android Apps"
+rprogdescr1="A modification to AOSP to extend mandatory access control layer to Android apps <a href='https://github.com/matthewrossi/seapp'>(link)</a>."
+rprog2="Spark-based Mondrian"
+rprogdescr2="A Dockerized Apache Spark-based version of Mondrian, a sanitization algorithm to achieve <i>k-anonimity</i>. It is executed on a Spark cluster with a varying number of executors <a href='https://github.com/mosaicrown/mondrian'>(link)</a>."
+rprog3="dot-emacs"
+rprogdescr3="A minimal version of my <tt>.emacs</tt> files useful to anybody that wants to test Emacs with EXWM as its main driver <a href='https://github.com/dariofad/dot-emacs'>(link)</a> . To use it, you only have to install Emacs, <tt>use-package</tt> and <tt>xorg</tt>."
 rprog4="MOSAICrOWN Policy Engine"
 rprogdescr4="The policy engine is the tool responsible for parsing the MOSAICrOWN policy and checking whether a subject request is permitted or denied <a href='https://github.com/mosaicrown/policy-engine'>(link)</a>. Upcoming releases scheduled for 2021."
 %}
