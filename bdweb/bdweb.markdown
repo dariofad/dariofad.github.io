@@ -15,6 +15,8 @@ Three slots have been planned:
 * (30/03) - Introduction, Relational Algebra, Tuple Relational Calculus, and Datalog
 * (13/04) - Introduction to SQL
 * (22/04) - How to use sqlite3 in python
+* (06/05) - Conceptual and logical database modeling (Matthew Rossi)
+* (10/05) - Normalization (Matthew Rossi)
 
 I will upload the text and the solution of all exercises discussed during the lesson.
 
@@ -38,11 +40,15 @@ I will upload the text and the solution of all exercises discussed during the le
 1. [Slides](https://drive.google.com/file/d/1wNX1w0ydVmAL_K3GXyHjxD5tuTMTGS39/view?usp=sharing)
 2. [App example](https://drive.google.com/file/d/1v7nmxlpaBSHR8Mrp_e4XFu74_O-IyIG7/view?usp=sharing)
 
-Additional material - Conceptual and logical database modeling
+`EXE4` Conceptual and logical database modeling - tutor Matthew Rossi
 >
-1. [Slides](https://drive.google.com/file/d/1rdZ3hIbuvw-lV6UOEZiFtPPbPE9njT7e/view?usp=sharing)
+1. [Slides](https://drive.google.com/file/d/1Fv0HfDlqWyhW71HbaSM-fyJ_2-WVHMvo/view?usp=sharing)
 2. [Notes](https://drive.google.com/file/d/1aX121Ud09boINYAqrHJv1HKUftg_S4ig/view?usp=sharing)
-3. [Normalization](https://drive.google.com/file/d/1RA4I8nSJJVeJ9GDULlJQCdrOwfPKjr5D/view?usp=sharing)
+
+
+`EXE5` Normalization - tutor Matthew Rossi
+>
+1. [Normalization](https://drive.google.com/file/d/1RA4I8nSJJVeJ9GDULlJQCdrOwfPKjr5D/view?usp=sharing)
 
 
 <small> _The documents gathered in this web page have been provided by the contributing authors as a means to ensure timely dissemination of scholarly and technical work on a noncommercial basis. Copyright and all rights therein are maintained by the authors or by other copyright holders, notwithstanding that they have offered their works here electronically. It is understood that all persons copying this information will adhere to the terms and constraints invoked by each author's copyright. These works may not be reposted without the explicit permission of the copyright holder._</small>
