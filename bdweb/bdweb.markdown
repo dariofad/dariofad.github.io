@@ -44,6 +44,8 @@ I will upload the text and the solution of all exercises discussed during the le
 >
 1. [Slides](https://drive.google.com/file/d/1Fv0HfDlqWyhW71HbaSM-fyJ_2-WVHMvo/view?usp=sharing)
 2. [Notes](https://drive.google.com/file/d/1aX121Ud09boINYAqrHJv1HKUftg_S4ig/view?usp=sharing)
+3. [Conceptual modeling solutions](https://drive.google.com/file/d/1umLqhxz1BR97QtIprzd-WoX0fB7BBxdm/view?usp=sharing)
+4. [Logical modeling solutions](https://drive.google.com/file/d/1m2bRztfjysiZ1LTbo5bepgIPfAFbaQGi/view?usp=sharing)
 
 
 `EXE5` Normalization - tutor Matthew Rossi
