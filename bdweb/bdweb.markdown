@@ -44,10 +44,10 @@ Feel free to send me an email to <dario.facchinetti@unibg.it>, but **please use 
 
 * [Slides](https://drive.google.com/file/d/1IFXMYZUsFNkklzwkvjH_PX2g1uVQUT1b/view?usp=sharing)
 * Solutions (
-[Es01](https://drive.google.com/file/d/1r4lJAaSpw7M9FAktodYTbx6zQAE63PeB/view?usp=sharing),
-[Es02](https://drive.google.com/file/d/19aun4ywnqcFB_a0IjG2Qva3N4JW8omKF/view?usp=sharing),
+[Ex01](https://drive.google.com/file/d/1r4lJAaSpw7M9FAktodYTbx6zQAE63PeB/view?usp=sharing),
+[Ex02](https://drive.google.com/file/d/19aun4ywnqcFB_a0IjG2Qva3N4JW8omKF/view?usp=sharing),
 [Exam20160419_CM](https://drive.google.com/file/d/1UbZa0P6zioaz9b882ITd3DU1cFnoubIt/view?usp=sharing),
-[Exam20160419_LM](https://drive.google.com/file/d/1Sokj4Lq-w1ACOMuhDcfnmPioZUan_dR8/view?usp=sharing),
+[Exam20160419_LM](https://drive.google.com/file/d/1Sokj4Lq-w1ACOMuhDcfnmPioZUan_dR8/view?usp=sharing)
 )
 
 ### Schedule
