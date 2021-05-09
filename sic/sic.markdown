@@ -20,7 +20,7 @@ In the third talk we'll discuss how Android isolates applications from each othe
 
 ### Introduction to Sandboxing, DAC and MAC
 
-* [slides](https://drive.google.com/file/d/1Hnr0sr7g5MFYxIpbNsIQFD6d_LlbhKoE/view?usp=sharing)
+* [Slides](https://drive.google.com/file/d/1Hnr0sr7g5MFYxIpbNsIQFD6d_LlbhKoE/view?usp=sharing)
 * Program
   * Introduction to Access control techniques, DAC and MAC
   * Unix-style permissions (managing users and groups, set-UID-root, sticky bit)
@@ -28,7 +28,7 @@ In the third talk we'll discuss how Android isolates applications from each othe
 
 ### Linux Capabilities
 
-* [slides](https://drive.google.com/file/d/1DEqifdSUuEOMwvHaPX7wEX_O29BCrabf/view?usp=sharing)
+* [Slides](https://drive.google.com/file/d/1DEqifdSUuEOMwvHaPX7wEX_O29BCrabf/view?usp=sharing)
 * Program
   * Introduction to Linux Capabilities
   * Thread capabilities vs File capabilities
