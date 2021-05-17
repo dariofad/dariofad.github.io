@@ -25,7 +25,7 @@ my_link="http://spdp.di.unimi.it/papers/percom2021.pdf"
 
 {% include paper.html
 my_title="Artifact: Scalable Distributed Data Anonymization"
-my_award="_Receiver of the best artifact award_"
+my_award="_Best Artifact Award Winner_"
 my_venue="PerCom '21"
 my_month="2021-03"
 my_link="http://spdp.di.unimi.it/papers/percom2021-artifact.pdf"
