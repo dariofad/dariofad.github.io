@@ -37,9 +37,22 @@ In the third talk we'll discuss how Android isolates applications from each othe
   * Set-user-ID-root programs with capabilities
   * Textual representation, set, get, and decode
   * Capability-aware vs Capability-dumb programs
+  
+### Isolation of apps in Android
+
+* [Slides](https://drive.google.com/file/d/1n2bZToTnnbnlJffqRWkTeoFmXG82nI8R/view?usp=sharing)
+* Program
+  * Application Sandboxing in Android: DAC and MAC
+    * SEAndroid Context Files
+    * Android Permissions and introduction to the Binder IPC
+  * SEApp: Bringing Mandatory Access Control to Android Apps
+    * Motivation and Idea
+	* Policy language and Policy Module Constraints
+	* Install time and Runtime support
+	* Demo using a Pixel 2 XL / Pixel 3
 
 ### Schedule
 
 * Talk 1: 04/05/2021
 * Talk 2: 11/05/2021
-* Talk 3: 18/05/2021
+* Talk 3: 18/05/2021 - Matthew Rossi
