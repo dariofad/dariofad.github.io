@@ -1,9 +1,4 @@
-<h3> {{ include.my_title }}</h3>
-<h4>{{ include.my_award | markdownify  }}</h4>
-<div class="col-md-6" style="float: left; margin-right 1em; width: 100%;">
-   <h4>{{ include.my_venue }}</h4>
-</div>
-<div class="col-md-6" style="float: left; margin-right 1em; width: 100%;  font-family: monospace">
-   <h4>{{ include.my_month }}</h4>
-</div>
-<a href="{{ include.my_link}}">Link</a>
+{{ include.my_authors }}, <a href="{{ include.my_item }}"> {{ include.my_title }}</a>,
+**{{ include.my_venue }}**, {{ include.my_year }} {% if include.my_pdf != "" %} [<a href="{{ include.my_pdf }}">pdf</a>] {% endif %}
+<br>
+{{ include.my_award }}
