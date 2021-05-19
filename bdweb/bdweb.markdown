@@ -50,7 +50,7 @@ Feel free to send me an email to <dario.facchinetti@unibg.it>, but **please use 
 [Exam20160419_LM](https://drive.google.com/file/d/1ktHp-hYt_NI2jvlqOa2XSNFuS9jmsb75/view?usp=sharing)
 )
 
-### `EXE6` Conceptual and logical database modeling - pt3
+### `EXE6` Solution of past years exams
 
 * Solutions (
 [Exam20170420_LM](https://drive.google.com/file/d/1xcpQt_j4NMhr-qqN-sUdeVU8J_rjeS--/view?usp=sharing),
