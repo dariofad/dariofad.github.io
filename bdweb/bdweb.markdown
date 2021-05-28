@@ -58,6 +58,19 @@ Feel free to send me an email to <dario.facchinetti@unibg.it>, but **please use 
 [Exam20180419_LM](https://drive.google.com/file/d/1w13ES3J759xGo8QcPICP1alUrnzDvtsp/view?usp=sharing)
 )
 
+### `EXE7`, `EXE8`, `EXE9` Solution of past years exams
+
+* Solutions (
+[Exam2004](https://drive.google.com/file/d/1TTBdksZEFDoqQOZ2RC-j4gnlXq2vYMC7/view?usp=sharing),
+[Exam2012](https://drive.google.com/file/d/1h1X-ya84_4LvHV2rb9YqIbn0lslCnrhB/view?usp=sharing),
+[Exam2013](https://drive.google.com/file/d/1sOKjzwaX-jdgKvfO1msmToIvKMc5TvcG/view?usp=sharing),
+[Exam2014](https://drive.google.com/file/d/1OODTWrpZIjytAIX1wGHq49ML9F3OQLFF/view?usp=sharing),
+[Exam2015](https://drive.google.com/file/d/108av4U84ZvlrC2nqn9JYxq0tsM6lBmSv/view?usp=sharing),
+[Exam2018](https://drive.google.com/file/d/1dMfSiSrvCloJh3f2O3YReJhYXSzBnXAP/view?usp=sharing),
+[Exam2019](https://drive.google.com/file/d/14sog8U_31gfFwE3Vu4hxwu1bitjQtuii/view?usp=sharing)
+)
+
+
 ### Schedule
 
 * Exe1: 30/03/2021
@@ -66,6 +79,9 @@ Feel free to send me an email to <dario.facchinetti@unibg.it>, but **please use 
 * Exe4: 06/05/2021 - Tutor Matthew Rossi
 * Exe5: 10/05/2021 - Tutor Matthew Rossi
 * Exe6: 17/05/2021 - Tutor Matthew Rossi
+* Exe7: 24/05/2021 - Tutor Gianluca Oldani
+* Exe8: 25/05/2021 - Tutor Gianluca Oldani
+* Exe9: 27/05/2021 - Tutor Gianluca Oldani
 
 
 <small> _The documents gathered in this web page have been provided by the contributing authors as a means to ensure timely dissemination of scholarly and technical work on a noncommercial basis. Copyright and all rights therein are maintained by the authors or by other copyright holders, notwithstanding that they have offered their works here electronically. It is understood that all persons copying this information will adhere to the terms and constraints invoked by each author's copyright. These works may not be reposted without the explicit permission of the copyright holder._</small>
