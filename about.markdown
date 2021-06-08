@@ -156,7 +156,7 @@ Policy/Programming Languages and tools that I've used occasionally:
 * `M4`, `TE`, `CIL`, `Java`, `Go`, `C/C++`, `SPARQL`, `Make`, `Bazel`, `Docker`
 
 Personal interest areas (software related):
-* Understanding how Linux (or any other derived OS) works, cryptography
+* Understanding how Linux (or any other derived OS) works, applied cryptography
 
 Languages:
 * Italian (native), English
