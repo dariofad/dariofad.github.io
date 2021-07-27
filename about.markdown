@@ -105,7 +105,7 @@ my_heading="Other experiences"
 `Programming`
 
 * 
-**AlgoExpert** - Completed 100 problems in Python ([certificate](./resources/AlgoExpert_Certificate.pdf))
+**AlgoExpert** - Completed 100 problems in Python ([certificate](https://drive.google.com/file/d/107ZkuFqHwE4L3oNnyURqF-whdiYl39r-/view?usp=sharing))
 
 `Coding competitions`
 * 
@@ -165,3 +165,5 @@ Languages:
 my_heading="Interests"
 %}
 Traveling, reading Manga (when I'm not messing up with my Linux distro ( ⚆ _ ⚆ ) ), technology
+
+[my resume](https://drive.google.com/file/d/1cQji7DeukMcoQFjRU8TMIkE1x-ehXNge/view?usp=sharing)
