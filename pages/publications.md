@@ -9,13 +9,22 @@ my_heading="Conference and Journal Papers"
 %}
 
 {% include paper.html
-my_authors="_Enrico Bacis, Dario Facchinetti, Marco Guarnieri, Marco Rosa, Matthew Rossi, Stefano Paraboschi_"
+my_authors="_Sabrina De Capitani di Vimercati, Dario Facchinetti, Sara Foresti, Gianluca Oldani, Stefano Paraboschi, Matthew Rossi, Pierangela Samarati_"
 my_item=""
-my_title="I _Told_ You Tomorrow: Practical Time-Locked Secrets using Smart Contracts"
-my_venue="16th ARES"
+my_title="Multi-dimensional indexes for point and range queries on outsourced encrypted data"
+my_venue="GLOBECOM"
 my_year="2021"
 my_pdf=""
 my_award="(to appear)"
+%}
+
+{% include paper.html
+my_authors="_Enrico Bacis, Dario Facchinetti, Marco Guarnieri, Marco Rosa, Matthew Rossi, Stefano Paraboschi_"
+my_item="https://dl.acm.org/doi/10.1145/3465481.3465765"
+my_title="I _Told_ You Tomorrow: Practical Time-Locked Secrets using Smart Contracts"
+my_venue="16th ARES"
+my_year="2021"
+my_pdf="https://dl.acm.org/doi/pdf/10.1145/3465481.3465765"
 %}
 
 
