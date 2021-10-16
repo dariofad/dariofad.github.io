@@ -7,13 +7,20 @@ permalink: /about/
 
 <br>
 {% include heading.html
+my_heading="Current position"
+%}
+**Researcher** - Università degli Studi di Bergamo
+<br>
+Topic: Information technology for data protection
+<br>
+{% include heading.html
 my_heading="Education"
 %}
 Software Engineering - Università degli Studi di Bergamo
 <br>
 **PhD program in Engineering and Applied Sciences**
 <br>
-{{ "2019-09-01" | date: date_format }} - Present
+{{ "2019-09-01" | date: date_format }} - {{ "2021-09-31" | date: date_format }}
 
 Software Engineering - Università degli Studi di Bergamo
 <br>
@@ -51,7 +58,7 @@ my_heading="Work Experience"
 <br>
 Extension of a prototype for the management of a language for security policies in a Digital Data Market
 <br>
-{{ "2021-05-03" | date: date_format }} - {{ "Present" | date: date_format }}
+{{ "2021-05-03" | date: date_format }} - {{ "2021-09-13" | date: date_format }}
 
 * 
 **Partner**: UniBg
@@ -88,7 +95,7 @@ Topics: Structured Query Language, Conceptual and Logical database modeling
 * 
 **Data Bases II**
 <br>
-Years: `2019`, `2020`
+Years: `2019`, `2020`, `2021`
 <br>
 Topics: Concurrency, scheduling, distributed databases, XQUERY
 
@@ -114,7 +121,7 @@ my_heading="Other experiences"
 `Thesis projects`
 
 * 
-**Supervised 20+ thesis students** - [Topics](https://seclab.unibg.it/tesi/)
+**Supervised 30+ thesis students** - [Topics](https://seclab.unibg.it/tesi/)
 
 {% include heading.html
 my_heading="Software Contributions"
@@ -150,10 +157,10 @@ my_heading="Skills"
 %}
 
 Software/Programming Languages that I use regularly:
-* `Ubuntu`, `Emacs`, `EXWM`, `git`, `Python`, `LaTeX`
+* `Ubuntu`, `Emacs`, `git`, `Python`, `LaTeX`, `Make`
 
 Policy/Programming Languages and tools that I've used occasionally:
-* `M4`, `TE`, `CIL`, `Java`, `Go`, `C/C++`, `SPARQL`, `Make`, `Bazel`, `Docker`
+* `M4`, `TE`, `CIL`, `Go`, `Java`, `C`, `C++`, `SPARQL`, `Bazel`, `Docker`
 
 Personal interest areas (software related):
 * Understanding how Linux (or any other derived OS) works, applied cryptography

@@ -15,7 +15,7 @@ title: Posts
     </h4>
 	{{ post.excerpt | markdownify}}
   	{% for tag in post.tags %}
- 	  <a href="/tag/{{ tag }}"><code><nobr>{{ tag }}</nobr></code>&nbsp;</a>
+ 	  <a href="/tag/{{ tag }}"><code><nobr>{{ tag }}</nobr></code></a>
     {% endfor %}
 	<br><br>
   {% endfor %}
