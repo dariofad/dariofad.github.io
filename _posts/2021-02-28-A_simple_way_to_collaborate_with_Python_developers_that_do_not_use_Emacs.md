@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "A simple way to collaborate with Python developers that do not use Emacs"
-tags: emacs vscode python development
+tags: emacs vscode python development linux
 excerpt: "In this post I'll share some tips to make it easier to setup a (Unix-based) Python development environment for Emacs and VSCode users."
 ---
 
