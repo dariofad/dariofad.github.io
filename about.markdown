@@ -11,7 +11,7 @@ my_heading="Current position"
 %}
 **Researcher** - Università degli Studi di Bergamo
 <br>
-Topic: Information technology for data protection
+Topic: Information technology for the protection of data
 <br>
 {% include heading.html
 my_heading="Education"
