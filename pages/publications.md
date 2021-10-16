@@ -81,17 +81,32 @@ my_heading="Chapters in Deliverables"
 
 {% include deliverable.html
 my_project="H2020 - MOSAICrOWN"
+my_title="D3.3 First Version of Policy Specification Language and Model"
+my_year="2020"
+my_item="https://mosaicrown.eu/wp-content/uploads/2020/09/D3.3.pdf"
+%}
+
+{% include deliverable.html
+my_project="H2020 - MOSAICrOWN"
+my_title="D3.4 Final Tools for the Governance Framework"
+my_year="2021"
+my_item="https://mosaicrown.eu/wp-content/uploads/2021/10/D3.4.pdf"
+%}
+
+{% include deliverable.html
+my_project="H2020 - MOSAICrOWN"
+my_title="D4.1 First Version of Encryption-based Protection Tools"
+my_year="2020"
+my_item="https://mosaicrown.eu/wp-content/uploads/2020/09/D4.1.pdf"
+%}
+
+{% include deliverable.html
+my_project="H2020 - MOSAICrOWN"
 my_title="D4.3 Final Encryption-based Techniques"
 my_year="2020"
 my_item="https://mosaicrown.eu/wp-content/uploads/2021/03/D4.3.pdf"
 %}
 
-{% include deliverable.html
-my_project="H2020 - MOSAICrOWN"
-my_title="D3.3 First Version of Policy Specification Language and Model"
-my_year="2020"
-my_item="https://mosaicrown.eu/wp-content/uploads/2020/09/D3.3.pdf"
-%}
 
 {% include deliverable.html
 my_project="H2020 - MOSAICrOWN"
@@ -102,7 +117,9 @@ my_item="https://mosaicrown.eu/wp-content/uploads/2020/09/D5.1.pdf"
 
 {% include deliverable.html
 my_project="H2020 - MOSAICrOWN"
-my_title="D4.1 First Version of Encryption-based Protection Tools"
-my_year="2020"
-my_item="https://mosaicrown.eu/wp-content/uploads/2020/09/D4.1.pdf"
+my_title="D5.4 Final Versions of Tools for Data Sanitisation and Computation"
+my_year="2021"
+my_item="https://mosaicrown.eu/wp-content/uploads/2021/10/D5.4.pdf"
 %}
+
+
