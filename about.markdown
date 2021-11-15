@@ -81,28 +81,28 @@ Teaching assistant, courses at Università degli Studi di Bergamo
 * 
 **Introduction to programming in Python**
 <br>
-Years `2018`, `2020`
+Year `2018`, `2020`
 <br>
 Topics: Basic types, control-flow statements, functions, lists
 
 * 
 **Data Bases I**
 <br>
-Years `2019`, `2020`, `2021`
+Year `2019`, `2020`, `2021`
 <br>
 Topics: Structured Query Language, Conceptual and Logical database modeling
 
 * 
 **Data Bases II**
 <br>
-Years: `2019`, `2020`, `2021`
+Year: `2019`, `2020`, `2021`
 <br>
 Topics: Concurrency, scheduling, distributed databases, XQUERY
 
 * 
 **Computer Security**
 <br>
-Years: `2021`
+Year: `2021`
 <br>
 Topics: Access Control, DAC, MAC, Capabilities (Linux), Isolation of 3rd-party apps in Android
 
@@ -145,12 +145,12 @@ A Dockerized Apache Spark-based version of Mondrian, a sanitization algorithm to
 * 
 **dot-emacs** <a href='https://github.com/dariofad/dot-emacs'>[link]</a>
 <br>
-A minimal version of my <tt>.emacs</tt> files useful to anybody that wants to test Emacs with EXWM as its main driver. To use it, you only have to install Emacs, <tt>use-package</tt> and <tt>xorg</tt>. The repo collects mostly Elisp code. Upgrades planned.
+A minimal version of my <tt>.emacs</tt> files useful to anybody that wants to test Emacs with EXWM as its main driver. To use it, you only have to install Emacs, <tt>use-package</tt> and <tt>xorg</tt>. The repo collects mostly Elisp code.
 
 * 
 **MOSAICrOWN Policy Engine** <a href='https://github.com/mosaicrown/policy-engine'>[link]</a>
 <br>
-The policy engine is the tool responsible for parsing the MOSAICrOWN policy and checking whether a subject request is permitted or denied. Policies are written in ODRL, while the tool is implemented in Python. Upcoming releases scheduled for 2021.
+The policy engine is the tool responsible for parsing the MOSAICrOWN policy and checking whether a subject request is permitted or denied. Policies are written in ODRL, while the tool is implemented in Python.
 
 {% include heading.html
 my_heading="Skills"
@@ -171,6 +171,6 @@ Languages:
 {% include heading.html
 my_heading="Interests"
 %}
-Traveling, reading Manga (when I'm not messing up with my Linux distro ( ⚆ _ ⚆ ) ), technology
+Traveling, reading books and manga ( ⚆ _ ⚆ ), technology
 
 [my resume](https://drive.google.com/file/d/1cQji7DeukMcoQFjRU8TMIkE1x-ehXNge/view?usp=sharing)
