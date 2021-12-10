@@ -109,19 +109,19 @@ Topics: Access Control, DAC, MAC, Capabilities (Linux), Isolation of 3rd-party a
 {% include heading.html
 my_heading="Other experiences"
 %}
-`Programming`
+`Competitions`
 
-* 
-**AlgoExpert** - Completed 100 problems in Python ([certificate](https://drive.google.com/file/d/107ZkuFqHwE4L3oNnyURqF-whdiYl39r-/view?usp=sharing))
-
-`Coding competitions`
-* 
-**Google hash code 2019 Finals** - Team: Unibg Seclab, [38th place](https://codingcompetitions.withgoogle.com/hashcode/archive/2019)
+* **Cybersecurity Games & Conference** (CSAW 2021) - Applied Research Competition, Top 10 Finalist in Europe ([certificate](https://drive.google.com/file/d/1kUxstkCdRUDYZQDfT2TFn8_X568Y-3R5/view?usp=sharing))
+* **Google hash code 2019 Finals** - Team: Unibg Seclab, [38th place](https://codingcompetitions.withgoogle.com/hashcode/archive/2019)
 
 `Thesis projects`
 
-* 
-**Supervised 30+ thesis students** - [Topics](https://seclab.unibg.it/tesi/)
+* **Supervised 30+ thesis students** - [Topics](https://seclab.unibg.it/tesi/)
+
+`Programming`
+
+* **AlgoExpert** - Completed 100 problems in Python ([certificate](https://drive.google.com/file/d/107ZkuFqHwE4L3oNnyURqF-whdiYl39r-/view?usp=sharing))
+
 
 {% include heading.html
 my_heading="Software Contributions"

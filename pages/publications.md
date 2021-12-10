@@ -54,7 +54,7 @@ my_title="Artifact: Scalable Distributed Data Anonymization"
 my_venue="19th IEEE PerCom"
 my_year="2021"
 my_pdf="http://spdp.di.unimi.it/papers/percom2021-artifact.pdf"
-my_award="_**Best Artifact Award Winner**_"
+my_award="_**Best Artifact Award Winner**_ [[certificate](https://drive.google.com/file/d/1XqsnYPw1rzOUZKWYmkTIq_7JBMPpJWzK/view?usp=sharing)]"
 %}
 
 {% include paper.html
