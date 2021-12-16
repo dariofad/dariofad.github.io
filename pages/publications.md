@@ -10,12 +10,12 @@ my_heading="Conference and Journal Papers"
 
 {% include paper.html
 my_authors="_Sabrina De Capitani di Vimercati, Dario Facchinetti, Sara Foresti, Gianluca Oldani, Stefano Paraboschi, Matthew Rossi, Pierangela Samarati_"
-my_item=""
+my_item="https://cs.unibg.it/seclab-papers/2021/GLOBECOM/multi-dimensional-indexes.pdf"
 my_title="Multi-dimensional indexes for point and range queries on outsourced encrypted data"
 my_venue="IEEE GLOBECOM"
 my_year="2021"
-my_pdf=""
-my_award="(to appear)"
+my_pdf="https://cs.unibg.it/seclab-papers/2021/GLOBECOM/multi-dimensional-indexes.pdf"
+my_award="" 
 %}
 
 {% include paper.html
