@@ -145,7 +145,7 @@ A Dockerized Apache Spark-based version of Mondrian, a sanitization algorithm to
 * 
 **dot-emacs** <a href='https://github.com/dariofad/dot-emacs'>[link]</a>
 <br>
-A minimal version of my <tt>.emacs</tt> files useful to anybody that wants to test Emacs with EXWM as its main driver. To use it, you only have to install Emacs, <tt>use-package</tt> and <tt>xorg</tt>. The repo collects mostly Elisp code.
+A minimal version of my <tt>.emacs.d/</tt> useful to anyone that may want to test Emacs for code development. Mostly Elisp code.
 
 * 
 **MOSAICrOWN Policy Engine** <a href='https://github.com/mosaicrown/policy-engine'>[link]</a>
@@ -160,7 +160,7 @@ Software/Programming Languages that I use regularly:
 * `Ubuntu`, `Emacs`, `git`, `Python`, `LaTeX`, `Make`
 
 Policy/Programming Languages and tools that I've used occasionally:
-* `M4`, `TE`, `CIL`, `Go`, `Java`, `C`, `C++`, `SPARQL`, `Bazel`, `Docker`
+* `M4`, `TE`, `CIL`, `Go`, `Rust`, `C`, `C++`, `Java`, `SQL`, `Bazel`, `Docker`
 
 Personal interest areas (software related):
 * Understanding how Linux (or any other derived OS) works, applied cryptography
@@ -171,6 +171,6 @@ Languages:
 {% include heading.html
 my_heading="Interests"
 %}
-Traveling, reading books and manga ( ⚆ _ ⚆ ), technology
+Planning new trips ( ⚆ _ ⚆ ), books, technology, Japanese.
 
 [my resume](https://drive.google.com/file/d/1cQji7DeukMcoQFjRU8TMIkE1x-ehXNge/view?usp=sharing)
