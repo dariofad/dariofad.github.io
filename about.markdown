@@ -20,7 +20,7 @@ Software Engineering - Università degli Studi di Bergamo
 <br>
 **PhD program in Engineering and Applied Sciences**
 <br>
-{{ "2019-09-01" | date: date_format }} - {{ "2021-09-31" | date: date_format }}
+{{ "2018-09-01" | date: date_format }} - {{ "2021-09-31" | date: date_format }}
 
 Software Engineering - Università degli Studi di Bergamo
 <br>
@@ -39,7 +39,7 @@ Software Engineering - Università degli Studi di Bergamo
 {% include heading.html
 my_heading="Awards"
 %}
-Univerity of Bergamo Alumni Association
+University of Bergamo Alumni Association
 <br>
 Dept. of Management, Information and Production Engineering
 <br>
@@ -157,20 +157,20 @@ my_heading="Skills"
 %}
 
 Software/Programming Languages that I use regularly:
-* `Ubuntu`, `Emacs`, `git`, `Python`, `LaTeX`, `Make`
+* `Ubuntu`, `Emacs`, `git`, `Go`, `Python`, `LaTeX`, `Make`
 
 Policy/Programming Languages and tools that I've used occasionally:
-* `M4`, `TE`, `CIL`, `Go`, `Rust`, `C`, `C++`, `Java`, `SQL`, `Bazel`, `Docker`
+* `M4`, `TE`, `CIL`, `Rust`, `C`, `C++`, `Java`, `SQL`, `Bazel`, `Docker`
 
 Personal interest areas (software related):
 * Understanding how Linux (or any other derived OS) works, applied cryptography
 
 Languages:
-* Italian (native), English
+* Italian (native), English (fluent)
 
 {% include heading.html
 my_heading="Interests"
 %}
-Planning new trips ( ⚆ _ ⚆ ), books, technology, Japanese.
+Planning new trips ( ⚆ _ ⚆ ), reading, technology, Japan and Japanese language.
 
 [my resume](https://drive.google.com/file/d/1cQji7DeukMcoQFjRU8TMIkE1x-ehXNge/view?usp=sharing)
