@@ -27,6 +27,7 @@ baseurl: ""
 url: "https://dariofad.github.io"
 twitter_username: darxst
 github_username:  dariofad
+linkedin_username: dario-facchinetti
 
 # Build settings
 theme: minima
