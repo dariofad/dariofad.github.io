@@ -9,68 +9,68 @@ my_heading="Conference and Journal Papers"
 %}
 
 {% include paper.html
-my_authors="_Sabrina De Capitani di Vimercati, Dario Facchinetti, Sara Foresti, Gianluca Oldani, Stefano Paraboschi, Matthew Rossi, Pierangela Samarati_"
+my_authors="Sabrina De Capitani di Vimercati, Dario Facchinetti, Sara Foresti, Gianluca Oldani, Stefano Paraboschi, Matthew Rossi, Pierangela Samarati"
 my_item="https://cs.unibg.it/seclab-papers/2021/GLOBECOM/multi-dimensional-indexes.pdf"
 my_title="Multi-dimensional indexes for point and range queries on outsourced encrypted data"
-my_venue="IEEE GLOBECOM"
+my_venue="**IEEE GLOBECOM**"
 my_year="2021"
 my_pdf="https://cs.unibg.it/seclab-papers/2021/GLOBECOM/multi-dimensional-indexes.pdf"
 my_award="" 
 %}
 
 {% include paper.html
-my_authors="_Enrico Bacis, Dario Facchinetti, Marco Guarnieri, Marco Rosa, Matthew Rossi, Stefano Paraboschi_"
+my_authors="Enrico Bacis, Dario Facchinetti, Marco Guarnieri, Marco Rosa, Matthew Rossi, Stefano Paraboschi"
 my_item="https://dl.acm.org/doi/10.1145/3465481.3465765"
 my_title="I _Told_ You Tomorrow: Practical Time-Locked Secrets using Smart Contracts"
-my_venue="16th ARES"
+my_venue="**16th ARES**"
 my_year="2021"
 my_pdf="https://dl.acm.org/doi/pdf/10.1145/3465481.3465765"
 %}
 
 
 {% include paper.html
-my_authors="_Matthew Rossi, Dario Facchinetti, Enrico Bacis, Marco Rosa, Stefano Paraboschi_"
+my_authors="Matthew Rossi, Dario Facchinetti, Enrico Bacis, Marco Rosa, Stefano Paraboschi"
 my_item="https://www.usenix.org/conference/usenixsecurity21/presentation/rossi"
 my_title="SEApp: Bringing Mandatory Access Control to Android Apps"
-my_venue="30th USENIX Security"
+my_venue="**30th USENIX Security**"
 my_year="2021"
 my_pdf="https://www.usenix.org/system/files/sec21fall-rossi.pdf"
 %}
 
 
 {% include paper.html
-my_authors="_Sabrina De Capitani di Vimercati, Dario Facchinetti, Sara Foresti, Gianluca Oldani, Stefano Paraboschi, Matthew Rossi, Pierangela Samarati_"
+my_authors="Sabrina De Capitani di Vimercati, Dario Facchinetti, Sara Foresti, Gianluca Oldani, Stefano Paraboschi, Matthew Rossi, Pierangela Samarati"
 my_item="http://spdp.di.unimi.it/papers/percom2021.pdf"
 my_title="Scalable Distributed Data Anonymization"
-my_venue="19th IEEE PerCom"
+my_venue="**19th IEEE PerCom**"
 my_year="2021"
 my_pdf="http://spdp.di.unimi.it/papers/percom2021.pdf"
 %}
 
 {% include paper.html
-my_authors="_Sabrina De Capitani di Vimercati, Dario Facchinetti, Sara Foresti, Gianluca Oldani, Stefano Paraboschi, Matthew Rossi, Pierangela Samarati_"
+my_authors="Sabrina De Capitani di Vimercati, Dario Facchinetti, Sara Foresti, Gianluca Oldani, Stefano Paraboschi, Matthew Rossi, Pierangela Samarati"
 my_item="http://spdp.di.unimi.it/papers/percom2021-artifact.pdf"
 my_title="Artifact: Scalable Distributed Data Anonymization"
-my_venue="19th IEEE PerCom"
+my_venue="**19th IEEE PerCom**"
 my_year="2021"
 my_pdf="http://spdp.di.unimi.it/papers/percom2021-artifact.pdf"
 my_award="_**Best Artifact Award Winner**_ [[certificate](https://drive.google.com/file/d/1XqsnYPw1rzOUZKWYmkTIq_7JBMPpJWzK/view?usp=sharing)]"
 %}
 
 {% include paper.html
-my_authors="_Dario Facchinetti, Giuseppe Psaila, Patrizia Scandurra_"
+my_authors="Dario Facchinetti, Giuseppe Psaila, Patrizia Scandurra"
 my_item="https://link.springer.com/article/10.1007/s40860-019-00088-9"
 my_title="Mobile cloud computing for indoor emergency response: the IPSOS assistant case study"
-my_venue="Journal of Reliable Intelligent Environments"
+my_venue="**Journal of Reliable Intelligent Environments**"
 my_year="2019"
 my_pdf=""
 %}
 
 {% include paper.html
-my_authors="_Enrico Bacis, Sabrina De Capitani di Vimercati, Dario Facchinetti, Sara Foresti, Giovanni Livraga, Stefano Paraboschi, Marco Rosa, Pierangela Samarati_"
+my_authors="Enrico Bacis, Sabrina De Capitani di Vimercati, Dario Facchinetti, Sara Foresti, Giovanni Livraga, Stefano Paraboschi, Marco Rosa, Pierangela Samarati"
 my_item="https://ieeexplore.ieee.org/document/8730707"
 my_title="Multi-Provider Secure Processing of Sensors Data"
-my_venue="17th IEEE PerCom"
+my_venue="**17th IEEE PerCom**"
 my_year="2019"
 my_pdf="http://spdp.di.unimi.it/papers/percom2019.pdf"
 %}
