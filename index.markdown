@@ -6,7 +6,7 @@ layout: home
 
 include introbox.html 
 
-image_path="./resources/me4.png" 
+image_path="./assets/me.png" 
 
 title=""
 
