@@ -28,7 +28,7 @@ applied cryptography.
 I'm a big fan of [Emacs](https://www.gnu.org/software/emacs/) and of
 [Ergodox-Ez](https://ergodox-ez.com/).
 
-My non-work interests ranges from reading, planning new trips, and
+My non-work interests range from reading, planning new trips, and
 learning the Japanese language."
 
 %}
