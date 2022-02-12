@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Dario Facchinetti
-email: dario.fad@gmail.com
+email: "dario.fad@gmail.com <br><a href='https://drive.google.com/file/d/1cQji7DeukMcoQFjRU8TMIkE1x-ehXNge/view?usp=sharing'>my resume</a>"
 description: >- # this means to ignore newlines until "baseurl:"
   Dario Facchinetti's Github Pages. All code is provided under the Apache 2.0 license unless otherwise stated.
   
