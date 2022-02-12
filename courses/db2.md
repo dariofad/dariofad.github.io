@@ -14,25 +14,25 @@ Feel free to send me an email to <dario.facchinetti@unibg.it>, but **please use 
 
 ### `EXE1` Introduction to XML and XPath
 
-* [Slides](./db2_files/intro_xml_xpath.pdf)
+* [Slides](https://drive.google.com/file/d/1NQWx6vTEH_UAkAa_pJ4QQLTHyeOdHNRg/view?usp=sharing)
 * [Link](https://basex.org/) to BaseX
-* [DTD](./db2_files/SigmodRecord.dtd) and [Link](http://aiweb.cs.washington.edu/research/projects/xmltk/xmldata/www/repository.html#sigmod-record) to the SigmodRecord.xml data collection
-* [Link](./db2_files/factbook.zip) to the factbook.xml data collection
-* [Text](./db2_files/xpath_t.pdf) and [solution](./db2_files/xpath_tas.pdf) of exercises
+* [DTD](https://drive.google.com/file/d/1S_N2qtfk0xYDxDoCPcIr-_544AdIfuXp/view?usp=sharing) and [Link](http://aiweb.cs.washington.edu/research/projects/xmltk/xmldata/www/repository.html#sigmod-record) to the SigmodRecord.xml data collection
+* [Link](https://drive.google.com/file/d/133o4XGX0Pdj6qbOsJAR2S-REfKMgZaL6/view?usp=sharing) to the factbook.xml data collection
+* [Text](https://drive.google.com/file/d/1ijHVOUxI0cVe6iAurI7YKpcW8qllzd-o/view?usp=sharing) and [solution](https://drive.google.com/file/d/1wDDmJNDP9Iv7GXjfPqGzOFjLZ_UAEvfu/view?usp=sharing) of exercises
 
 ### `EXE2` XPath exerices and introduction to XQuery
 
-* [Slides](./db2_files/intro_xquery.pdf)
-* Running examples [data](./db2_files/examples_exe2.zip) 
+* [Slides](https://drive.google.com/file/d/1mGCzuEZBwLTkB5bxKan74bUBZu-Dyeuj/view?usp=sharing)
+* Running examples [data](https://drive.google.com/file/d/1_FnfZnQZXjp_QRbH75GCtcIXnHYZOroz/view?usp=sharing)
 
 ### `EXE3` FLWOR expressions, delete, insert and update
 
-* [Slides](./db2_files/intro_xquery.pdf)
+* [Slides](https://drive.google.com/file/d/1mGCzuEZBwLTkB5bxKan74bUBZu-Dyeuj/view?usp=sharing)
 
 ### `EXE4` XQUERY exercises
 
-* [Exercises](./db2_files/xquery_exercises_t.pdf) taken from exams
-* [Solutions](./db2_files/xquery_exercises_tas.pdf)
+* [Exercises](https://drive.google.com/file/d/1qBFBbqVdEkM6vbrqqutqxAxnv69Fpc4B/view?usp=sharing) taken from exams
+* [Solutions](https://drive.google.com/file/d/1MU62IOK76BLfy2nXbhNfyPPRbcEkeBxG/view?usp=sharing)
 
 Schedule
 
