@@ -21,7 +21,7 @@
 title: Dario Facchinetti
 email: dario.fad@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Dario Facchinetti's Github Pages. All written content on this site is provided under a Creative Commons ShareAlike license unless otherwise stated. All code is provided under the Apache 2.0 license unless otherwise stated.
+  Dario Facchinetti's Github Pages. All code is provided under the Apache 2.0 license unless otherwise stated.
   
 baseurl: ""
 url: "https://dariofad.github.io"
