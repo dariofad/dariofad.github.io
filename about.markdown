@@ -34,7 +34,7 @@ Software Engineering - University of Bergamo
 <br>
 {{ "2016-09-01" | date: date_format }} - {{ "2018-07-17" | date: date_format }}
 <br>
-`GPA: 4.0/4.0` - Graduated summa cum laude
+GPA: 4.0/4.0 - Graduated summa cum laude
 <br>
 Thesis: Transforming query trees for cost optimization in secure multi-provider execution
 
