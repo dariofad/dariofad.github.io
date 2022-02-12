@@ -12,9 +12,6 @@ my_heading="Current position"
 **Postdoc Researcher** - University of Bergamo, department of Engineering
 <br>
 Topic: Information technology for the protection of data
-<br>
-[my resume](https://drive.google.com/file/d/1cQji7DeukMcoQFjRU8TMIkE1x-ehXNge/view?usp=sharing)
-
 
 {% include heading.html
 my_heading="Education"
@@ -27,9 +24,9 @@ Software Engineering - University of Bergamo
 <br>
 Expected graduation date: _May 2022_
 <br>
-Advisor: _prof. Stefano Paraboschi_
+Advisor: prof. Stefano Paraboschi
 <br>
-Thesis: _Technologies for the secure collection, sanitization, processing and release of data_
+Thesis: Technologies for the secure collection, sanitization, processing and release of data
 
 Software Engineering - University of Bergamo
 <br>
@@ -39,7 +36,7 @@ Software Engineering - University of Bergamo
 <br>
 `GPA: 4.0/4.0` - Graduated summa cum laude
 <br>
-Thesis: _Transforming query trees for cost optimization in secure multi-provider execution_
+Thesis: Transforming query trees for cost optimization in secure multi-provider execution
 
 
 Software Engineering - University of Bergamo
