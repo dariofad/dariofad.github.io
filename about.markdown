@@ -69,7 +69,7 @@ my_heading="Skills"
   `C`, `Elisp`, `M4`, `TE`, `CIL`, `ODRL`, `RDF`
   
 * Software: `Docker`, `Postgres`, `Redis`, `Deno`, `Bazel`, `Apache 
-  Spark`, `FRESCO mpc`, `Z3`, `FUSE`
+  Spark`, `FRESCO mpc`, `Z3`, `FUSE`, `eBPF`
   
 * see [my dotfiles](https://github.com/dariofad/dot-emacs)
 
