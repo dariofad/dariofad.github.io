@@ -1,9 +1,16 @@
 <div style="clear: none;">
-  <div class="col-md-6" style="float: left; margin-right 1em; width: 30%">
-    <img src="{{ include.image_path }}" alt="" max-height="180px" max-width="180px" height="auto" width="auto">
-  </div>
-  <div style="margin-left 3em;">
-    <br>
-    {{ include.description | markdownify }}
+  <div style="margin-right: auto; margin-left: auto; width: 35%">
+    <img src="{{ include.image_path }}" alt="" max-height="120px" max-width="120px" height="auto" width="auto">
   </div>
 </div>
+
+<br>
+
+<div style="margin-left: auto; margin-right: auto; width: 95%; text-align: center;">
+  {{ include.sub_heading | markdownify }}
+</div>
+
+<div style="margin-left: auto; margin-right: auto; width: 95%; text-align: center;">
+  {{ include.sub_description | markdownify }}
+</div>
+
