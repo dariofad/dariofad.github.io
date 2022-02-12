@@ -9,32 +9,72 @@ permalink: /about/
 {% include heading.html
 my_heading="Current position"
 %}
-**Researcher** - Università degli Studi di Bergamo
+**Postdoc Researcher** - University of Bergamo, department of Engineering
 <br>
 Topic: Information technology for the protection of data
 <br>
+[my resume](https://drive.google.com/file/d/1cQji7DeukMcoQFjRU8TMIkE1x-ehXNge/view?usp=sharing)
+
+
 {% include heading.html
 my_heading="Education"
 %}
-Software Engineering - Università degli Studi di Bergamo
+Software Engineering - University of Bergamo
 <br>
 **PhD program in Engineering and Applied Sciences**
 <br>
 {{ "2018-09-01" | date: date_format }} - {{ "2021-09-31" | date: date_format }}
+<br>
+Expected graduation date: _May 2022_
+<br>
+Advisor: _prof. Stefano Paraboschi_
+<br>
+Thesis: _Technologies for the secure collection, sanitization, processing and release of data_
 
-Software Engineering - Università degli Studi di Bergamo
+Software Engineering - University of Bergamo
 <br>
 **Master of Science (MSc)**
 <br>
 {{ "2016-09-01" | date: date_format }} - {{ "2018-07-17" | date: date_format }}
 <br>
 `GPA: 4.0/4.0` - Graduated summa cum laude
+<br>
+Thesis: _Transforming query trees for cost optimization in secure multi-provider execution_
 
-Software Engineering - Università degli Studi di Bergamo
+
+Software Engineering - University of Bergamo
 <br>
 **Bachelor of Science (BSc)**
 <br>
 {{ "2013-09-01" | date: date_format }} - {{ "2016-07-19" | date: date_format }}
+
+{% include heading.html
+my_heading="Skills"
+%}
+
+**Core competencies**:
+
+* Programming languages: `Go`, `Python`
+
+* Software: `Ubuntu`, `Emacs`, `git`, `Make`
+
+* Scientific writing with `LaTeX`
+
+* Access control techniques
+
+**Other** programming languages/frameworks/tools used occasionaly
+(say, less than 3 projects):
+
+* Programming Languages: `Rust`, `C++`, `Java`, `Javascript`, `SQL`,
+  `C`, `Elisp`, `M4`, `TE`, `CIL`, `ODRL`, `RDF`
+  
+* Software: `Docker`, `Postgres`, `Redis`, `Deno`, `Bazel`, `Apache 
+  Spark`, `FRESCO mpc`, `Z3`, `FUSE`
+  
+* see [my dotfiles](https://github.com/dariofad/dot-emacs)
+
+**Languages**:
+* Italian (native), English (fluent)
 
 {% include heading.html
 my_heading="Awards"
@@ -53,30 +93,16 @@ Dept. of Management, Information and Production Engineering
 my_heading="Work Experience"
 %}
 `Autonomous collaborations`
-* 
-**Partner**: UniBg
-<br>
-Extension of a prototype for the management of a language for security policies in a Digital Data Market
-<br>
-{{ "2021-05-03" | date: date_format }} - {{ "2021-09-13" | date: date_format }}
-
-* 
-**Partner**: UniBg
-<br>
-Development of a prototype for the management of a security policy language in a Digital Data Market
-<br>
-{{ "2020-07-20" | date: date_format }} - {{ "2020-11-20" | date: date_format }}
-
-* 
-**Partner**: UniBg
-<br>
- Development of a prototype for the management of data in a Digital Data Market
-<br>
-{{ "2019-07-04" | date: date_format }} - {{ "2019-11-04" | date: date_format }}
+* **Partner**: UniBg
+  <br>
+  Extension of a prototype for the management of a language for security policies in a Digital Data Market
+  - {{ "2021-05-03" | date: date_format }} - {{ "2021-09-13" | date: date_format }}
+  - {{ "2020-07-20" | date: date_format }} - {{ "2020-11-20" | date: date_format }}
+  - {{ "2019-07-04" | date: date_format }} - {{ "2019-11-04" | date: date_format }}
 
 `Teaching experience`
 
-Teaching assistant, courses at Università degli Studi di Bergamo
+Teaching assistant, courses at University of Bergamo
 
 * 
 **Introduction to programming in Python**
@@ -151,26 +177,3 @@ A minimal version of my <tt>.emacs.d/</tt> useful to anyone that may want to tes
 **MOSAICrOWN Policy Engine** <a href='https://github.com/mosaicrown/policy-engine'>[link]</a>
 <br>
 The policy engine is the tool responsible for parsing the MOSAICrOWN policy and checking whether a subject request is permitted or denied. Policies are written in ODRL, while the tool is implemented in Python.
-
-{% include heading.html
-my_heading="Skills"
-%}
-
-Software/Programming Languages that I use regularly:
-* `Ubuntu`, `Emacs`, `git`, `Go`, `Python`, `LaTeX`, `Make`
-
-Policy/Programming Languages and tools that I've used occasionally:
-* `M4`, `TE`, `CIL`, `Rust`, `C`, `C++`, `Java`, `SQL`, `Bazel`, `Docker`
-
-Personal interest areas (software related):
-* Understanding how Linux (or any other derived OS) works, applied cryptography
-
-Languages:
-* Italian (native), English (fluent)
-
-{% include heading.html
-my_heading="Interests"
-%}
-Planning new trips ( ⚆ _ ⚆ ), reading, technology, Japan and Japanese language.
-
-[my resume](https://drive.google.com/file/d/1cQji7DeukMcoQFjRU8TMIkE1x-ehXNge/view?usp=sharing)
