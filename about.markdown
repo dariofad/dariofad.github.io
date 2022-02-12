@@ -95,7 +95,7 @@ my_heading="Work Experience"
 `Autonomous collaborations`
 * **Partner**: UniBg
   <br>
-  Extension of a prototype for the management of a language for security policies in a Digital Data Market
+  Development of a prototype for the management of a language for security policies in a Digital Data Market
   - {{ "2021-05-03" | date: date_format }} - {{ "2021-09-13" | date: date_format }}
   - {{ "2020-07-20" | date: date_format }} - {{ "2020-11-20" | date: date_format }}
   - {{ "2019-07-04" | date: date_format }} - {{ "2019-11-04" | date: date_format }}
