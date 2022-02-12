@@ -151,26 +151,26 @@ my_heading="Software Contributions"
 %}
 
 * 
-**SEApp: Bringing Mandatory Access Control to Android Apps**  <a href='https://github.com/matthewrossi/seapp'>[link]</a>
+**SEApp: Bringing Mandatory Access Control to Android Apps**  (<a href='https://github.com/matthewrossi/seapp'>link</a>)
 <br>
 A modification to AOSP to extend the mandatory access control layer to Android apps. SEApp leverages SELinux to restrict access to the internal storage, restrict access to services, and isolate vulnerability prone components. This is achieved executing components on dedicated processes. A dedicated app policy module (written in CIL) regulates the permissions associated to each process. Changes to AOSP are implemented in both Java and C++.
 
 * 
-**ITYT:  Practical Time-Locked Secrets using Smart Contracts** <a href='https://github.com/unibg-seclab/ityt'>[link]</a>
+**ITYT:  Practical Time-Locked Secrets using Smart Contracts** (<a href='https://github.com/unibg-seclab/ityt'>link</a>)
 <br>
 A framework to deploy time-locks using the blockchain. It leverages multi-party computation to split a secret among many parties, each obtaining a share. The parties need to cooperate to recover the secret following a pre-defined protocol. The protocol is programmed using a smart contract. The smart contract is developed in Solidity, while the multi-party computation protocol is developed in Java using the FRESCO programming framework.
 
 * 
-**Spark-based Mondrian** <a href='https://github.com/mosaicrown/mondrian'>[link]</a>
+**Spark-based Mondrian** (<a href='https://github.com/mosaicrown/mondrian'>link</a>)
 <br>
 A Dockerized Apache Spark-based version of Mondrian, a sanitization algorithm to achieve <i>k-anonimity</i>. It is executed on a Spark cluster with a varying number of executors. Docker containers are used to scale the number of executors. The anonymization app is an Apache Spark application implemented in Python.
 
 * 
-**dot-emacs** <a href='https://github.com/dariofad/dot-emacs'>[link]</a>
+**dot-emacs** (<a href='https://github.com/dariofad/dot-emacs'>link</a>)
 <br>
 A minimal version of my <tt>.emacs.d/</tt> useful to anyone that may want to test Emacs for code development. Mostly Elisp code.
 
 * 
-**MOSAICrOWN Policy Engine** <a href='https://github.com/mosaicrown/policy-engine'>[link]</a>
+**MOSAICrOWN Policy Engine** (<a href='https://github.com/mosaicrown/policy-engine'>link</a>)
 <br>
 The policy engine is the tool responsible for parsing the MOSAICrOWN policy and checking whether a subject request is permitted or denied. Policies are written in ODRL, while the tool is implemented in Python.
