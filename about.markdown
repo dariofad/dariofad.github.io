@@ -9,6 +9,10 @@ permalink: /about/
 {% include heading.html
 my_heading="Current position"
 %}
+
+---
+<br/>
+
 **Postdoc Researcher** - University of Bergamo, department of Engineering
 <br>
 Topic: Information technology for the protection of data
@@ -16,6 +20,10 @@ Topic: Information technology for the protection of data
 {% include heading.html
 my_heading="Education"
 %}
+
+---
+<br>
+
 Software Engineering - University of Bergamo
 <br>
 **PhD program in Engineering and Applied Sciences**
@@ -38,7 +46,6 @@ GPA: 4.0/4.0 - Graduated summa cum laude
 <br>
 Thesis: Transforming query trees for cost optimization in secure multi-provider execution
 
-
 Software Engineering - University of Bergamo
 <br>
 **Bachelor of Science (BSc)**
@@ -48,6 +55,9 @@ Software Engineering - University of Bergamo
 {% include heading.html
 my_heading="Skills"
 %}
+
+---
+<br>
 
 **Core competencies**:
 
@@ -76,6 +86,10 @@ my_heading="Skills"
 {% include heading.html
 my_heading="Awards"
 %}
+
+---
+<br>
+
 University of Bergamo Alumni Association
 <br>
 Dept. of Management, Information and Production Engineering
@@ -89,6 +103,10 @@ Dept. of Management, Information and Production Engineering
 {% include heading.html
 my_heading="Work Experience"
 %}
+
+---
+<br>
+
 `Autonomous collaborations`
 * **Partner**: UniBg
   <br>
@@ -132,6 +150,10 @@ Topics: Access Control, DAC, MAC, Capabilities (Linux), Isolation of 3rd-party a
 {% include heading.html
 my_heading="Other experiences"
 %}
+
+---
+<br>
+
 `Competitions`
 
 * **Cybersecurity Games & Conference** (CSAW 2021) - Applied Research Competition, Top 10 Finalist in Europe ([certificate](https://drive.google.com/file/d/1kUxstkCdRUDYZQDfT2TFn8_X568Y-3R5/view?usp=sharing))
@@ -149,6 +171,9 @@ my_heading="Other experiences"
 {% include heading.html
 my_heading="Software Contributions"
 %}
+
+---
+<br>
 
 * 
 **SEApp: Bringing Mandatory Access Control to Android Apps**  (<a href='https://github.com/matthewrossi/seapp'>link</a>)

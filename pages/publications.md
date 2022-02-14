@@ -8,6 +8,9 @@ title: Publications
 my_heading="Conference and Journal Papers"
 %}
 
+---
+<br>
+
 {% include paper.html
 my_authors="Sabrina De Capitani di Vimercati, Dario Facchinetti, Sara Foresti, Gianluca Oldani, Stefano Paraboschi, Matthew Rossi, Pierangela Samarati"
 my_item="https://cs.unibg.it/seclab-papers/2021/GLOBECOM/multi-dimensional-indexes.pdf"
@@ -78,6 +81,9 @@ my_pdf="http://spdp.di.unimi.it/papers/percom2019.pdf"
 {% include heading.html
 my_heading="Chapters in Deliverables"
 %}
+
+---
+<br>
 
 {% include deliverable.html
 my_project="H2020 - MOSAICrOWN"
