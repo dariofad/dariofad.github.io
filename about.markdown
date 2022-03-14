@@ -30,7 +30,7 @@ Software Engineering - University of Bergamo
 <br>
 {{ "2018-09-01" | date: date_format }} - {{ "2021-09-31" | date: date_format }}
 <br>
-Expected graduation date: _May 2022_
+Expected graduation date: _April 2022_
 <br>
 Advisor: prof. Stefano Paraboschi
 <br>
