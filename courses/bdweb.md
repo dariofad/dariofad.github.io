@@ -6,7 +6,7 @@ layout: default
 
 ## Databases and Web - Teaching material
 
-My email: <dario.facchinetti@unibg.it>, **please use your student email account** to send emails (and attach only PDF files). 
+**Please use your student email account** to send emails to <dario.facchinetti@unibg.it> (and attach only PDF files). 
 
 ### Topics: Relational Algebra, Tuple Relational Calculus, Datalog, SQL, Conceptual and Logical Database modeling
 
