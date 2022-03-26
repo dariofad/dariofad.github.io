@@ -6,9 +6,7 @@ layout: default
 
 ## Databases and Web - Teaching material
 
-This page lists the exercises of the course 21019.
-
-Feel free to send me an email to <dario.facchinetti@unibg.it>, but **please use your student email account** to send the message (and attach only PDF files). 
+My email: <dario.facchinetti@unibg.it>, **please use your student email account** to send emails (and attach only PDF files). 
 
 ### Topics: Relational Algebra, Tuple Relational Calculus, Datalog, SQL, Conceptual and Logical Database modeling
 
@@ -73,15 +71,15 @@ Feel free to send me an email to <dario.facchinetti@unibg.it>, but **please use 
 
 ### Schedule
 
-* Exe1: 30/03/2021
-* Exe2: 13/04/2021
-* Exe3: 22/04/2021
-* Exe4: 06/05/2021 - Tutor Matthew Rossi
-* Exe5: 10/05/2021 - Tutor Matthew Rossi
-* Exe6: 17/05/2021 - Tutor Matthew Rossi
-* Exe7: 24/05/2021 - Tutor Gianluca Oldani
-* Exe8: 25/05/2021 - Tutor Gianluca Oldani
-* Exe9: 27/05/2021 - Tutor Gianluca Oldani
+* Exe1: 29/03/2022
+* Exe2: 06/04/2022
+* Exe3: 07/04/2022
+* Exe4: TBA - Tutor Matthew Rossi
+* Exe5: TBA - Tutor Matthew Rossi
+* Exe6: TBA - Tutor Matthew Rossi
+* Exe7: TBA - Tutor Gianluca Oldani
+* Exe8: TBA - Tutor Gianluca Oldani
+* Exe9: TBA - Tutor Gianluca Oldani
 
 
 <small> _The documents gathered in this web page have been provided by the contributing authors as a means to ensure timely dissemination of scholarly and technical work on a noncommercial basis. Copyright and all rights therein are maintained by the authors or by other copyright holders, notwithstanding that they have offered their works here electronically. It is understood that all persons copying this information will adhere to the terms and constraints invoked by each author's copyright. These works may not be reposted without the explicit permission of the copyright holder._</small>
