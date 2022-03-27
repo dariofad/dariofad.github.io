@@ -6,9 +6,7 @@ layout: default
 
 ## Databases 2 - Teaching material
 
-This page lists the exercises of the course 21053-E1.
-
-Feel free to send me an email to <dario.facchinetti@unibg.it>, but **please use your student email account** to send the message (and attach only PDF files). 
+**Please use your student email account** to send emails to <dario.facchinetti@unibg.it> (and attach only PDF files). 
 
 ### Topic: Introduction to XML and XPATH, XQUERY
 
