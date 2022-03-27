@@ -10,13 +10,11 @@ layout: default
 
 ### Topics: Relational Algebra, Tuple Relational Calculus, Datalog, SQL, Conceptual and Logical Database modeling
 
-### `EXE1` Introduction, Relational Algebra, Tuple Relational Calculus, and Datalog
+### (Update) `EXE1` Introduction, Relational Algebra, Tuple Relational Calculus, and Datalog
 
 * [Slides](https://drive.google.com/file/d/1E6Pv3g8YYi0qkP3TT_YHsOGrv7kH3iaX/view?usp=sharing)
-* [RA solutions](https://drive.google.com/file/d/1jhMktu2S8t-6F5CB97lnmd_6xqK-Wqq1/view?usp=sharing)
-* [TRC solutions](https://drive.google.com/file/d/1n18LZfDrt3UaAH2vAiI2N0gHX_k6vJSY/view?usp=sharing)
-* [Datalog solutions](https://drive.google.com/file/d/1puNPEH0br-WPton-V65cmLicd4AKvEO2/view?usp=sharing)
-* [Notes](https://drive.google.com/file/d/1ZePyRrW8gX-kr_dp3rWnNF4OTnOXYSje/view?usp=sharing)
+* [Notes](https://drive.google.com/file/d/1gM8zH-zRmDJ41BlEAzd15wN1-f9fdoav/view?usp=sharing)
+* [Solutions](https://drive.google.com/file/d/1cX-75fmhgXejjXVCt6ilLtXLt7QEcegW/view?usp=sharing)
 
 ### `EXE2` Datalog execises, Introduction to SQL, SQL exercises
 
