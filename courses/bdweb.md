@@ -25,8 +25,8 @@ layout: default
 
 ### `EXE3` More SQL with sqlite3
 
-* [Slides](https://drive.google.com/file/d/1wNX1w0ydVmAL_K3GXyHjxD5tuTMTGS39/view?usp=sharing)
-* [App example](https://drive.google.com/file/d/1v7nmxlpaBSHR8Mrp_e4XFu74_O-IyIG7/view?usp=sharing)
+* [Slides](https://drive.google.com/file/d/1i91KIQh0K9OlCr9J3m3AfGL_79dzJI9-/view?usp=sharing)
+* [App example](https://drive.google.com/file/d/1IMRotglBdRJuG4EMkjox5ebsLgPj2RTt/view?usp=sharing)
 
 ### `EXE4` Conceptual and logical database modeling - pt1
 
