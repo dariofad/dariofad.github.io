@@ -72,9 +72,9 @@ layout: default
 * Exe1: 29/03/2022
 * Exe2: 06/04/2022
 * Exe3: 07/04/2022
-* Exe4: TBA - Tutor Matthew Rossi
-* Exe5: TBA - Tutor Matthew Rossi
-* Exe6: TBA - Tutor Matthew Rossi
+* Exe4: 03/05/2022 - Tutor Matthew Rossi
+* Exe5: 05/05/2022 - Tutor Matthew Rossi
+* Exe6: 10/05/2022 - Tutor Matthew Rossi
 * Exe7: TBA - Tutor Gianluca Oldani
 * Exe8: TBA - Tutor Gianluca Oldani
 * Exe9: TBA - Tutor Gianluca Oldani
