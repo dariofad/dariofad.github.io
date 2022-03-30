@@ -10,7 +10,7 @@ layout: default
 
 ### Topics: Relational Algebra, Tuple Relational Calculus, Datalog, SQL, Conceptual and Logical Database modeling
 
-### (Update) `EXE1` Introduction, Relational Algebra, Tuple Relational Calculus, and Datalog
+### `EXE1` Introduction, Relational Algebra, Tuple Relational Calculus, and Datalog
 
 * [Slides](https://drive.google.com/file/d/1E6Pv3g8YYi0qkP3TT_YHsOGrv7kH3iaX/view?usp=sharing)
 * [Notes](https://drive.google.com/file/d/1gM8zH-zRmDJ41BlEAzd15wN1-f9fdoav/view?usp=sharing)
@@ -19,9 +19,9 @@ layout: default
 ### `EXE2` Datalog execises, Introduction to SQL, SQL exercises
 
 * [Slides](https://drive.google.com/file/d/1O8_g2-buDLqkUnx0cmGX34RBa8FWJ3mQ/view?usp=sharing)
-* [SQL solutions](https://drive.google.com/file/d/1BKrPz4DU-XqnBaAcjMXOTw3lyFE92J2H/view?usp=sharing)
+* [Notes](https://drive.google.com/file/d/1kmUjbOOtL8P9YE4JS5keZqVL7LBFdeLF/view?usp=sharing)
+* [Solutions](https://drive.google.com/file/d/1kFXU1SrFUJSc_EssUVsynZaKS-94DrtR/view?usp=sharing)
 * [SQLiteDB_example](https://drive.google.com/file/d/1XZ-kwyiheTf5tllRohfYpNKpvjGxrbP8/view?usp=sharing)
-* [Notes](https://drive.google.com/file/d/1u6HUTeR7hDi8iQN4WIwW9OBrGjqk6XPl/view?usp=sharing)
 
 ### `EXE3` More SQL with sqlite3
 
