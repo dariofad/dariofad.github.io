@@ -30,7 +30,7 @@ Software Engineering - University of Bergamo
 <br>
 {{ "2018-09-01" | date: date_format }} - {{ "2021-09-31" | date: date_format }}
 <br>
-Expected graduation date: _April 2022_
+_Apr 5, 2022_ - Graduated with honors
 <br>
 Advisor: prof. Stefano Paraboschi
 <br>
@@ -129,7 +129,7 @@ Topics: Basic types, control-flow statements, functions, lists
 * 
 **Data Bases I**
 <br>
-Year `2019`, `2020`, `2021`
+Year `2019`, `2020`, `2021`, `2022`
 <br>
 Topics: Structured Query Language, Conceptual and Logical database modeling
 
@@ -143,7 +143,7 @@ Topics: Concurrency, scheduling, distributed databases, XQUERY
 * 
 **Computer Security**
 <br>
-Year: `2021`
+Year: `2021`, `2022`
 <br>
 Topics: Access Control, DAC, MAC, Capabilities (Linux), Isolation of 3rd-party apps in Android
 
