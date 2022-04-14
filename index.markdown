@@ -12,8 +12,8 @@ title=""
 
 sub_heading= 
 
-"Hi, I'm **Dario**, a researcher and a [PhD
-candidate](https://seclab.unibg.it/people) at the University of
+"Hi, I'm **Dario**, a [postdoctoral
+researcher](https://seclab.unibg.it/people) at the University of
 Bergamo, Italy."
 
 sub_description=
