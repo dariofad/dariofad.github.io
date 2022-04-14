@@ -1,6 +1,6 @@
 <div style="margin-left: auto; margin-right: auto; width: 95%; text-align: left;">
-  <a href="{{ include.my_item }}">{{ include.my_title | markdownify  | remove: '<p>' | remove: '</p>'}}</a>-
-  {{ include.my_venue | markdownify  | remove: '<p>' | remove: '</p>' }}, {{ include.my_year }}, {% if include.my_pdf != "" %} <a href="{{ include.my_pdf }}">PDF</a> {% endif %}
+  <a href="{{ include.my_item }}">{{ include.my_title | markdownify  | remove: '<p>' | remove: '</p>'}}</a>
+  <br> {{ include.my_year }}, {{ include.my_venue | markdownify  | remove: '<p>' | remove: '</p>' }} {% if include.my_pdf != "" %} <a href="{{ include.my_pdf }}">PDF</a> {% endif %}
 </div>
 <div style="margin-left: auto; margin-right: auto; width: 95%; text-align: left;">
   {{ include.my_authors | markdownify | remove: '<p>' | remove: '</p>' }}
