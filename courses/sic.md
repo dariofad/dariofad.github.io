@@ -33,7 +33,7 @@ In the third talk we'll discuss how Android isolates applications from each othe
   * Capability sets
   * What happens during an `execve`
   * Set-user-ID-root programs with capabilities
-  * Textual representation, set, get, and decode
+  * Textual representation, `capset`, `get`, and decoding
   * Capability-aware vs Capability-dumb programs
   
 ### Isolation of apps in Android
@@ -51,6 +51,6 @@ In the third talk we'll discuss how Android isolates applications from each othe
 
 ### Schedule
 
-* Talk 1: 04/05/2021
-* Talk 2: 11/05/2021
-* Talk 3: 18/05/2021 - Matthew Rossi
+* Talk 1: 03/05/2022
+* Talk 2: 10/05/2022
+* Talk 3: 17/05/2022 - Matthew Rossi
