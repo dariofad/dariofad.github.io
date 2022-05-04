@@ -32,9 +32,7 @@ layout: default
 
 * [Slides](https://drive.google.com/file/d/1Fv0HfDlqWyhW71HbaSM-fyJ_2-WVHMvo/view?usp=sharing)
 * [Notes](https://drive.google.com/file/d/1aX121Ud09boINYAqrHJv1HKUftg_S4ig/view?usp=sharing)
-* [Conceptual modeling solutions](https://drive.google.com/file/d/1umLqhxz1BR97QtIprzd-WoX0fB7BBxdm/view?usp=sharing)
-* [Logical modeling solutions](https://drive.google.com/file/d/1m2bRztfjysiZ1LTbo5bepgIPfAFbaQGi/view?usp=sharing)
-
+* [Conceptual modeling (1st example)](https://drive.google.com/file/d/1UJdbkPPAjt_ILdmDivYLDBFG9i7Ph9zg/view?usp=sharing)
 
 ### `EXE5` Conceptual and logical database modeling - pt2
 
