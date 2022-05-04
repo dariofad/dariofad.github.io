@@ -75,9 +75,9 @@ layout: default
 * Exe4: 03/05/2022 - Tutor Matthew Rossi
 * Exe5: 05/05/2022 - Tutor Matthew Rossi
 * Exe6: 10/05/2022 - Tutor Matthew Rossi
-* Exe7: TBA - Tutor Gianluca Oldani
-* Exe8: TBA - Tutor Gianluca Oldani
-* Exe9: TBA - Tutor Gianluca Oldani
+* Exe7: 12/05/2022 - Tutor Gianluca Oldani
+* Exe8: 17/05/2022 - Tutor Gianluca Oldani
+* Exe9: 18/05/2022 - Tutor Gianluca Oldani
 
 
 <small> _The documents gathered in this web page have been provided by the contributing authors as a means to ensure timely dissemination of scholarly and technical work on a noncommercial basis. Copyright and all rights therein are maintained by the authors or by other copyright holders, notwithstanding that they have offered their works here electronically. It is understood that all persons copying this information will adhere to the terms and constraints invoked by each author's copyright. These works may not be reposted without the explicit permission of the copyright holder._</small>
