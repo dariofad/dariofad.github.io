@@ -32,37 +32,30 @@ layout: default
 
 * [Slides](https://drive.google.com/file/d/1Fv0HfDlqWyhW71HbaSM-fyJ_2-WVHMvo/view?usp=sharing)
 * [Notes](https://drive.google.com/file/d/1aX121Ud09boINYAqrHJv1HKUftg_S4ig/view?usp=sharing)
-* [Conceptual modeling (1st example)](https://drive.google.com/file/d/1UJdbkPPAjt_ILdmDivYLDBFG9i7Ph9zg/view?usp=sharing)
+* [Conceptual and logical modeling (1st example)](https://drive.google.com/file/d/1UJdbkPPAjt_ILdmDivYLDBFG9i7Ph9zg/view?usp=sharing)
 
-### `EXE5` Conceptual and logical database modeling - pt2
+### `EXE5` Conceptual and logical database modeling - pt1
 
-* [Slides](https://drive.google.com/file/d/1IFXMYZUsFNkklzwkvjH_PX2g1uVQUT1b/view?usp=sharing)
-* Solutions (
-[Ex01](https://drive.google.com/file/d/1r4lJAaSpw7M9FAktodYTbx6zQAE63PeB/view?usp=sharing),
-[Ex02](https://drive.google.com/file/d/19aun4ywnqcFB_a0IjG2Qva3N4JW8omKF/view?usp=sharing),
-[Exam20160419_CM](https://drive.google.com/file/d/1UbZa0P6zioaz9b882ITd3DU1cFnoubIt/view?usp=sharing),
-[Exam20160419_LM](https://drive.google.com/file/d/1ktHp-hYt_NI2jvlqOa2XSNFuS9jmsb75/view?usp=sharing)
-)
+* [Slides](https://drive.google.com/file/d/1NKdzpi8Lt2KqLFiZRIe2U7JAS_SKfIja/view?usp=sharing)
+* [Conceptual and logical modeling (1st example)](https://drive.google.com/file/d/1hQ5dQswDSwvXWOPlAgDbGF6fNp31y9IY/view?usp=sharing)
+* [Conceptual and logical modeling (2nd example)](https://drive.google.com/file/d/1rgRwoVVD_LzCQNJQ8zuRJBcB78UtIhI-/view?usp=sharing)
 
-### `EXE6` Solution of past years exams
 
-* Solutions (
-[Exam20170420_LM](https://drive.google.com/file/d/1xcpQt_j4NMhr-qqN-sUdeVU8J_rjeS--/view?usp=sharing),
-[Exam20170608_CM](https://drive.google.com/file/d/1Ir8s43ZbOiE3o2VJ4adwqI0FeCrCC2SF/view?usp=sharing),
-[Exam20180419_LM](https://drive.google.com/file/d/1w13ES3J759xGo8QcPICP1alUrnzDvtsp/view?usp=sharing)
-)
+## Archive: past exams
 
-### `EXE7`, `EXE8`, `EXE9` Solution of past years exams
+* [20160419_CM](https://drive.google.com/file/d/1UbZa0P6zioaz9b882ITd3DU1cFnoubIt/view?usp=sharing),
+  [20160419_LM](https://drive.google.com/file/d/1ktHp-hYt_NI2jvlqOa2XSNFuS9jmsb75/view?usp=sharing),
+  [20170420_LM](https://drive.google.com/file/d/1xcpQt_j4NMhr-qqN-sUdeVU8J_rjeS--/view?usp=sharing),
+  [20170608_CM](https://drive.google.com/file/d/1Ir8s43ZbOiE3o2VJ4adwqI0FeCrCC2SF/view?usp=sharing),
+  [20180419_LM](https://drive.google.com/file/d/1w13ES3J759xGo8QcPICP1alUrnzDvtsp/view?usp=sharing)
 
-* Solutions (
-[Exam2004](https://drive.google.com/file/d/1TTBdksZEFDoqQOZ2RC-j4gnlXq2vYMC7/view?usp=sharing),
-[Exam2012](https://drive.google.com/file/d/1h1X-ya84_4LvHV2rb9YqIbn0lslCnrhB/view?usp=sharing),
-[Exam2013](https://drive.google.com/file/d/1sOKjzwaX-jdgKvfO1msmToIvKMc5TvcG/view?usp=sharing),
-[Exam2014](https://drive.google.com/file/d/1OODTWrpZIjytAIX1wGHq49ML9F3OQLFF/view?usp=sharing),
-[Exam2015](https://drive.google.com/file/d/108av4U84ZvlrC2nqn9JYxq0tsM6lBmSv/view?usp=sharing),
-[Exam2018](https://drive.google.com/file/d/1dMfSiSrvCloJh3f2O3YReJhYXSzBnXAP/view?usp=sharing),
-[Exam2019](https://drive.google.com/file/d/14sog8U_31gfFwE3Vu4hxwu1bitjQtuii/view?usp=sharing)
-)
+* [2004](https://drive.google.com/file/d/1TTBdksZEFDoqQOZ2RC-j4gnlXq2vYMC7/view?usp=sharing),
+  [2012](https://drive.google.com/file/d/1h1X-ya84_4LvHV2rb9YqIbn0lslCnrhB/view?usp=sharing),
+  [2013](https://drive.google.com/file/d/1sOKjzwaX-jdgKvfO1msmToIvKMc5TvcG/view?usp=sharing),
+  [2014](https://drive.google.com/file/d/1OODTWrpZIjytAIX1wGHq49ML9F3OQLFF/view?usp=sharing),
+  [2015](https://drive.google.com/file/d/108av4U84ZvlrC2nqn9JYxq0tsM6lBmSv/view?usp=sharing),
+  [2018](https://drive.google.com/file/d/1dMfSiSrvCloJh3f2O3YReJhYXSzBnXAP/view?usp=sharing),
+  [2019](https://drive.google.com/file/d/14sog8U_31gfFwE3Vu4hxwu1bitjQtuii/view?usp=sharing)
 
 
 ### Schedule
