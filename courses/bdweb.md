@@ -40,6 +40,11 @@ layout: default
 * [Conceptual and logical modeling (1st example)](https://drive.google.com/file/d/1hQ5dQswDSwvXWOPlAgDbGF6fNp31y9IY/view?usp=sharing)
 * [Conceptual and logical modeling (2nd example)](https://drive.google.com/file/d/1rgRwoVVD_LzCQNJQ8zuRJBcB78UtIhI-/view?usp=sharing)
 
+### `EXE6` Exercises
+
+* [20160419](https://drive.google.com/file/d/1vjSy9J3DZCw6qsxoGJTAtI83I8qZtpsU/view?usp=sharing)
+* [20170608](https://drive.google.com/file/d/1nxt-r1a9qxcfX4fo3DUxzOauTpY4CPmT/view?usp=sharing)
+
 
 ### Archive: past exams
 
