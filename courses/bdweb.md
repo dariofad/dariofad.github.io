@@ -34,7 +34,7 @@ layout: default
 * [Notes](https://drive.google.com/file/d/1aX121Ud09boINYAqrHJv1HKUftg_S4ig/view?usp=sharing)
 * [Conceptual and logical modeling (1st example)](https://drive.google.com/file/d/1UJdbkPPAjt_ILdmDivYLDBFG9i7Ph9zg/view?usp=sharing)
 
-### `EXE5` Conceptual and logical database modeling - pt1
+### `EXE5` Conceptual and logical database modeling - pt2
 
 * [Slides](https://drive.google.com/file/d/1NKdzpi8Lt2KqLFiZRIe2U7JAS_SKfIja/view?usp=sharing)
 * [Conceptual and logical modeling (1st example)](https://drive.google.com/file/d/1hQ5dQswDSwvXWOPlAgDbGF6fNp31y9IY/view?usp=sharing)
@@ -44,6 +44,13 @@ layout: default
 
 * [20160419](https://drive.google.com/file/d/1vjSy9J3DZCw6qsxoGJTAtI83I8qZtpsU/view?usp=sharing)
 * [20170608](https://drive.google.com/file/d/1nxt-r1a9qxcfX4fo3DUxzOauTpY4CPmT/view?usp=sharing)
+
+### `EXE7` Exercises
+
+* [ex1-c](https://drive.google.com/file/d/19ZDBS7_4BaSZrGkn9C_jviRYCo4fwBxm/view?usp=sharing)
+* [ex1-l](https://drive.google.com/file/d/1H6fkD6Im4ya3KzVrnbaeYIQzsd6a3H3C/view?usp=sharing)
+* [ex2-c](https://drive.google.com/file/d/1bNIsFtFPQOO-ZPH5crOLWBLa5H979vag/view?usp=sharing)
+* [ex2-l](https://drive.google.com/file/d/1Ec6VNKxd-sw6dBtakUYrkCqjwpWLApaY/view?usp=sharing)
 
 
 ### Archive: past exams
