@@ -47,10 +47,10 @@ layout: default
 
 ### `EXE7` Exercises
 
-* [ex1-c](https://drive.google.com/file/d/19ZDBS7_4BaSZrGkn9C_jviRYCo4fwBxm/view?usp=sharing)
-* [ex1-l](https://drive.google.com/file/d/1H6fkD6Im4ya3KzVrnbaeYIQzsd6a3H3C/view?usp=sharing)
-* [ex2-c](https://drive.google.com/file/d/1bNIsFtFPQOO-ZPH5crOLWBLa5H979vag/view?usp=sharing)
-* [ex2-l](https://drive.google.com/file/d/1Ec6VNKxd-sw6dBtakUYrkCqjwpWLApaY/view?usp=sharing)
+* [Ex1-C](https://drive.google.com/file/d/19ZDBS7_4BaSZrGkn9C_jviRYCo4fwBxm/view?usp=sharing)
+* [Ex1-L](https://drive.google.com/file/d/1H6fkD6Im4ya3KzVrnbaeYIQzsd6a3H3C/view?usp=sharing)
+* [Ex2-C](https://drive.google.com/file/d/1bNIsFtFPQOO-ZPH5crOLWBLa5H979vag/view?usp=sharing)
+* [Ex2-L](https://drive.google.com/file/d/1Ec6VNKxd-sw6dBtakUYrkCqjwpWLApaY/view?usp=sharing)
 
 
 ### Archive: past exams
