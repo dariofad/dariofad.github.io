@@ -21,7 +21,7 @@ layout: default
 * [Slides](https://drive.google.com/file/d/1O8_g2-buDLqkUnx0cmGX34RBa8FWJ3mQ/view?usp=sharing)
 * [Notes](https://drive.google.com/file/d/1kmUjbOOtL8P9YE4JS5keZqVL7LBFdeLF/view?usp=sharing)
 * [Solutions](https://drive.google.com/file/d/1kFXU1SrFUJSc_EssUVsynZaKS-94DrtR/view?usp=sharing)
-* [SQLiteDB_example](https://drive.google.com/file/d/1XZ-kwyiheTf5tllRohfYpNKpvjGxrbP8/view?usp=sharing)
+* [SQLiteDB example](https://drive.google.com/file/d/1XZ-kwyiheTf5tllRohfYpNKpvjGxrbP8/view?usp=sharing)
 
 ### `EXE3` More SQL with sqlite3
 
@@ -42,8 +42,8 @@ layout: default
 
 ### `EXE6` Exercises
 
-* [20160419](https://drive.google.com/file/d/1vjSy9J3DZCw6qsxoGJTAtI83I8qZtpsU/view?usp=sharing)
-* [20170608](https://drive.google.com/file/d/1nxt-r1a9qxcfX4fo3DUxzOauTpY4CPmT/view?usp=sharing)
+* [20160419-CL](https://drive.google.com/file/d/1vjSy9J3DZCw6qsxoGJTAtI83I8qZtpsU/view?usp=sharing)
+* [20170608-C](https://drive.google.com/file/d/1nxt-r1a9qxcfX4fo3DUxzOauTpY4CPmT/view?usp=sharing)
 
 ### `EXE7` Exercises
 
@@ -52,14 +52,20 @@ layout: default
 * [Ex2-C](https://drive.google.com/file/d/1bNIsFtFPQOO-ZPH5crOLWBLa5H979vag/view?usp=sharing)
 * [Ex2-L](https://drive.google.com/file/d/1Ec6VNKxd-sw6dBtakUYrkCqjwpWLApaY/view?usp=sharing)
 
+### `EXE8` Exercises
+
+* [20100621-C](https://drive.google.com/file/d/12JCCOLOzzB1nfyX3vZoI60gRN5odA1Bd/view?usp=sharing)
+* [20100621-L](https://drive.google.com/file/d/1PJJO9KMLXIOSYq93eKNioU1fvjOU-7f6/view?usp=sharing)
+* [20100630-C](https://drive.google.com/file/d/16WadYbSrDTHn9GZePkSGGqcu_zZCHUlC/view?usp=sharing)
+* [20100630-L](https://drive.google.com/file/d/1q5armZwbuDXO8MjsbskS5iqY0XJE_LA_/view?usp=sharing)
 
 ### Archive: past exams
 
-* [20160419_CM](https://drive.google.com/file/d/1UbZa0P6zioaz9b882ITd3DU1cFnoubIt/view?usp=sharing),
-  [20160419_LM](https://drive.google.com/file/d/1ktHp-hYt_NI2jvlqOa2XSNFuS9jmsb75/view?usp=sharing),
-  [20170420_LM](https://drive.google.com/file/d/1xcpQt_j4NMhr-qqN-sUdeVU8J_rjeS--/view?usp=sharing),
-  [20170608_CM](https://drive.google.com/file/d/1Ir8s43ZbOiE3o2VJ4adwqI0FeCrCC2SF/view?usp=sharing),
-  [20180419_LM](https://drive.google.com/file/d/1w13ES3J759xGo8QcPICP1alUrnzDvtsp/view?usp=sharing)
+* [20160419-C](https://drive.google.com/file/d/1UbZa0P6zioaz9b882ITd3DU1cFnoubIt/view?usp=sharing),
+  [20160419-L](https://drive.google.com/file/d/1ktHp-hYt_NI2jvlqOa2XSNFuS9jmsb75/view?usp=sharing),
+  [20170420-L](https://drive.google.com/file/d/1xcpQt_j4NMhr-qqN-sUdeVU8J_rjeS--/view?usp=sharing),
+  [20170608-C](https://drive.google.com/file/d/1Ir8s43ZbOiE3o2VJ4adwqI0FeCrCC2SF/view?usp=sharing),
+  [20180419-L](https://drive.google.com/file/d/1w13ES3J759xGo8QcPICP1alUrnzDvtsp/view?usp=sharing)
 
 * [2004](https://drive.google.com/file/d/1TTBdksZEFDoqQOZ2RC-j4gnlXq2vYMC7/view?usp=sharing),
   [2012](https://drive.google.com/file/d/1h1X-ya84_4LvHV2rb9YqIbn0lslCnrhB/view?usp=sharing),
