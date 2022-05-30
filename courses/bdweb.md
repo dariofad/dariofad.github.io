@@ -59,6 +59,15 @@ layout: default
 * [20100630-C](https://drive.google.com/file/d/16WadYbSrDTHn9GZePkSGGqcu_zZCHUlC/view?usp=sharing)
 * [20100630-L](https://drive.google.com/file/d/1q5armZwbuDXO8MjsbskS5iqY0XJE_LA_/view?usp=sharing)
 
+### `EXE9` Exercises
+
+* [Ex3-C](https://drive.google.com/file/d/1rrpA3oqVQvQQbS2mHqmdWhH07BVCZkXP/view?usp=sharing)
+* [Ex3-L](https://drive.google.com/file/d/1TUn1l7h9BCOVcOBSQmX0kw0E1o1roMgQ/view?usp=sharing)
+* [Ex4-C](https://drive.google.com/file/d/1QRTUkGsUm5OXXOeyh4K90GVARX3kjNeh/view?usp=sharing)
+* [Ex4-L](https://drive.google.com/file/d/1lw0oDvZcbCU-qYpGRlvWSHPwqfHDp0To/view?usp=sharing)
+* [Ex5-C](https://drive.google.com/file/d/1xOtJfzScHDaaWZcjHrdy4nf3gvofxYok/view?usp=sharing)
+* [Ex5-L](https://drive.google.com/file/d/1AhKOwUjQF9AXdfmO_eisoz0v2LLNurF0/view?usp=sharing)
+
 ### Archive: past exams
 
 * [20160419-C](https://drive.google.com/file/d/1UbZa0P6zioaz9b882ITd3DU1cFnoubIt/view?usp=sharing),
