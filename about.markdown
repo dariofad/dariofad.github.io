@@ -81,7 +81,7 @@ my_heading="Skills"
 * see [my dotfiles](https://github.com/dariofad/dot-emacs)
 
 **Languages**:
-* Italian (native), English (fluent)
+* Italian (native), English (fluent), Japanese (Basic)
 
 {% include heading.html
 my_heading="Awards"
