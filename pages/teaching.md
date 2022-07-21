@@ -3,6 +3,8 @@ layout: page
 title: Teaching
 ---
 
+## Courses
+
 <div>
 	<h4 style="margin: 1px; padding: 1px;">
 		<a href="/bdweb.html">Databases and Web</a>
@@ -32,3 +34,9 @@ title: Teaching
 - Introduction to Sandboxing, DAC and MAC
 - Linux Capabilities
 - Isolation of 3rd party apps in Android
+
+## Presentations
+
+- Information security: core concepts
+- CILAM summer school on advanced manufacturing, 2022
+- [Slides](https://drive.google.com/file/d/1Qwi-YVpoC2IISI_0CpGOoX7hxV_YiagN/view?usp=sharing)
