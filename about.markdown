@@ -69,14 +69,14 @@ my_heading="Skills"
 
 * Access control techniques
 
-**Other** programming languages/frameworks/tools used occasionaly
+**Other** programming languages/frameworks/tools used occasionally
 (say, less than 3 projects):
 
-* Programming Languages: `Rust`, `C++`, `Java`, `Javascript`, `SQL`,
-  `C`, `Elisp`, `M4`, `TE`, `CIL`, `ODRL`, `RDF`
+* Programming Languages: `Rust`, `C++`, `Java`, `SQL`, `C`,
+  `Javascript`, `Elisp`, `M4`, `TE`, `CIL`, `ODRL`, `RDF`
   
-* Software: `Docker`, `Postgres`, `Redis`, `Deno`, `Bazel`, `Apache 
-  Spark`, `FRESCO mpc`, `Z3`, `FUSE`, `eBPF`
+* Software: `Docker`, `eBPF`, `Postgres`, `Redis`, `Deno`, `Bazel`,
+  `Apache Spark`, `FRESCO mpc`, `Z3`, `FUSE`
   
 * see [my dotfiles](https://github.com/dariofad/dot-emacs)
 
