@@ -90,6 +90,34 @@ my_pdf="http://spdp.di.unimi.it/papers/percom2019.pdf"
 %}
 
 {% include heading.html
+my_heading="Posters"
+%}
+
+---
+<br>
+
+{% include paper.html
+my_authors="Marco Abbadini, Dario Facchinetti, Gianluca Oldani, Stefano Paraboschi, Matthew Rossi"
+my_item="https://drive.google.com/file/d/14isgPb5SAPyXdfttP5IkMMIvlquuaX8I/view?usp=sharing"
+my_title="Enhancing the security of WebAssembly runtimes using Linux Security Modules"
+my_venue="**31st USENIX Security**,"
+my_year="2022"
+my_pdf="https://drive.google.com/file/d/14isgPb5SAPyXdfttP5IkMMIvlquuaX8I/view?usp=sharing"
+my_award="" 
+%}
+
+{% include paper.html
+my_authors="Matthew Rossi, Dario Facchinetti, Enrico Bacis, Marco Rosa, Stefano Paraboschi"
+my_item="https://drive.google.com/file/d/1Yxg5MDNUechnVbQ5M27UK43K2rny8LrN/view?usp=sharing"
+my_title="Giving developers the power to declare per-component access control policy for their apps"
+my_venue="**31st USENIX Security**,"
+my_year="2022"
+my_pdf="https://drive.google.com/file/d/1Yxg5MDNUechnVbQ5M27UK43K2rny8LrN/view?usp=sharing"
+my_award="" 
+%}
+
+
+{% include heading.html
 my_heading="PhD Thesis"
 %}
 
