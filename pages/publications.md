@@ -116,6 +116,16 @@ my_pdf="https://drive.google.com/file/d/1Yxg5MDNUechnVbQ5M27UK43K2rny8LrN/view?u
 my_award="" 
 %}
 
+{% include paper.html
+my_authors="Matthew Rossi, Dario Facchinetti, Enrico Bacis, Marco Rosa, Stefano Paraboschi"
+my_item="https://drive.google.com/file/d/1N33bqdcB6rgTQ53EOZHZIxs4hsPSIXYl/view?usp=sharing"
+my_title="SEApp: Bringing Mandatory Access Control to Android Apps"
+my_venue="**CSAW 2021**,"
+my_year="2022"
+my_pdf="https://drive.google.com/file/d/1N33bqdcB6rgTQ53EOZHZIxs4hsPSIXYl/view?usp=sharing"
+my_award="" 
+%}
+
 
 {% include heading.html
 my_heading="PhD Thesis"
