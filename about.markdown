@@ -61,24 +61,24 @@ my_heading="Skills"
 
 **Core competencies**:
 
-* Programming languages: `Go`, `Python`
-
 * Software: `Ubuntu`, `Emacs`, `git`, `Make`
 
 * Scientific writing with `LaTeX`
+
+* Programming languages: `Go`, `Python`
 
 * Access control techniques
 
 **Other** programming languages/frameworks/tools used occasionally
 (say, less than 3 projects):
 
-* Programming Languages: `Rust`, `C++`, `Java`, `SQL`, `C`,
-  `Javascript`, `Elisp`, `M4`, `TE`, `CIL`, `ODRL`, `RDF`
+* Programming Languages: `Rust`, `C++`, `Java`, `SQL`, `C`, `Elisp`,
+   `Javascript`, `M4`, `TE`, `CIL`, `ODRL`, `RDF`
   
-* Software: `Docker`, `eBPF`, `Postgres`, `Redis`, `Deno`, `Bazel`,
+* Software: `Docker`, `BPF`, `Postgres`, `Redis`, `Deno`, `Bazel`,
   `Apache Spark`, `FRESCO mpc`, `Z3`, `FUSE`
   
-* see [my dotfiles](https://github.com/dariofad/dot-emacs)
+* [.emacs.d](https://github.com/dariofad/dot-emacs)
 
 **Languages**:
 * Italian (native), English (fluent), Japanese (Basic)
