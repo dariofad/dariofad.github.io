@@ -13,11 +13,11 @@ my_heading="Conference and Journal Papers"
 
 {% include paper.html
 my_authors="Sabrina De Capitani di Vimercati, Dario Facchinetti, Sara Foresti, Giovanni Livraga, Gianluca Oldani, Stefano Paraboschi, Matthew Rossi, Pierangela Samarati"
-my_item=""
+my_item="https://ieeexplore.ieee.org/document/9894678"
 my_title="Scalable Distributed Data Anonymization for Large Datasets"
-my_venue="**IEEE Transactions on Big Data** (to appear)"
+my_venue="**IEEE Transactions on Big Data**,"
 my_year="2022"
-my_pdf=""
+my_pdf="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9894678"
 my_award="" 
 %}
 
