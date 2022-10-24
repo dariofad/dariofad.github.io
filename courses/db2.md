@@ -34,10 +34,10 @@ layout: default
 
 Schedule
 
-* Exe1: 16/11/2021
-* Exe2: 23/11/2021
-* Exe3: 30/11/2021
-* Exe4: 07/12/2021
+* Exe1: 25/10/2022
+* Exe2: 26/10/2022
+* Exe3: TBA
+* Exe4: TBA
 
 
 <small> _The documents gathered in this web page have been provided by the contributing authors as a means to ensure timely dissemination of scholarly and technical work on a noncommercial basis. Copyright and all rights therein are maintained by the authors or by other copyright holders, notwithstanding that they have offered their works here electronically. It is understood that all persons copying this information will adhere to the terms and constraints invoked by each author's copyright. These works may not be reposted without the explicit permission of the copyright holder._</small>
