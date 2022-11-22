@@ -27,17 +27,26 @@ layout: default
 
 * [Slides](https://drive.google.com/file/d/1mGCzuEZBwLTkB5bxKan74bUBZu-Dyeuj/view?usp=sharing)
 
-### `EXE4` XQUERY exercises
+### `EXE4`, `EXE5` XQUERY exercises
 
-* [Exercises](https://drive.google.com/file/d/1qBFBbqVdEkM6vbrqqutqxAxnv69Fpc4B/view?usp=sharing) taken from exams
+* [Exercises](https://drive.google.com/file/d/1qBFBbqVdEkM6vbrqqutqxAxnv69Fpc4B/view?usp=sharing)
 * [Solutions](https://drive.google.com/file/d/1MU62IOK76BLfy2nXbhNfyPPRbcEkeBxG/view?usp=sharing)
 
 Schedule
 
 * Exe1: 25/10/2022
 * Exe2: 26/10/2022
-* Exe3: TBA
-* Exe4: TBA
+* Exe3: 29/11/2022
+* Exe4: 30/11/2022
+* Exe5: 06/12/2022
 
 
-<small> _The documents gathered in this web page have been provided by the contributing authors as a means to ensure timely dissemination of scholarly and technical work on a noncommercial basis. Copyright and all rights therein are maintained by the authors or by other copyright holders, notwithstanding that they have offered their works here electronically. It is understood that all persons copying this information will adhere to the terms and constraints invoked by each author's copyright. These works may not be reposted without the explicit permission of the copyright holder._</small>
+<small> _The documents gathered in this web page have been provided by
+the contributing authors as a means to ensure timely dissemination of
+scholarly and technical work on a noncommercial basis. Copyright and
+all rights therein are maintained by the authors or by other copyright
+holders, notwithstanding that they have offered their works here
+electronically. It is understood that all persons copying this
+information will adhere to the terms and constraints invoked by each
+author's copyright. These works may not be reposted without the
+explicit permission of the copyright holder._</small>
