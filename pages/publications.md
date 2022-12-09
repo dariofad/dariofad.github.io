@@ -136,7 +136,7 @@ my_heading="PhD Thesis"
 
 {% include paper.html
 my_authors="Dario Facchinetti"
-my_item="http://hdl.handle.net/10446/212691"
+my_item="https://aisberg.unibg.it/retrieve/handle/10446/212691"
 my_title="Methods and technologies for the secure collection, sanitization, processing and release of data"
 my_venue="**PhD Program in Engineering and Applied Sciences**,"
 my_year="2022"

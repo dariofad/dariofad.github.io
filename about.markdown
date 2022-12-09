@@ -78,10 +78,10 @@ my_heading="Skills"
 * Software: `Docker`, `BPF`, `Postgres`, `Redis`, `Deno`, `Bazel`,
   `Apache Spark`, `FRESCO mpc`, `Z3`, `FUSE`
   
-* [.emacs.d](https://github.com/dariofad/dot-emacs)
+* [.emacs.d](https://github.com/dariofad/dot-emacs) configuration files
 
 **Languages**:
-* Italian (native), English (fluent), Japanese (Basic)
+* Italian (native), English (fluent), Japanese (intermediate)
 
 {% include heading.html
 my_heading="Awards"
@@ -117,7 +117,7 @@ my_heading="Work Experience"
 
 `Teaching experience`
 
-Teaching assistant, courses at University of Bergamo
+Teaching assistant, University of Bergamo
 
 * 
 **Introduction to programming in Python**
