@@ -33,7 +33,7 @@ exposed by a server. A client can talk to the server simply by calling
 one of the methods defined in the interface.
 
 <div style="margin-right: auto; margin-left: auto; width: 100%; max-width: 600px;">
-  <img src="/assets/blog_assets/2022_05_20/client-stub.png" alt="">
+  <img src="/assets/blog_assets/2022_05_20/client-stub.png" alt="" style="border-radius: 3%;">
 </div>
 <b>
 
@@ -496,7 +496,7 @@ served).
 We're ready for a demo!
 
 <div style="margin-right: auto; margin-left: auto; width: 100%; ">
-  <img src="/assets/blog_assets/2022_05_20/demo.gif" alt="">
+  <img src="/assets/blog_assets/2022_05_20/demo.gif" alt="" style="border-radius: 1%;">
 </div>
 <b>
 
@@ -511,7 +511,7 @@ no action was taken to fulfill this requirement. To demonstrate that,
 we can inspect the network communication using Wireshark.
 
 <div style="margin-right: auto; margin-left: auto; width: 100%; max-width: 850px;">
-  <img src="/assets/blog_assets/2022_05_20/no_tls.png" alt="">
+  <img src="/assets/blog_assets/2022_05_20/no_tls.png" alt="" style="border-radius: 2%;">
 </div>
 <b>
 
@@ -662,7 +662,7 @@ class SimpleProxy:
 Let's again inspect the network traffic with Wireshark.
 
 <div style="margin-right: auto; margin-left: auto; width: 100%; max-width: 850px;">
-  <img src="/assets/blog_assets/2022_05_20/tls.png" alt="">
+  <img src="/assets/blog_assets/2022_05_20/tls.png" alt="" style="border-radius: 2%;">
 </div>
 <b>
 

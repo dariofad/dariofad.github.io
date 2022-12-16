@@ -138,5 +138,5 @@ To boot into the new Kernel we only need to restart the VM. After
 that, you can open the terminal and verify that Landlock is running:
 
 <p align="center">
-	<img src="/assets/blog_assets/2021_10_16/landlock_status.png" width="700">
+	<img src="/assets/blog_assets/2021_10_16/landlock_status.png" width="700" style="border-radius: 2%;">
 </p>
