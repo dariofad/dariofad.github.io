@@ -5,164 +5,109 @@ permalink: /about/
 ---
 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}	
 
+I was born in Bergamo, Italy, in 1994.
+
+I'm a **postdoc** researcher at [Università degli Studi di
+Bergamo](https://en.unibg.it/). My research group is [Unibg
+Seclab](https://seclab.unibg.it/). We focus on several areas such as
+system security (Linux, Android), security for data warehouses, access
+control, data outsourcing and privacy.
+
+# Background and competences
+
+I received the PhD in Engineering and Applied Sciences (area: Computer
+Science) in 2022, with a thesis on *Technologies for the secure
+collection, sanitization, processing and release of data*. My advisor
+was Prof. Stefano Paraboschi.
+
+The PhD is a fundamentally different **experience** compared to a
+Master or Bachelor degree. During this journey I learned to work on
+complex topics, in which I often had no previous knowledge, nor
+predetermined goals. I also learned how to experiment ideas developing
+small prototypes, write scientific papers, give presentations, and
+evaluate the feasibility of new approaches to a problem.
+
+There are 3 **software** that I use frequently: `Emacs`, `Git`,
+`Make`. Scientific papers are always formatted in `LaTeX`, and
+prototypes mostly implemented in `Python`. Every time I have the
+opportunity, I try to implement new tools in `Go`, which is my
+favorite programming language.
+
+Occasionally, I have also written code in Rust, C++, Java, SQL, C,
+Elisp, Javascript, M4, TE, CIL, ODRL, RDF;
+
+and used the following software or frameworks: Landlock, Seccomp, BPF,
+Docker, Postgres, Redis, Deno, Bazel, Apache Spark, FRESCO mpc, Z3,
+FUSE.
+
+From time to time I update a public version of my
+[.emacs.d](https://github.com/dariofad/dot-emacs) configuration files.
+
+# Other work activities
+
+I have been a **teaching assistant** at my college since 2018. Courses:
+
+* Computer Security
 <br>
-{% include heading.html
-my_heading="Current position"
-%}
-
----
-<br/>
-
-**Postdoc Researcher** - University of Bergamo, department of Engineering
+Year: 2021, 2022
 <br>
-Topic: Information technology for the protection of data
+Topic: Access Control, DAC, MAC, Capabilities (Linux), Isolation of
+3rd-party apps in Android
 
-{% include heading.html
-my_heading="Education"
-%}
-
----
+* Introduction to programming in Python
 <br>
-
-Software Engineering - University of Bergamo
+Year 2018, 2020
 <br>
-**PhD program in Engineering and Applied Sciences**
+Topic: Basic types, control-flow statements, functions, lists
+
+* Data Bases II
 <br>
-{{ "2018-09-01" | date: date_format }} - {{ "2021-09-31" | date: date_format }}
+Year: 2019, 2020, 2021
 <br>
-_Apr 5, 2022_ - Graduated with honors
+Topic: Concurrency, scheduling, distributed databases, XML, XQUERY
+
+* Data Bases I
 <br>
-Advisor: prof. Stefano Paraboschi
+Year 2019, 2020, 2021, 2022
 <br>
-Thesis: Technologies for the secure collection, sanitization, processing and release of data
+Topic: Structured Query Language, Conceptual and Logical database modeling
 
-Software Engineering - University of Bergamo
+In 2023 I will be the **teacher** for a new course named Laboratory of
+competitive programming!
+
+As a member of the Unibg Seclab group, I also participated in the
+supervision of 35+ **thesis projects**. Also, I have been a member of
+the UNIBG unit in the following **Horizon 2020** European research
+projects:
+
+* MOSAICrOWN, Multi Owner data Sharing for Analytics and Integration
+  respecting Confidentiality and OWNer control, from 2019 to 2021
+
+* GLACIATION, Green responsible privACy preserving dAta operaTIONs, since 2022
+
+# Awards
+
+* **Cybersecurity Games & Conference**, CSAW 2021
 <br>
-**Master of Science (MSc)**
+Applied Research Competition, Top 10 Finalist in Europe ([certificate](https://drive.google.com/file/d/1kUxstkCdRUDYZQDfT2TFn8_X568Y-3R5/view?usp=sharing)), shared with my colleague Matthew Rossi
+
+* **Google Hash Code 2019 Finals**, Dublin 2019
 <br>
-{{ "2016-09-01" | date: date_format }} - {{ "2018-07-17" | date: date_format }}
+Team: Unibg Seclab, [38th place](https://codingcompetitions.withgoogle.com/hashcode/archive/2019)
+
+* **LUBERG - New graduate of the year**, Bergamo 2019
 <br>
-GPA: 4.0/4.0 - Graduated summa cum laude
-<br>
-Thesis: Transforming query trees for cost optimization in secure multi-provider execution
-
-Software Engineering - University of Bergamo
-<br>
-**Bachelor of Science (BSc)**
-<br>
-{{ "2013-09-01" | date: date_format }} - {{ "2016-07-19" | date: date_format }}
-
-{% include heading.html
-my_heading="Skills"
-%}
-
----
-<br>
-
-**Core competencies**:
-
-* Software: `Ubuntu`, `Emacs`, `git`, `Make`
-
-* Scientific writing with `LaTeX`
-
-* Programming languages: `Go`, `Python`
-
-* Access control techniques
-
-**Other** programming languages/frameworks/tools used occasionally
-(say, less than 3 projects):
-
-* Programming Languages: `Rust`, `C++`, `Java`, `SQL`, `C`, `Elisp`,
-   `Javascript`, `M4`, `TE`, `CIL`, `ODRL`, `RDF`
-  
-* Software: `Docker`, `BPF`, `Postgres`, `Redis`, `Deno`, `Bazel`,
-  `Apache Spark`, `FRESCO mpc`, `Z3`, `FUSE`
-  
-* [.emacs.d](https://github.com/dariofad/dot-emacs) configuration files
-
-**Languages**:
-* Italian (native), English (fluent), Japanese (intermediate)
-
-{% include heading.html
-my_heading="Awards"
-%}
-
----
-<br>
-
 University of Bergamo Alumni Association
 <br>
 Dept. of Management, Information and Production Engineering
 <br>
-**LUBERG - New graduate of the year**
-<br>
-{{ "2019-11-19" | date: date_format }}
-<br>
 <a href='http://www.luberg.it/eccellenze/proclamazione-neolaureati-dellanno-premio-agli-studi-2/'>LUBERG new graduate</a> of the year award rewards talent, determination and commitment of graduates who stand out for a particularly brilliant academic record, the results achieved in the degree course, the originality and the scientific rigor of the thesis.
 
-{% include heading.html
-my_heading="Work Experience"
-%}
+# Languages
 
----
-<br>
+I'm a native **Italian** speaker, but I also speak **English**
+(fluent), and **Japanese** (intermediate).
 
-`Autonomous collaborations`
-* **Partner**: UniBg
-  <br>
-  Development of a prototype for the management of a language for security policies in a Digital Data Market
-  - {{ "2021-05-03" | date: date_format }} - {{ "2021-09-13" | date: date_format }}
-  - {{ "2020-07-20" | date: date_format }} - {{ "2020-11-20" | date: date_format }}
-  - {{ "2019-07-04" | date: date_format }} - {{ "2019-11-04" | date: date_format }}
+# Hobbies
 
-`Teaching experience`
-
-Teaching assistant, University of Bergamo
-
-* 
-**Introduction to programming in Python**
-<br>
-Year `2018`, `2020`
-<br>
-Topics: Basic types, control-flow statements, functions, lists
-
-* 
-**Data Bases I**
-<br>
-Year `2019`, `2020`, `2021`, `2022`
-<br>
-Topics: Structured Query Language, Conceptual and Logical database modeling
-
-* 
-**Data Bases II**
-<br>
-Year: `2019`, `2020`, `2021`
-<br>
-Topics: Concurrency, scheduling, distributed databases, XQUERY
-
-* 
-**Computer Security**
-<br>
-Year: `2021`, `2022`
-<br>
-Topics: Access Control, DAC, MAC, Capabilities (Linux), Isolation of 3rd-party apps in Android
-
-{% include heading.html
-my_heading="Other experiences"
-%}
-
----
-<br>
-
-`Competitions`
-
-* **Cybersecurity Games & Conference** (CSAW 2021) - Applied Research Competition, Top 10 Finalist in Europe ([certificate](https://drive.google.com/file/d/1kUxstkCdRUDYZQDfT2TFn8_X568Y-3R5/view?usp=sharing))
-* **Google hash code 2019 Finals** - Team: Unibg Seclab, [38th place](https://codingcompetitions.withgoogle.com/hashcode/archive/2019)
-
-`Thesis projects`
-
-* **Supervised 30+ thesis students** - [Topics](https://seclab.unibg.it/tesi/)
-
-`Programming`
-
-* **AlgoExpert** - Completed 100 problems in Python ([certificate](https://drive.google.com/file/d/107ZkuFqHwE4L3oNnyURqF-whdiYl39r-/view?usp=sharing))
+Reading books, Travel, Emacs, Japanese language
