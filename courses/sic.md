@@ -6,7 +6,7 @@ layout: default
 
 ## Computer security - Teaching material
 
-**Please use your student email account** to send emails to <dario.facchinetti@unibg.it> (and attach only PDF files). 
+**Please use your student email account** to send emails to <dario.facchinetti@unibg.it>. 
 
 ### Topic: Access Control and Sandboxing in OS
 

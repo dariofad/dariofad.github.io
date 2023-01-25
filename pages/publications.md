@@ -4,12 +4,7 @@ title: Publications
 ---
 
 
-{% include heading.html
-my_heading="Conference and Journal Papers"
-%}
-
----
-<br>
+# Conference and Journal Papers
 
 {% include paper.html
 my_authors="Sabrina De Capitani di Vimercati, Dario Facchinetti, Sara Foresti, Giovanni Livraga, Gianluca Oldani, Stefano Paraboschi, Matthew Rossi, Pierangela Samarati"
@@ -20,7 +15,6 @@ my_year="2022"
 my_pdf="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9894678"
 my_award="" 
 %}
-
 
 {% include paper.html
 my_authors="Sabrina De Capitani di Vimercati, Dario Facchinetti, Sara Foresti, Gianluca Oldani, Stefano Paraboschi, Matthew Rossi, Pierangela Samarati"
@@ -89,12 +83,8 @@ my_year="2019"
 my_pdf="http://spdp.di.unimi.it/papers/percom2019.pdf"
 %}
 
-{% include heading.html
-my_heading="Posters"
-%}
 
----
-<br>
+# Posters
 
 {% include paper.html
 my_authors="Marco Abbadini, Dario Facchinetti, Gianluca Oldani, Stefano Paraboschi, Matthew Rossi"
@@ -127,12 +117,7 @@ my_award=""
 %}
 
 
-{% include heading.html
-my_heading="PhD Thesis"
-%}
-
----
-<br>
+# PhD Thesis
 
 {% include paper.html
 my_authors="Dario Facchinetti"
@@ -144,12 +129,7 @@ my_pdf="https://aisberg.unibg.it/retrieve/handle/10446/212691/496833/facchinetti
 %}
 
 
-{% include heading.html
-my_heading="Chapters in Deliverables"
-%}
-
----
-<br>
+# Technical Reports and Deliverables
 
 {% include deliverable.html
 my_project="H2020 - MOSAICrOWN"
@@ -193,5 +173,3 @@ my_title="D5.4 Final Versions of Tools for Data Sanitisation and Computation"
 my_year="2021"
 my_item="https://mosaicrown.eu/wp-content/uploads/2021/10/D5.4.pdf"
 %}
-
-
