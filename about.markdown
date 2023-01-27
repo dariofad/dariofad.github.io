@@ -32,11 +32,11 @@ There are 3 **software** that I use frequently: `Emacs`, `Git`,
 prototypes mostly implemented in `Python`. Every time I have the
 opportunity, I try to implement new tools in `Go`, which is my
 favorite programming language.
-
-Occasionally, I have also written code in Rust, C++, Java, SQL, C,
+<br>
+Occasionally, I have also written code in -- Rust, C++, Java, SQL, C,
 Elisp, Javascript, M4, TE, CIL, ODRL, RDF;
-
-and used the following software or frameworks: Landlock, Seccomp, BPF,
+<br>
+and used these software/frameworks -- Landlock, Seccomp, BPF,
 Docker, Postgres, Redis, Deno, Bazel, Apache Spark, FRESCO mpc, Z3,
 FUSE.
 
