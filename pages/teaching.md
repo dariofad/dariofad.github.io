@@ -5,6 +5,17 @@ title: Teaching
 
 # Courses
 
+* [Laboratory of Competitive Programming](/comp.html)
+<br>
+c. 38104
+<br>
+Introduction to coding competitions
+<br>
+Python fundamentals
+<br>
+Data structures and common patterns
+
+
 * [Computer Security](/sic.html)
 <br>
 c. 38039
