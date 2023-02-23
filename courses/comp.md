@@ -20,15 +20,15 @@ patterns) to produce solutions with low computational complexity.
   + Official communications
   + Exam results
   + Study material (copy)
-- Timetable
-  + First lesson - wed 22/02/2023, **17.00-19.00**, Lab. Galvani
-  + Second lesson - thu 23/02/2023, **16.00-18.00**, Lab. Galvani
-  + Timetable will be decided together with the students
-  + Please attend the first lesson to express your preference
 - Office hours (for students)
   + Weekly on thursday, 18.00-19.00, Dalmine, Building B, room 3.05
   + We can change office hours based on the new timetable
-  + It is appreciated to make an appointment by mail  in advance
+  + It is appreciated to make an appointment by mail  in advance  
+- Timetable (updated)
+  + Tuesday **14.00-16.00**, room A201
+  + Friday **10.30-12.30**, room to be assigned
+  + <p style="color:#FF0000">This Friday (24/02) room will be A203</p>
+
   
 ### Unit 1
 
@@ -41,3 +41,16 @@ patterns) to produce solutions with low computational complexity.
   * Growth of functions
   * Big-Θ, Big-O, Big-Ω notation
   * Code examples
+  
+### Unit 2
+
+* Choice of the programming language [slides](https://drive.google.com/file/d/1W3Nl-b38PZ8JK172WJX1NPro73B-rJIJ/view?usp=share_link)
+  * Advantages and drawbacks
+* Python programming fundamentals - pt.1 [slides](https://drive.google.com/file/d/1mh3XU2f7YMvf7pVMLvuV8qdJ6jZ7NE8v/view?usp=share_link)
+  * Data model
+  * Name resolution 
+  * Containers - list vs tuple
+  * Dynamic resizing
+  * Range, enumerate and list comprehension
+  * Functions
+
