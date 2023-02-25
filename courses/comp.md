@@ -27,7 +27,6 @@ patterns) to produce solutions with low computational complexity.
 - Timetable (updated)
   + Tuesday **14.00-16.00**, room A201
   + Friday **10.30-12.30**, room to be assigned
-  + <p style="color:#FF0000">This Friday (24/02) room will be A203</p>
 
   
 ### Unit 1
@@ -44,13 +43,12 @@ patterns) to produce solutions with low computational complexity.
   
 ### Unit 2
 
-* Choice of the programming language [slides](https://drive.google.com/file/d/1W3Nl-b38PZ8JK172WJX1NPro73B-rJIJ/view?usp=share_link)
+* Choice of the programming language [slides](https://drive.google.com/file/d/1W3Nl-b38PZ8JK172WJX1NPro73B-rJIJ/view?usp=share_link) 
   * Advantages and drawbacks
-* Python programming fundamentals - pt.1 [slides](https://drive.google.com/file/d/1mh3XU2f7YMvf7pVMLvuV8qdJ6jZ7NE8v/view?usp=share_link)
+* Python programming fundamentals - pt.1 [slides](https://drive.google.com/file/d/1mh3XU2f7YMvf7pVMLvuV8qdJ6jZ7NE8v/view?usp=share_link), [practice](https://drive.google.com/file/d/1xFuGwA0GqzwybwG5yQzptr8evhARy073/view?usp=share_link)
   * Data model
   * Name resolution 
   * Containers - list vs tuple
   * Dynamic resizing
   * Range, enumerate and list comprehension
   * Functions
-
