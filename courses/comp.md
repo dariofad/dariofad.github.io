@@ -21,12 +21,11 @@ patterns) to produce solutions with low computational complexity.
   + Exam results
   + Study material (copy)
 - Office hours (for students)
-  + Weekly on thursday, 18.00-19.00, Dalmine, Building B, room 3.05
-  + We can change office hours based on the new timetable
-  + It is appreciated to make an appointment by mail  in advance  
-- Timetable (updated)
+  + Weekly on Tuesday, 16.00-17.00, Dalmine, Building B, room 3.05
+  + It is appreciated to make an appointment by mail  in advance
+- Timetable
   + Tuesday **14.00-16.00**, room A201
-  + Friday **10.30-12.30**, room to be assigned
+  + Friday **10.30-12.30**, room A104
 
   
 ### Unit 1
