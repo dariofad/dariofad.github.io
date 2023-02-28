@@ -24,8 +24,8 @@ patterns) to produce solutions with low computational complexity.
   + Weekly on Tuesday, 16.00-17.00, Dalmine, Building B, room 3.05
   + It is appreciated to make an appointment by mail  in advance
 - Timetable
-  + Tuesday **14.00-16.00**, room A201
-  + Friday **10.30-12.30**, room A104
+  + Tuesday **14.00-16.00**, room B003 (**update**)
+  + Friday **10.30-12.30**, room A104 (**update**)
 
   
 ### Unit 1
