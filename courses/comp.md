@@ -51,3 +51,8 @@ patterns) to produce solutions with low computational complexity.
   * Dynamic resizing
   * Range, enumerate and list comprehension
   * Functions
+* Python programming fundamentals - pt.2 [slides](https://drive.google.com/file/d/1EMdsXwuoOIFHvcTefmh1vUW-7Wq81dzp/view?usp=share_link), [practice](https://drive.google.com/file/d/1EbQ2FzPJT2BlDaMwTbxdykh2URuRWyLz/view?usp=share_link)
+  * String
+  * Containers - set vs dict
+  * Zip, map and dictionary comprehension
+  * Stdin and Stdout
