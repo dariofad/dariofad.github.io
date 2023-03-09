@@ -32,11 +32,11 @@ There are 3 **software** that I use frequently: `Emacs`, `Git`,
 prototypes mostly implemented in `Python`. Every time I have the
 opportunity, I try to implement new tools in `Go`, which is my
 favorite programming language.
-<br>
+
 Occasionally, I have also written code in -- Rust, C++, Java, SQL, C,
-Elisp, Javascript, M4, TE, CIL, ODRL, RDF;
-<br>
-and used these software/frameworks -- Landlock, Seccomp, BPF,
+Elisp, Javascript, M4, TE, CIL, ODRL, RDF.
+
+I have also used these software/frameworks -- Landlock, Seccomp, BPF,
 Docker, Postgres, Redis, Deno, Bazel, Apache Spark, FRESCO mpc, Z3,
 FUSE.
 
@@ -44,6 +44,9 @@ From time to time I update a public version of my
 [.emacs.d](https://github.com/dariofad/dot-emacs) configuration files.
 
 # Other work activities
+
+In 2023 I will be the **teacher** for a new course named Laboratory of
+competitive programming!
 
 I have been a **teaching assistant** at my college since 2018. Courses:
 
@@ -72,18 +75,15 @@ Year 2019, 2020, 2021, 2022
 <br>
 Topic: Structured Query Language, Conceptual and Logical database modeling
 
-In 2023 I will be the **teacher** for a new course named Laboratory of
-competitive programming!
-
 As a member of the Unibg Seclab group, I also participated in the
 supervision of 35+ **thesis projects**. Also, I have been a member of
 the UNIBG unit in the following **Horizon 2020** European research
 projects:
 
-* MOSAICrOWN, Multi Owner data Sharing for Analytics and Integration
-  respecting Confidentiality and OWNer control, from 2019 to 2021
+* MOSAICrOWN, Multi owner data sharing for analytics and integration
+  respecting confidentiality and owner control, from 2019 to 2021
 
-* GLACIATION, Green responsible privACy preserving dAta operaTIONs, since 2022
+* GLACIATION, Green responsible privacy preserving data operations, since 2022
 
 # Awards
 
