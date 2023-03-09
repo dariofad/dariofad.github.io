@@ -24,8 +24,8 @@ patterns) to produce solutions with low computational complexity.
   + Weekly on Tuesday, 16.00-17.00, Dalmine, Building B, room 3.05
   + It is appreciated to make an appointment by mail  in advance
 - Timetable
-  + Tuesday **14.00-16.00**, room B003 (**update**)
-  + Friday **10.30-12.30**, room A104 (**update**)
+  + Tuesday **14.00-16.00**, room B003
+  + Friday **10.30-12.30**, room A104
 
   
 ### Unit 1
@@ -56,3 +56,10 @@ patterns) to produce solutions with low computational complexity.
   * Containers - set vs dict
   * Zip, map and dictionary comprehension
   * Stdin and Stdout
+  
+### Unit 3
+
+* Sorting [slides](https://drive.google.com/file/d/1QI2s73vFXOHgMgees4oGVu8Mbi-aGxNs/view?usp=share_link)
+  * Bubble sort, selection sort, insertion sort
+  * Merge sort, quick sort, heap sort (max-heap), radix sort
+  * Hybrid approaches
