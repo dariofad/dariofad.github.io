@@ -59,11 +59,15 @@ patterns) to produce solutions with low computational complexity.
   
 ### Unit 3
 
-* Sorting [slides](https://drive.google.com/file/d/1QI2s73vFXOHgMgees4oGVu8Mbi-aGxNs/view?usp=share_link)
+* Sorting [slides](https://drive.google.com/file/d/1QI2s73vFXOHgMgees4oGVu8Mbi-aGxNs/view?usp=share_link), [practice](https://drive.google.com/file/d/11vIaV6YA4SzrYnHhyLdGqDFM812e98u-/view?usp=share_link)
   * Bubble sort, selection sort, insertion sort
   * Merge sort, quick sort, heap sort (max-heap), radix sort
   * Hybrid approaches
   
 ### Unit 4
 
-* Coding strategies [practice](https://drive.google.com/file/d/1wh9RB_5xEUs28-kovlzLqxN9G0t_Znwn/view?usp=share_link)
+* Coding strategies [slides](https://drive.google.com/file/d/1CGi_l7yDcNRaiKgK_GEiwYthQ3y4PU2g/view?usp=share_link), [practice](https://drive.google.com/file/d/19lygARH96Djfm3CopjAD_3BKNnMZ3LxX/view?usp=share_link)
+  * Sliding windows, two pointers, fast and slow pointers
+* Data structures
+  * Linked list [slides](https://drive.google.com/file/d/186uvGDyeTec6gT7g_ozLG6Wnd_Aja07N/view?usp=share_link)
+  * Queue and stack [slides](https://drive.google.com/file/d/1jE5A7mDp6SfiyuLoKmSvRvyxCsHATgek/view?usp=share_link)
