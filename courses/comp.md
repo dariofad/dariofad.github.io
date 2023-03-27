@@ -14,6 +14,8 @@ patterns) to produce solutions with low computational complexity.
 
 ### General info
 
+<p style="color:red"><u>Notice: Tuesday 28/03, lesson in room B001</u></p>
+
 - Email
   + <dario.facchinetti@unibg.it>
 - University [e-Learning platform](https://elearning15.unibg.it/course/view.php?id=3873)
