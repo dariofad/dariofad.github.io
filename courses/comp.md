@@ -14,8 +14,6 @@ patterns) to produce solutions with low computational complexity.
 
 ### General info
 
-<p style="color:red"><u>Notice: Tuesday 28/03, lesson in room B001</u></p>
-
 - Email
   + <dario.facchinetti@unibg.it>
 - University [e-Learning platform](https://elearning15.unibg.it/course/view.php?id=3873)
@@ -71,5 +69,5 @@ patterns) to produce solutions with low computational complexity.
 * Coding strategies [slides](https://drive.google.com/file/d/1CGi_l7yDcNRaiKgK_GEiwYthQ3y4PU2g/view?usp=share_link), [practice](https://drive.google.com/file/d/19lygARH96Djfm3CopjAD_3BKNnMZ3LxX/view?usp=share_link)
   * Sliding windows, two pointers, fast and slow pointers
 * Data structures
-  * Linked list [slides](https://drive.google.com/file/d/186uvGDyeTec6gT7g_ozLG6Wnd_Aja07N/view?usp=share_link)
+  * Linked list [slides](https://drive.google.com/file/d/186uvGDyeTec6gT7g_ozLG6Wnd_Aja07N/view?usp=share_link), [practice](https://drive.google.com/file/d/1bE9OL4pXVDFt-Q_vsVQGXQXYRS9B6mj4/view?usp=share_link)
   * Queue and stack [slides](https://drive.google.com/file/d/1jE5A7mDp6SfiyuLoKmSvRvyxCsHATgek/view?usp=share_link)
