@@ -70,5 +70,12 @@ patterns) to produce solutions with low computational complexity.
   * Sliding windows, two pointers, fast and slow pointers
 * Data structures
   * Linked list [slides](https://drive.google.com/file/d/186uvGDyeTec6gT7g_ozLG6Wnd_Aja07N/view?usp=share_link), [practice](https://drive.google.com/file/d/1bE9OL4pXVDFt-Q_vsVQGXQXYRS9B6mj4/view?usp=share_link)
+    * reverse list, detect cycles
   * Queue and stack [slides](https://drive.google.com/file/d/1jE5A7mDp6SfiyuLoKmSvRvyxCsHATgek/view?usp=share_link), [practice](https://drive.google.com/file/d/1jBSqSclWTzYE1i8yFSL5ld2Rtx0Ks0Qi/view?usp=share_link)
+    * push, pop, `deque`
   * Heap [slides](https://drive.google.com/file/d/1JKnes0UeMj2PBKaC-u42XQZjwx12WtdD/view?usp=share_link), [practice](https://drive.google.com/file/d/1wkKV-dwXv_lZScMjy7EWFnGtuUwAj0Ls/view?usp=share_link)
+    * min-heap, max-heap, `heapq`, priority queue
+  * Binary tree [slides](https://drive.google.com/file/d/1z2fU9hMqdmiysVbm6USfa49ymFqQmWEH/view?usp=share_link)
+    * insert, search, in-order, pre-order, post-order, reverse tree, lowest common ancestor
+  * AVL tree [slides](https://drive.google.com/file/d/1dsHpqaw-2yx1p6q8Bf5CkxJmrkHy7kFz/view?usp=share_link)
+    * rotate left and right, insert, delete
