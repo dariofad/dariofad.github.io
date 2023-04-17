@@ -75,7 +75,7 @@ patterns) to produce solutions with low computational complexity.
     * push, pop, `deque`
   * Heap [slides](https://drive.google.com/file/d/1JKnes0UeMj2PBKaC-u42XQZjwx12WtdD/view?usp=share_link), [practice](https://drive.google.com/file/d/1wkKV-dwXv_lZScMjy7EWFnGtuUwAj0Ls/view?usp=share_link)
     * min-heap, max-heap, `heapq`, priority queue
-  * Binary tree [slides](https://drive.google.com/file/d/1z2fU9hMqdmiysVbm6USfa49ymFqQmWEH/view?usp=share_link)
+  * Binary tree [slides](https://drive.google.com/file/d/1z2fU9hMqdmiysVbm6USfa49ymFqQmWEH/view?usp=share_link), [practice](https://drive.google.com/file/d/1N_MifwYhhuHaP9UJX8xSW7KsipulrnFP/view?usp=share_link) (draft)
     * insert, search, in-order, pre-order, post-order, reverse tree, lowest common ancestor
   * AVL tree [slides](https://drive.google.com/file/d/1dsHpqaw-2yx1p6q8Bf5CkxJmrkHy7kFz/view?usp=share_link)
     * rotate left and right, insert, delete
