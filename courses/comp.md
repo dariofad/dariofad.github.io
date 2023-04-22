@@ -77,8 +77,8 @@ patterns) to produce solutions with low computational complexity.
     * min-heap, max-heap, `heapq`, priority queue
   * Binary tree [slides](https://drive.google.com/file/d/1z2fU9hMqdmiysVbm6USfa49ymFqQmWEH/view?usp=share_link), [practice](https://drive.google.com/file/d/1N_MifwYhhuHaP9UJX8xSW7KsipulrnFP/view?usp=share_link)
     * insert, search, in-order, pre-order, post-order, reverse tree, lowest common ancestor
-  * AVL tree [slides](https://drive.google.com/file/d/1dsHpqaw-2yx1p6q8Bf5CkxJmrkHy7kFz/view?usp=share_link)
+  * AVL tree [slides](https://drive.google.com/file/d/1dsHpqaw-2yx1p6q8Bf5CkxJmrkHy7kFz/view?usp=share_link), [practice](https://drive.google.com/file/d/1xbx69HDDQCPfxMn-liAhTepW7is0qNMH/view?usp=share_link)
     * rotate left and right, insert, delete
-  * Graph [slides](https://drive.google.com/file/d/18j9eBGJc_iEMhIb7-6fwFW0kmoBNJvgE/view?usp=share_link) (1st part)
+  * Graph [slides](https://drive.google.com/file/d/18j9eBGJc_iEMhIb7-6fwFW0kmoBNJvgE/view?usp=share_link) (updated)
     * directed vs undirected, representations, acyclicity, shortest path, bridges 
 	
