@@ -7,6 +7,26 @@ title: Publications
 # Conference and Journal Papers
 
 {% include paper.html
+my_authors="Marco Abbadini, Dario Facchinetti, Gianluca Oldani, Matthew Rossi, Stefano Paraboschi"
+my_item="../upcoming.html"
+my_title="Cage4Deno: A Fine-Grained Sandbox for Deno Subprocesses"
+my_venue="accepted to **ASIACCS**"
+my_year="2023"
+my_pdf=""
+my_award="" 
+%}
+
+{% include paper.html
+my_authors="Marco Abbadini, Michele Beretta, Dario Facchinetti, Gianluca Oldani, Matthew Rossi, Stefano Paraboschi"
+my_item="../upcoming.html"
+my_title="Leveraging eBPF to enhance sandboxing of WebAssembly runtimes"
+my_venue="accepted to **ASIACCS**,"
+my_year="2023"
+my_pdf=""
+my_award="" 
+%}
+
+{% include paper.html
 my_authors="Sabrina De Capitani di Vimercati, Dario Facchinetti, Sara Foresti, Giovanni Livraga, Gianluca Oldani, Stefano Paraboschi, Matthew Rossi, Pierangela Samarati"
 my_item="https://ieeexplore.ieee.org/document/9894678"
 my_title="Scalable Distributed Data Anonymization for Large Datasets"
