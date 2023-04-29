@@ -7,10 +7,11 @@ layout: default
 ## Laboratory of competitive programming
 
 The goal of the course is to study and learn how to solve
-**algorithmic** **problems** typically found in coding
-competitions. The focus is mainly on understanding how to use
-fundamental algorithms, data structures, and common approaches (or
-patterns) to produce solutions with low computational complexity.
+**algorithmic problems** typically found in coding competitions. The
+focus is mainly on understanding how to use fundamental algorithms,
+data structures, and common approaches (or patterns) to produce
+solutions with low computational complexity. We will also gradually
+learn Python.
 
 ### General info
 
