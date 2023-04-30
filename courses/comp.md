@@ -82,4 +82,7 @@ learn Python.
     * rotate left and right, insert, delete
   * Graph [slides](https://drive.google.com/file/d/18j9eBGJc_iEMhIb7-6fwFW0kmoBNJvgE/view?usp=share_link) (updated)
     * directed vs undirected, representations, acyclicity, shortest path, bridges 
+  * Trie [slides](https://drive.google.com/file/d/1bmnaDSyNbAkkPe09DanvWe2Eo4dIIqbp/view?usp=share_link)
+    * construction, key lookup, autocompletion
+	
 	
