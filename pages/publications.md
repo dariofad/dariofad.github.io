@@ -8,21 +8,21 @@ title: Publications
 
 {% include paper.html
 my_authors="Marco Abbadini, Dario Facchinetti, Gianluca Oldani, Matthew Rossi, Stefano Paraboschi"
-my_item="../upcoming.html"
+my_item="https://cs.unibg.it/seclab-papers/2023/ASIACCS/paper/cage4deno.pdf"
 my_title="Cage4Deno: A Fine-Grained Sandbox for Deno Subprocesses"
-my_venue="accepted to **ASIACCS**"
+my_venue="accepted to **ASIACCS**,"
 my_year="2023"
-my_pdf=""
+my_pdf="https://cs.unibg.it/seclab-papers/2023/ASIACCS/paper/cage4deno.pdf"
 my_award="" 
 %}
 
 {% include paper.html
 my_authors="Marco Abbadini, Michele Beretta, Dario Facchinetti, Gianluca Oldani, Matthew Rossi, Stefano Paraboschi"
-my_item="../upcoming.html"
+my_item="https://cs.unibg.it/seclab-papers/2023/ASIACCS/poster/enhance-wasm-sandbox.pdf"
 my_title="Leveraging eBPF to enhance sandboxing of WebAssembly runtimes"
-my_venue="accepted to **ASIACCS**"
+my_venue="accepted to **ASIACCS**,"
 my_year="2023"
-my_pdf=""
+my_pdf="https://cs.unibg.it/seclab-papers/2023/ASIACCS/poster/enhance-wasm-sandbox.pdf"
 my_award="" 
 %}
 
