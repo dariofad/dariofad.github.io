@@ -80,9 +80,11 @@ learn Python.
     * insert, search, in-order, pre-order, post-order, reverse tree, lowest common ancestor
   * AVL tree [slides](https://drive.google.com/file/d/1dsHpqaw-2yx1p6q8Bf5CkxJmrkHy7kFz/view?usp=share_link), [practice](https://drive.google.com/file/d/1xbx69HDDQCPfxMn-liAhTepW7is0qNMH/view?usp=share_link)
     * rotate left and right, insert, delete
-  * Graph [slides](https://drive.google.com/file/d/18j9eBGJc_iEMhIb7-6fwFW0kmoBNJvgE/view?usp=share_link) (updated)
+  * Graph [slides](https://drive.google.com/file/d/18j9eBGJc_iEMhIb7-6fwFW0kmoBNJvgE/view?usp=share_link), [practice](https://drive.google.com/file/d/1JrAcKQZfu9QbyeKromejhfqsK5NfKh8f/view?usp=share_link)
     * directed vs undirected, representations, acyclicity, shortest path, bridges 
-  * Trie [slides](https://drive.google.com/file/d/1bmnaDSyNbAkkPe09DanvWe2Eo4dIIqbp/view?usp=share_link)
+  * Trie [slides](https://drive.google.com/file/d/1bmnaDSyNbAkkPe09DanvWe2Eo4dIIqbp/view?usp=share_link), [practice](https://drive.google.com/file/d/1gkPvsycHbDYk_mTsEJJC2JVMtRiFlfz2/view?usp=share_link)
     * construction, key lookup, autocompletion
+  * Disjoint-set, Union-find [slides](https://drive.google.com/file/d/1yUYElPgySFq97MdxJjm2ZSSHWLwLZ6Yg/view?usp=share_link)
+    * problem statement, union by rank, path compression
 	
 	
