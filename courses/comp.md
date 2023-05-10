@@ -84,7 +84,10 @@ learn Python.
     * directed vs undirected, representations, acyclicity, shortest path, bridges 
   * Trie [slides](https://drive.google.com/file/d/1bmnaDSyNbAkkPe09DanvWe2Eo4dIIqbp/view?usp=share_link), [practice](https://drive.google.com/file/d/1gkPvsycHbDYk_mTsEJJC2JVMtRiFlfz2/view?usp=share_link)
     * construction, key lookup, autocompletion
-  * Disjoint-set, Union-find [slides](https://drive.google.com/file/d/1yUYElPgySFq97MdxJjm2ZSSHWLwLZ6Yg/view?usp=share_link)
+  * Disjoint-set or union-find [slides](https://drive.google.com/file/d/1yUYElPgySFq97MdxJjm2ZSSHWLwLZ6Yg/view?usp=share_link) (updated)
     * problem statement, union by rank, path compression
+  * Sparse table [slides](https://drive.google.com/file/d/1C1z4E2AXC9m-ipoRHfX8kr-oLOS7ZiuC/view?usp=share_link)
+    * range minimum queries
+	
 	
 	
