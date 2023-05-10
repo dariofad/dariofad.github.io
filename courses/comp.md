@@ -88,6 +88,3 @@ learn Python.
     * problem statement, union by rank, path compression
   * Sparse table [slides](https://drive.google.com/file/d/1C1z4E2AXC9m-ipoRHfX8kr-oLOS7ZiuC/view?usp=share_link)
     * range minimum queries
-	
-	
-	
