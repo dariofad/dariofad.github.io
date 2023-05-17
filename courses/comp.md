@@ -88,5 +88,10 @@ learn Python.
     * problem statement, union by rank, path compression
   * Sparse table [slides](https://drive.google.com/file/d/1C1z4E2AXC9m-ipoRHfX8kr-oLOS7ZiuC/view?usp=share_link), [practice](https://drive.google.com/file/d/11AwfyK5RnUk0QgKEeWrDagRH2VfE3dtI/view?usp=share_link)
     * range minimum queries
-  * LRU cache [slides](https://drive.google.com/file/d/1k1nP_ieMU1hDeVHiE8HWdqlQOLMJ9LYl/view?usp=share_link)
+  * LRU cache [slides](https://drive.google.com/file/d/1k1nP_ieMU1hDeVHiE8HWdqlQOLMJ9LYl/view?usp=share_link), [practice](https://drive.google.com/file/d/1Lcit1umH2EeZKUm_bZbqpuYo9Mldzdbi/view?usp=share_link)
     * get, put, functools
+	
+### Unit 5
+
+* Dynamic Programming [slides](https://drive.google.com/file/d/193yQy7xrWGEMnrfHqHXDavwtqE32THWv/view?usp=share_link)
+  * Minimum edit distance, minimum number of coins, knapsack
