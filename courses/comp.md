@@ -93,5 +93,5 @@ learn Python.
 	
 ### Unit 5
 
-* Dynamic programming [slides](https://drive.google.com/file/d/193yQy7xrWGEMnrfHqHXDavwtqE32THWv/view?usp=share_link)
+* Dynamic programming [slides](https://drive.google.com/file/d/193yQy7xrWGEMnrfHqHXDavwtqE32THWv/view?usp=share_link), [practice](https://drive.google.com/file/d/12ZkJxeQ8EiqrS4v0SmGSBPpGBntfIGs-/view?usp=share_link)
   * Minimum edit distance, minimum number of coins, knapsack
