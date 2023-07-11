@@ -3,14 +3,23 @@ layout: page
 title: Publications
 ---
 
-
 # Conference and Journal Papers
+
+{% include paper.html
+my_authors="Marco Abbadini, Dario Facchinetti, Gianluca Oldani, Matthew Rossi, Stefano Paraboschi"
+my_item="https://cs.unibg.it/seclab-papers/2023/RAID/natisand.pdf"
+my_title="NatiSand: Native Code Sandboxing for JavaScript Runtimes"
+my_venue="**26th RAID**,"
+my_year="2023"
+my_pdf="https://cs.unibg.it/seclab-papers/2023/RAID/natisand.pdf"
+my_award="" 
+%}
 
 {% include paper.html
 my_authors="Marco Abbadini, Dario Facchinetti, Gianluca Oldani, Matthew Rossi, Stefano Paraboschi"
 my_item="https://cs.unibg.it/seclab-papers/2023/ASIACCS/paper/cage4deno.pdf"
 my_title="Cage4Deno: A Fine-Grained Sandbox for Deno Subprocesses"
-my_venue="accepted to **ASIA CCS**,"
+my_venue="**18th ASIACCS**,"
 my_year="2023"
 my_pdf="https://cs.unibg.it/seclab-papers/2023/ASIACCS/paper/cage4deno.pdf"
 my_award="" 
@@ -20,7 +29,7 @@ my_award=""
 my_authors="Marco Abbadini, Michele Beretta, Dario Facchinetti, Gianluca Oldani, Matthew Rossi, Stefano Paraboschi"
 my_item="https://cs.unibg.it/seclab-papers/2023/ASIACCS/poster/enhance-wasm-sandbox.pdf"
 my_title="Leveraging eBPF to enhance sandboxing of WebAssembly runtimes"
-my_venue="accepted to **ASIA CCS**,"
+my_venue="**18th ASIACCS**,"
 my_year="2023"
 my_pdf="https://cs.unibg.it/seclab-papers/2023/ASIACCS/poster/enhance-wasm-sandbox.pdf"
 my_award="" 
@@ -105,6 +114,17 @@ my_pdf="http://spdp.di.unimi.it/papers/percom2019.pdf"
 
 
 # Posters
+
+
+{% include paper.html
+my_authors="Marco Abbadini, Dario Facchinetti, Gianluca Oldani, Stefano Paraboschi, Matthew Rossi"
+my_item="https://drive.google.com/file/d/15PRjbfZngHgPDB3E0iULsPpemh78YDe2/view?usp=sharing"
+my_title="WebAssembly runtime sandboxing using eBPF Linux Security Module"
+my_venue="**18th ASIACCS**,"
+my_year="2023"
+my_pdf="https://drive.google.com/file/d/15PRjbfZngHgPDB3E0iULsPpemh78YDe2/view?usp=sharing"
+my_award="" 
+%}
 
 {% include paper.html
 my_authors="Marco Abbadini, Dario Facchinetti, Gianluca Oldani, Stefano Paraboschi, Matthew Rossi"
