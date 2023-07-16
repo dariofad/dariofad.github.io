@@ -202,7 +202,7 @@ generic completion fronted for Emacs, I find convenient to set the
 
 Here's my configuration with `use-package`.
 
-```elisp
+```Lisp
 ;; input Japanese
 (use-package mozc
   :ensure t
@@ -289,7 +289,7 @@ is hit repeatedly.
 **Copy-from-point-to-end-of-line**: a function to that copies the
 content between the point and the end of the line.
 
-```elisp
+```Lisp
 (defun ddcteol/Copy-To-End-Of-Line ()
   (interactive)
   (save-excursion
@@ -379,7 +379,7 @@ and improve a bit the readability. Take a look at my vocabulary notes.
 Hitting `C-c C-e h h` feels a bit slow, wouldn't it be better to use
 `C-~`? Well, I wrote a couple of functions to do so.
 
-```elisp
+```Lisp
 ;; placeholder to execute a function by name
 (defvar callable-function-placeholder "initialize function name"
   "Name of a function callable with dd/... utility.")
