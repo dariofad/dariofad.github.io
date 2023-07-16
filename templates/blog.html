@@ -1,0 +1,34 @@
+{% extends "_base.html" %}
+
+{% block page %}blog{% endblock page%}
+{% block lang %}{% if section.extra.lang %}{{ section.extra.lang }}{% else %}{{ section.lang }}{% endif %}{% endblock lang %}
+{% block title %}{{ section.title }}{% endblock title %}
+{% block desc %}{{ section.description }}{% endblock desc %}
+
+{% block content %}
+{% include "_header.html" %}
+<div id="blog-wrapper">
+  <main>
+    <div class="post-list">
+      {% for post in section.pages %}
+      <div class="post">
+	<a href="{{ post.permalink }}">
+	  <span>{{ post.title }}</span>
+	  <span class="date">{{ post.date | date }}</span>
+	</a>
+	<div class="post-description"> {{ post.summary | safe }} </div>
+	<div class="tags-list">
+	  <p>
+	    {% for tag in post.taxonomies.tags %}
+	    #{{ tag }}
+	    {% endfor %}
+	  </p>
+	</div>
+      </div>
+	{% endfor %}
+      </div>
+      
+  </main>
+  {% include "_footer.html" %}
+</div>
+{% endblock content %}

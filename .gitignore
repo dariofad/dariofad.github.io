@@ -1,11 +1,3 @@
-_site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
-
-
-# -*- mode: gitignore; -*-
 *~
 \#*\#
 /.emacs.desktop
@@ -14,9 +6,6 @@ vendor
 auto-save-list
 tramp
 .\#*
-
-# vscode settings
-.vscode
 
 # Org-mode
 .org-id-locations
@@ -45,8 +34,6 @@ dist/
 # Flycheck
 flycheck_*.el
 
-# server auth directory
-/server/
 
 # projectiles files
 .projectile
@@ -54,6 +41,5 @@ flycheck_*.el
 # directory configuration
 .dir-locals.el
 
-# network security
-/network-security.data
-
+public
+!public/.gitkeep

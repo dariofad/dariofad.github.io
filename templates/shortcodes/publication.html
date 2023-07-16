@@ -1,0 +1,22 @@
+<div class="publication">
+  <div>
+	<div class="publication-title">
+		{{ title | safe }},
+		{% if url %}<a href="{{ url }}"> PDF </a>{% else %} Upcoming {% endif %}
+	</div>
+	</div>
+	{% if authors %}<div>{{ authors }}</div>{% endif %}
+	{% if description %}<div>{{ description | safe }}</div>{% endif %}
+	{% if venue %}
+	<div class="publication-venue">{{ venue }},
+		{% if venue %}
+		{{ year }}
+		{% endif %}
+	</div>
+	{% endif %}
+	{% if doi %}
+	DOI: <a href="https://doi.org/{{ doi }}">{{ doi }}</a>
+	<br />
+	{% endif %}
+	{% if bib %}[<a href="{{ bib }}">BibTex</a>]{% endif %}
+</div>

@@ -1,0 +1,63 @@
+base_url = "https://dariofad.github.io/"      # Domain name of your website
+title = "Dario Facchinetti"
+description = "Dario Facchinetti's GitHub Pages"
+default_language = "en"
+output_dir = "public"
+compile_sass = true
+minify_html = true
+build_search_index = false            # Keep this false, search is temporarily unsupported
+generate_feed = false
+feed_filename = "feed.xml"
+taxonomies = [{ name = "tags" }, { name = "categories" }]
+
+[markdown]
+highlight_code = true
+extra_syntaxes = []
+highlight_theme = "one-dark"          
+render_emoji = false
+external_links_target_blank = false
+external_links_no_follow = true
+external_links_no_referrer = true
+smart_punctuation = false
+
+[slugify]
+paths = "on"
+taxonomies = "on"
+anchors = "on"
+
+#=========================================================================================
+
+[extra]
+
+name = "Dario Facchinetti, PhD"
+id = "dariofad" # Your id / username / handle
+bio = "Researcher @ University of Bergamo"
+avatar = "img/me.webp"            # Your avatar
+links = [                             # Your links
+    { name = "GitHub", icon = "github", url = "https://github.com/dariofad" },
+    { name = "Twitter", icon = "twitter", url = "https://www.twitter.com/dario_fad" },
+    { name = "Email", icon = "email", url = "mailto:dario.fad@gmail.com" },
+    { name = "LinkedIn", icon = "linkedin", url = "https://www.linkedin.com/in/dario-facchinetti" },
+]
+
+nav_pages = [
+    { name = "publications", url = "/publications" },
+    { name = "teaching", url = "/teaching" },    
+]
+
+nav_separator = "-"
+
+display_id = false                    # Display your id on homepage
+projects_page = true                  # Display projects page
+blur_effect = true                    # Whether to turn on blur effect on navigation bar
+
+toc = true                            # Whether to show Table-Of-Contents by default
+comment = false                       # Whether to show giscus comment section by default, see https://giscus.app for more info
+
+outdate_alert = false                 # Whether to show outdate alert by default
+outdate_alert_days = 120              # How many days will a post be outdated by default
+outdate_alert_text_before = "This article was last updated "
+outdate_alert_text_after = " days ago and may be out of date."
+
+footer_copyright = "© 2023 Dario Facchinetti"
+footer_credits = false
