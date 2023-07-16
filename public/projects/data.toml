@@ -1,0 +1,41 @@
+[[project]]
+name = "NatiSand"
+desc = "Modern runtimes render JavaScript code in a secure and isolated environment, but when they execute binary programs and shared libraries, no isolation guarantees are provided. This is an important limitation, and it affects many popular runtimes including Node.js, Deno, and Bun. NatiSand is a component for JavaScript runtimes that leverages Landlock, eBPF, and Seccomp to control the file system, Inter-Process Communication (IPC), and network resources available to binary programs and shared libraries. It does not require changes to the application code and offers to the user an easy interface. Languages: `Rust`, `JavaScript`, `C`, `LaTeX`, `Makefile`."
+links = [
+  { name = "GitHub", url = "https://github.com/unibg-seclab/natisand" },
+]
+
+[[project]]
+name = "Dmng"
+desc = "dmng is a command line tool that helps you collect and manage the list of file system requirements associated with your scripts and programs. Each requirement is represented with a path and the RWX permissions associated with its use. The tool supports Linux systems. It leverages ldd, strace and eBPF. Languages: `Go`, `Rust`, `C`."
+links = [
+  { name = "GitHub", url = "https://github.com/unibg-seclab/dmng" },
+]
+
+[[project]]
+name = "Cage4Deno"
+desc = "Cage4Deno is a set of modifications to the JavaScript Deno runtime that provides fine-grained sandboxes for subprocesses. In particular, it permits to specify file system permissions with a RWX+D model. It relies on Landlock and eBPF LSMs.	 Languages: `Rust`, `JavaScript`, `C`, `LaTeX`, `Makefile`."
+links = [
+  { name = "GitHub", url = "https://github.com/unibg-seclab/Cage4Deno" },
+]
+
+[[project]]
+name = "dot-emacs"
+desc = "A public version of my Emacs configuration files. It configures an Emacs daemon and relies on use-package. It also demonstrates how to setup a programming environment, LaTeX for scientific writing, and mozc to write in Japanese. No particular Elisp knowledge is required. Language: `Elisp`."
+links = [
+  { name = "GitHub", url = "https://github.com/dariofad/dot-emacs" },
+]
+
+[[project]]
+name = "SEApp"
+desc = "SEApp enables developers to define ad-hoc Mandatory Access Control policies for their apps. This repository provides a set of changes to the Android Open Source Project. Languages: `Java`, `C++`, `C`, `Python`, `CIL`, `SELinux`, `Makefile`, `M4`."
+links = [
+  { name = "GitHub", url = "https://github.com/matthewrossi/seapp" },
+]
+
+[[project]]
+name = "Grpc_py_go_example"
+desc = "This project exemplifies how to call an API implemented in Go from a Python client. It also shows how to use TLS (multi) to secure network communication. Languages: `Python`, `Go`, `Makefile`."
+links = [
+  { name = "GitHub", url = "https://github.com/dariofad/grpc_py_go_example" },
+]
