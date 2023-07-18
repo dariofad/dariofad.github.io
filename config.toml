@@ -30,7 +30,7 @@ anchors = "on"
 [extra]
 
 name = "Dario Facchinetti, PhD"
-id = "dariofad" # Your id / username / handle
+id = "Home" # Your id / username / handle
 bio = "Researcher @ University of Bergamo"
 avatar = "img/me.webp"            # Your avatar
 links = [                             # Your links
