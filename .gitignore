@@ -1,3 +1,4 @@
+# Emacs
 *~
 \#*\#
 /.emacs.desktop
@@ -7,38 +8,38 @@ auto-save-list
 tramp
 .\#*
 
+# Directory configuration (Emacs)
+.dir-locals.el
+
 # Org-mode
 .org-id-locations
 *_archive
 
-# flymake-mode
+# Flymake-mode
 *_flymake.*
 
-# eshell files
+# Eshell files
 /eshell/history
 /eshell/lastdir
 
-# elpa packages
+# Elpa packages
 /elpa/
 
-# reftex files
+# Reftex files
 *.rel
 
 # AUCTeX auto folder
 /auto/
 
-# cask packages
+# Cask packages
 .cask/
 dist/
 
 # Flycheck
 flycheck_*.el
 
-
-# projectiles files
+# Projectiles files
 .projectile
 
-# directory configuration
-.dir-locals.el
-
+# Zola default output dir
 public
