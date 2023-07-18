@@ -3,7 +3,7 @@
 all: build
 
 build:
-	mkdir public
-	touch public/.nojekyll
+	@echo "[*] Building static website"
 	zola build
+	@echo "[*] Copying sources"
 	cp -r public docs
