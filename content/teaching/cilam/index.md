@@ -1,5 +1,6 @@
 +++
 title = "Information Security: Core Concepts"
+weight = 4
 
 [taxonomies]
 tags = []

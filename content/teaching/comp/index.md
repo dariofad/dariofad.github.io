@@ -1,5 +1,6 @@
 +++
 title = "Laboratory of Competitive Programming"
+weight = 0
 
 [taxonomies]
 tags = []
