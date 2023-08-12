@@ -1,4 +1,4 @@
-.phony: build serve install clean
+.PHONY: build serve install clean
 
 POLICY := boxer/zola.json
 

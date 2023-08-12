@@ -4,8 +4,230 @@
 	<subtitle>My blog site.</subtitle>
 	<link href="https://dariofad.github.io/blog/feed.xml" rel="self" type="application/atom+xml"/>
     <link href="https://dariofad.github.io/blog/"/>
-	<updated>2022-12-16T00:00:00+00:00</updated>
+	<updated>2023-08-12T00:00:00+00:00</updated>
 	<id>https://dariofad.github.io/blog/feed.xml</id>
+	<entry xml:lang="en">
+		<title>Sandboxing Zola: lightweight isolation of a static website generator</title>
+		<published>2023-08-12T00:00:00+00:00</published>
+		<updated>2023-08-12T00:00:00+00:00</updated>
+        <summary>&lt;p&gt;In this post I&#x27;ll show how to sandbox Zola using Landlock, avoiding to
+push confidential information (i.e., files and environment variables)
+to your website.&lt;&#x2F;p&gt;
+</summary>
+		<link href="https://dariofad.github.io/blog/2023-08-12/" type="text/html"/>
+		<id>https://dariofad.github.io/blog/2023-08-12/</id>
+		<content type="html">&lt;p&gt;In this post I&#x27;ll show how to sandbox Zola using Landlock, avoiding to
+push confidential information (i.e., files and environment variables)
+to your website.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;&lt;h2 id=&quot;intro&quot;&gt;Intro&lt;a class=&quot;zola-anchor&quot; href=&quot;#intro&quot; aria-label=&quot;Anchor link for: intro&quot;&gt;#&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;A while ago I decided to stop using Jekyll. The two main reasons for
+this change are associated with the management of Ruby Gems and the
+lack of updates to the Minima theme (e.g., dark mode). I really wanted
+a single-binary static website generator, and after asking some
+friends, I decided to use &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;www.getzola.org&#x2F;&quot;&gt;Zola&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Zola is super easy, and after a quick personalization of the template,
+I was ready to deploy the website on GitHub Pages. The original idea
+was to rely on Actions, however, I noticed some problems with the
+scripts that were used by the community. The scripts looked &lt;em&gt;frail&lt;&#x2F;em&gt;,
+and I was concerned that sooner or later something might break.&lt;&#x2F;p&gt;
+&lt;p&gt;I didn&#x27;t want to overcomplicate something so simple, and I didn&#x27;t find
+any practical advantage in using Actions. I thought: &lt;em&gt;I just want a
+static website, and it should exactly work as it does locally&lt;&#x2F;em&gt;. So, I
+opted for publishing the content directly from &lt;code&gt;&#x2F;docs&lt;&#x2F;code&gt;. The dowside is
+security, of course. Zola&#x27;s code is open source and can be verified,
+but what if there were unwanted bugs? What if I were to include
+confidential resources in some pages and push without noticing? My
+main concern was related to environment variables and local files, so
+I decided to implement a little program to restrict the resources
+available at website generation time.&lt;&#x2F;p&gt;
+&lt;p&gt;In the following I&#x27;ll explain how it works.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;environment-variables&quot;&gt;Environment variables&lt;a class=&quot;zola-anchor&quot; href=&quot;#environment-variables&quot; aria-label=&quot;Anchor link for: environment-variables&quot;&gt;#&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;I usually don&#x27;t store secret tokens in environment variables, and when
+I really need I use &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;direnv.net&#x2F;&quot;&gt;direnv&lt;&#x2F;a&gt;, which permits to
+edit the environment loading and unloading variables based on the
+current directory. However, there may be other software running on the
+workstation while building the website, so it is safer to constrain
+them. The realization is simple, we only need to &lt;em&gt;drop&lt;&#x2F;em&gt; some variables
+before the website is generated. For that, we start from the array of
+all the environment variables (&lt;code&gt;ENV_VARS&lt;&#x2F;code&gt; in the snipped below), then
+create an array of variables which may be legitimately required by
+Zola (&lt;code&gt;ENV_VAR_ALLOWLIST&lt;&#x2F;code&gt;). Finally, we unset every variable that
+belongs to the first array but not to the second. A simple script like
+the following can be used.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;#!&#x2F;bin&#x2F;bash
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;ENV_VARS&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;( $(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;env &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;cut -d&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt; -f1&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;) )
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;ENV_VAR_ALLOWLIST&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;( DBUS_SESSION_BUS_ADDRESS DESKTOP_SESSION GDMSESSION \
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;                    GTK_IM_MODULE GTK_MODULES HOME LANG LANGUAGE LC_ADDRESS \
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;                    LC_ALL LC_IDENTIFICATION LC_MONETARY LC_NAME LC_NUMERIC \
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;                    LC_TIME LESSOPEN LOGNAME OLD_PWD PATH PWD SESSION_MANAGER \
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;                    SYSTEMD_EXEC_PID USER USERNAME XDG_CONFIG_DIRS \
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;                    XDG_CURRENT_DESKTOP XDG_MENU_PREFIX XDG_SESSION_DESKTOP \
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;                    XDG_SESSION_TYPE XMODIFIERS SHELL )
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; v &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;${&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;ENV_VARS[@]&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;}&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;do
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;found&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;0
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; va &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;in &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;${&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;ENV_VAR_ALLOWLIST[@]&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;}&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;do
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;[ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;v &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;== &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;va &lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;]&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;then
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;found&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;1
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;break
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;fi
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;done
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;if &lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;[ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;found &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;==&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; 0 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;]&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;then
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;# unset variable v
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;unset &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;$&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;v
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;fi
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;done
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;files&quot;&gt;Files&lt;a class=&quot;zola-anchor&quot; href=&quot;#files&quot; aria-label=&quot;Anchor link for: files&quot;&gt;#&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;Files are the biggest concern. The idea is that anything outside of
+the website folder should not be read by the static generator at build
+time. To enforce this condition we can use Landlock: an unprivileged,
+stackable access control LSM available from version 5.13. Landlock is
+very intuitive, it allows a process to restricts its privileges with a
+single call from user space. After this operation is performed, the
+set of privileges can only be further restricted (privileges cannot be
+reclaimed). Again, the realization is simple, we just need a launcher
+that restricts its privileges before Zola is executed. The only
+requirement to obtain is the &lt;em&gt;policy&lt;&#x2F;em&gt;, or rather the list of
+file-system resources the Zola binary needs to read&#x2F;write&#x2F;exec to
+successfully produce the website. This list can be quickly generated
+using &lt;code&gt;ldd&lt;&#x2F;code&gt; and &lt;code&gt;strace&lt;&#x2F;code&gt;, here is how it looks like on my workstation.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;json&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-json &quot;&gt;&lt;code class=&quot;language-json&quot; data-lang=&quot;json&quot;&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;{
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;read&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;: [
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;&#x2F;etc&#x2F;ld.so.cache&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;&#x2F;lib64&#x2F;ld-linux-x86-64.so.2&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;libc.so.6&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;libgcc_s.so.1&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;&#x2F;lib&#x2F;x86_64-linux-gnu&#x2F;libm.so.6&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;&#x2F;home&#x2F;dariofad&#x2F;.cargo&#x2F;bin&#x2F;zola&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;.&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    ],
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;write&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;: [
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;.&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;&#x2F;dev&#x2F;null&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    ],
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;exec&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;: [
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;&#x2F;lib64&#x2F;ld-linux-x86-64.so.2&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;,	
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;&#x2F;home&#x2F;dariofad&#x2F;.cargo&#x2F;bin&#x2F;zola&amp;quot;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    ]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;What I really appreciate about Zola is that it only needs to access
+the program interpreter and 3 libraries to work as intended. About the
+launcher, it is implemented as a minimal Rust application called
+&lt;code&gt;boxer&lt;&#x2F;code&gt;. It just:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;reads the json policy using serde,&lt;&#x2F;li&gt;
+&lt;li&gt;configures the appropriate Landlock ruleset,&lt;&#x2F;li&gt;
+&lt;li&gt;calls Landlock enforcing the ruleset,&lt;&#x2F;li&gt;
+&lt;li&gt;executes Zola with the input argument (i.e., &lt;code&gt;build&lt;&#x2F;code&gt; or &lt;code&gt;serve&lt;&#x2F;code&gt;).&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;The code is shown below.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;Rust&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-Rust &quot;&gt;&lt;code class=&quot;language-Rust&quot; data-lang=&quot;Rust&quot;&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;use &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;anyhow::{bail, Result};
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;use &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;clap::Parser;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;use &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;landlock::{
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    Access, AccessFs, PathBeneath, PathFd, Ruleset, RulesetAttr, RulesetCreatedAttr, RulesetStatus,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#db9d63;&quot;&gt;ABI&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;};
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;use &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;serde::Deserialize;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;use &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;std::fs;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;use &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;std::process::{Command, Stdio};
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;#[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;derive&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;(Deserialize, Debug)]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;struct &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;Policy {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;read&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;: Vec&amp;lt;String&amp;gt;,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;write&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;: Vec&amp;lt;String&amp;gt;,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;exec&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;: Vec&amp;lt;String&amp;gt;,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;#[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;derive&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;(Parser, Debug)]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;#[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;clap&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;(author, version, about, long_about &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; None)]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;struct &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;Args {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    #[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;clap&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;(long &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;argument&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;, value_name &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;ARG&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;)]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;pub &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;argument&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;: String,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    #[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;clap&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;(long &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;policy&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;, value_name &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;FILE&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;)]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;pub &lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;policy&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;: String,
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#5cb3fa;&quot;&gt;main&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;() -&amp;gt; Result&amp;lt;()&amp;gt; {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; args &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;Args::parse();
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; pol: Policy &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;serde_json::from_str(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;&amp;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;fs::read_to_string(args.policy)&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;?&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;)&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;?&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; abi &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#db9d63;&quot;&gt;ABI&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#db9d63;&quot;&gt;V2&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;let mut&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; ruleset &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;Ruleset::new()
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;        .&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;handle_access&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;(AccessFs::from_all(abi))&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;?
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;        .&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;create&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;()&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;?&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    ruleset &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; ruleset.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;add_rule&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;(PathBeneath::new(PathFd::new(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;.&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;)&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;?&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;, Access::from_all(abi)))&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;?&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; path &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;in &amp;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;pol.read {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; path_fd &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;PathFd::new(path)&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;?&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;        ruleset &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; ruleset.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;add_rule&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;(PathBeneath::new(path_fd, AccessFs::from_read(abi)))&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;?&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    }
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; path &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;in &amp;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;pol.write {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; path_fd &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;PathFd::new(path)&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;?&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;        ruleset &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; ruleset.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;add_rule&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;(PathBeneath::new(path_fd, Access::from_write(abi)))&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;?&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    }
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;for&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; path &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;in &amp;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;pol.exec {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;        &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; path_fd &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;PathFd::new(path)&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;?&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;        ruleset &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; ruleset.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;add_rule&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;(PathBeneath::new(path_fd, AccessFs::Execute))&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;?&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    }
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; status &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; ruleset.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;restrict_self&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;()&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;?&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;if&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; status.ruleset &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;== &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;RulesetStatus::NotEnforced {
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;        bail!(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;Landlock not supported, upgrade kernel please&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;);
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    }
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    Command::new(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;&amp;quot;zola&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;        .&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;arg&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;(args.argument)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;        .&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;stdout&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;(Stdio::null())
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;        .&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;spawn&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;()&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;?
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;        .&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;wait&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;()&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;?&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;    Ok(())
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Putting all the pieces together, we just need to add a line to the
+previous bash script, calling the &lt;code&gt;boxer&lt;&#x2F;code&gt; right after the unwanted
+variables have been unset.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;Make&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-Make &quot;&gt;&lt;code class=&quot;language-Make&quot; data-lang=&quot;Make&quot;&gt;&lt;span style=&quot;font-style:italic;color:#5f697a;&quot;&gt;# spawn the sandboxer
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;(.&#x2F;boxer&#x2F;target&#x2F;debug&#x2F;boxer --argument $1 --policy $2)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Argument &lt;code&gt;$1&lt;&#x2F;code&gt; is either &lt;code&gt;build&lt;&#x2F;code&gt; or &lt;code&gt;serve&lt;&#x2F;code&gt;, while argument &lt;code&gt;$2&lt;&#x2F;code&gt; is the
+path to the json policy file.&lt;&#x2F;p&gt;
+&lt;p&gt;Let&#x27;s use a new Makefile phony target (&lt;code&gt;build&lt;&#x2F;code&gt;) to build our website!&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;Make&quot; style=&quot;background-color:#2b303b;color:#6c7079;&quot; class=&quot;language-Make &quot;&gt;&lt;code class=&quot;language-Make&quot; data-lang=&quot;Make&quot;&gt;&lt;span style=&quot;color:#5cb3fa;&quot;&gt;.PHONY&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;build
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;POLICY &lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;:= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;boxer&#x2F;zola.json
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5cb3fa;&quot;&gt;_clean_website&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;:
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;$(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;info &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;[*] Clean website&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#db9d63;&quot;&gt;@&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;rm -rf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt; docs&#x2F;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;*
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5cb3fa;&quot;&gt;build&lt;&#x2F;span&gt;&lt;span style=&quot;color:#adb7c9;&quot;&gt;: &lt;&#x2F;span&gt;&lt;span style=&quot;color:#9acc76;&quot;&gt;_clean_website
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;$(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#5ebfcc;&quot;&gt;info &lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;[*] Unset environment variables &amp;amp; rebuild website&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#abb2bf;&quot;&gt;	&lt;&#x2F;span&gt;&lt;span style=&quot;color:#db9d63;&quot;&gt;@&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;.&#x2F;boxer&#x2F;subshell.sh $@ &lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;$(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#eb6772;&quot;&gt;POLICY&lt;&#x2F;span&gt;&lt;span style=&quot;color:#cd74e8;&quot;&gt;)
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;Just in case you were wondering, we don&#x27;t need to worry about the
+execution of other targets potentially contained in the Makefile, as
+by
+&lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;www.gnu.org&#x2F;software&#x2F;make&#x2F;manual&#x2F;html_node&#x2F;Execution.html&quot;&gt;default&lt;&#x2F;a&gt;,
+each target recipe line is executed in a new sub-shell (so environment
+variables and sandboxing only affect the process that executes Zola).&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;availability&quot;&gt;Availability&lt;a class=&quot;zola-anchor&quot; href=&quot;#availability&quot; aria-label=&quot;Anchor link for: availability&quot;&gt;#&lt;&#x2F;a&gt;&lt;&#x2F;h2&gt;
+&lt;p&gt;You can check the source of this pages to see how everything
+works. &lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dariofad&#x2F;dariofad.github.io&#x2F;blob&#x2F;master&#x2F;Makefile&quot;&gt;Here&lt;&#x2F;a&gt;
+you can find the Makefile, and
+&lt;a rel=&quot;nofollow noreferrer&quot; href=&quot;https:&#x2F;&#x2F;github.com&#x2F;dariofad&#x2F;dariofad.github.io&#x2F;tree&#x2F;master&#x2F;boxer&quot;&gt;here&lt;&#x2F;a&gt;
+the sandboxer. You may also find convenient the &lt;code&gt;make serve&lt;&#x2F;code&gt; option,
+which allows to write a new blog post without enforcing restrictions.&lt;&#x2F;p&gt;
+&lt;p&gt;Thanks for reading.&lt;&#x2F;p&gt;
+</content>
+	</entry>
 	<entry xml:lang="en">
 		<title>A programmer&#x27;s approach to the JLPT N3</title>
 		<published>2022-12-16T00:00:00+00:00</published>

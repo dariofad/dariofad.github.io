@@ -23,6 +23,10 @@
         <lastmod>2022-12-16</lastmod>
     </url>
     <url>
+        <loc>https://dariofad.github.io/blog/2023-08-12/</loc>
+        <lastmod>2023-08-12</lastmod>
+    </url>
+    <url>
         <loc>https://dariofad.github.io/categories/</loc>
     </url>
     <url>
@@ -45,6 +49,12 @@
     </url>
     <url>
         <loc>https://dariofad.github.io/tags/emacs/</loc>
+    </url>
+    <url>
+        <loc>https://dariofad.github.io/tags/environment/</loc>
+    </url>
+    <url>
+        <loc>https://dariofad.github.io/tags/file-system/</loc>
     </url>
     <url>
         <loc>https://dariofad.github.io/tags/go/</loc>
@@ -77,6 +87,9 @@
         <loc>https://dariofad.github.io/tags/python/</loc>
     </url>
     <url>
+        <loc>https://dariofad.github.io/tags/sandbox/</loc>
+    </url>
+    <url>
         <loc>https://dariofad.github.io/tags/stream/</loc>
     </url>
     <url>
@@ -84,6 +97,9 @@
     </url>
     <url>
         <loc>https://dariofad.github.io/tags/vscode/</loc>
+    </url>
+    <url>
+        <loc>https://dariofad.github.io/tags/zola/</loc>
     </url>
     <url>
         <loc>https://dariofad.github.io/teaching/</loc>
