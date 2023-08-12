@@ -1,8 +1,29 @@
-.phony: build
+.phony: build serve install clean
 
-build:
-	@echo "[*] Building static website"
-	@zola build
-	@echo "[*] Copying sources"
-	@rm -rf docs
-	@cp -r public docs
+POLICY := boxer/zola.json
+
+all: clean | install build
+
+_clean_boxer:
+	$(info [*] Clean boxer)
+	@cd boxer; cargo clean
+
+install:
+	$(info [*] Check zola is installed)
+	@zola --version
+	$(info [*] Build the sandboxer)
+	@cd boxer; cargo build
+
+_clean_website:
+	$(info [*] Clean website)
+	@rm -rf docs/*
+
+build: _clean_website
+	$(info [*] Unset environment variables & rebuild website)
+	@./boxer/subshell.sh $@ $(POLICY)
+
+serve: _clean_website
+	@echo "\033[0;31mWriter mode: you can preview the website but no protection is available"
+	@zola serve
+
+clean: _clean_website _clean_boxer

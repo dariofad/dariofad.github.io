@@ -1,0 +1,13 @@
+[package]
+name = "boxer"
+version = "0.1.0"
+edition = "2021"
+authors = ["Dario Facchinetti 'dario.fad@gmail.com'"]
+
+
+[dependencies]
+anyhow = "1.0.72"
+landlock = "0.2.0"
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+clap = { version = "3.1.15", features = ["derive"] }
