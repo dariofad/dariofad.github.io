@@ -38,6 +38,7 @@ links = [                             # Your links
     { name = "Twitter", icon = "twitter-x", url = "https://www.twitter.com/dario_fad" },
     { name = "Email", icon = "email", url = "mailto:dario.fad@gmail.com" },
     { name = "LinkedIn", icon = "linkedin", url = "https://www.linkedin.com/in/dario-facchinetti" },
+    { name = "Google Scholar", icon = "google-scholar", url = "https://scholar.google.com/citations?user=OR7QNvoAAAAJ&hl=it" },
 ]
 # look here to get icons: https://remixicon.com/
 
