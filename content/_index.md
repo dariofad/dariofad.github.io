@@ -18,4 +18,5 @@ taking long walks, and reading books.
 
 
 [Resume](https://drive.google.com/file/d/1cQji7DeukMcoQFjRU8TMIkE1x-ehXNge/view?usp=sharing)
-
+| 
+[List of publications](https://drive.google.com/file/d/1cFWsv_MOsHkZ4QsZBRqE6vhfoYAOaFtb/view?usp=sharing)
