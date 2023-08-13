@@ -35,10 +35,12 @@ bio = "Researcher @ University of Bergamo"
 avatar = "img/me.webp"            # Your avatar
 links = [                             # Your links
     { name = "GitHub", icon = "github", url = "https://github.com/dariofad" },
-    { name = "Twitter", icon = "twitter", url = "https://www.twitter.com/dario_fad" },
+    { name = "Twitter", icon = "twitter-x", url = "https://www.twitter.com/dario_fad" },
     { name = "Email", icon = "email", url = "mailto:dario.fad@gmail.com" },
     { name = "LinkedIn", icon = "linkedin", url = "https://www.linkedin.com/in/dario-facchinetti" },
 ]
+# look here to get icons: https://remixicon.com/
+
 
 nav_pages = [
     { name = "publications", url = "/publications" },
