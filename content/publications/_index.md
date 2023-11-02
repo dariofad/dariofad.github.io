@@ -10,6 +10,17 @@ title = "Publications"
 
 {{ 
 publication(
+	title="Lightweight Cloud Application Sandboxing",
+	authors="Marco Abbadini, Michele Beretta, Dario Facchinetti, Gianluca Oldani, Matthew Rossi, Stefano Paraboschi",
+	venue="14th IEEE CLOUDCOM",
+	year="2023",
+	url="https://drive.google.com/file/d/1MNB_LQg9c5m3H4ns-wQG3JOJ815RqoM-/view?usp=sharing",
+	doi=""
+)
+}}
+
+{{ 
+publication(
 	title="NatiSand: Native Code Sandboxing for JavaScript Runtimes",
 	authors="Marco Abbadini, Dario Facchinetti, Gianluca Oldani, Matthew Rossi, Stefano Paraboschi",
 	venue="26th RAID",
