@@ -155,7 +155,7 @@ publication(
 publication(
 	title="WebAssembly runtime sandboxing using eBPF Linux Security Module",
 	authors="Marco Abbadini, Michele Beretta, Dario Facchinetti, Gianluca Oldani, Stefano Paraboschi, Matthew Rossi",
-	venue="18th ASIACCSCom",	
+	venue="18th ASIACCS",	
 	year="2023",
 	url="https://drive.google.com/file/d/15PRjbfZngHgPDB3E0iULsPpemh78YDe2/view?usp=sharing"
 )
