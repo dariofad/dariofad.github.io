@@ -143,6 +143,16 @@ publication(
 
 {{ 
 publication(
+	title="Enable seamless sandboxing of native components your web application most likely depends upon",
+	authors="Marco Abbadini, Dario Facchinetti, Gianluca Oldani, Matthew Rossi, Stefano Paraboschi",
+	venue="CSAW 2023",	
+	year="2023",
+	url="https://drive.google.com/file/d/1WGPT0BCUSNK3GoyWIBVeEZ1fPf3Wf2hv/view?usp=sharing"
+)
+}}
+
+{{ 
+publication(
 	title="WebAssembly runtime sandboxing using eBPF Linux Security Module",
 	authors="Marco Abbadini, Michele Beretta, Dario Facchinetti, Gianluca Oldani, Stefano Paraboschi, Matthew Rossi",
 	venue="18th ASIACCSCom",	
