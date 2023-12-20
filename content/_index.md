@@ -7,12 +7,19 @@ lang = 'en'
 
 Member of [UniBG Seclab](https://seclab.unibg.it/)
 
-My goal is the integration of security features in frameworks,
+I work as a postdoc researcher at the University of Bergamo, Italy. My
+goal is the integration of security features in various systems like
 runtimes and cloud applications. I’m interested in operating systems
-(Linux), sandboxing, access control, system and backend programming.
+(Linux), application sandboxing, access control methods, and backend
+programming.
 
-My hobbies are studying the Japanese language and culture, traveling,
-taking long walks, and reading books.
+Previously I’ve been a teacher and a teaching assistant for several
+courses at the University of Bergamo. I also recently completed an
+internship at HENNGE in Tokyo.
+
+I really enjoy the Japanese culture, and I visited many places in the
+country.  I’m also studying the Japanese language, currently getting
+closer to the JLPT N3 level.
 
 [Emacs](https://www.gnu.org/software/emacs/) &#10084; [Ergodox-Ez](https://ergodox-ez.com/)
 
