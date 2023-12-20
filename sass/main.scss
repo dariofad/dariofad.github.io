@@ -972,13 +972,13 @@ body.tag-single {
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
 body.projects {
-  #proj-wrapper {
-    margin: 0 auto;
-    max-width: var(--main-max-width);
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    #proj-wrapper {
+	margin: 0 auto;
+	max-width: var(--main-max-width);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
   }
 
   main {
@@ -987,7 +987,14 @@ body.projects {
   }
 
   .proj {
-    margin: 0px 15px 30px;
+      margin: 0px 15px 5px;
+
+      padding: 15px 15px;
+      border-radius: 4px;
+
+      &:hover {
+          background-color: var(--primary-pale-color);
+      }
 
     .name {
       font-size: 1.15em;
