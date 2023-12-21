@@ -62,7 +62,7 @@ html {
   scroll-behavior: smooth;
 }
 
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 600px) {
   ::-webkit-scrollbar {
     width: 6px;
     height: 6px;
@@ -126,11 +126,33 @@ body.homepage {
     #bio {
 	font-size: 0.85em;
     }
+
+    #biolink {
+	color: inherit;
+	font-size: 0.85em;
+	display: flex;	
+	gap: 0.5em 1em;
+
+	a,
+	button {
+	    text-decoration: none;
+	    color: var(--link-color);
+
+	    &:hover {
+		color: var(--primary-color);
+	    }
+	}
+
+	a {
+            border-bottom: 1.5px solid var(--primary-color);
+            line-height: 24px;
+	}
+    }
   }
 
   #links {
     max-height: 24px;
-    margin: 1.25em 0 1.5em;
+    margin: 1.25em 0 1.25em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -176,10 +198,12 @@ body.homepage {
       }
     }
 
-    @media (max-width: 425px) {
-      #left {
-        gap: 0.75em;
-      }
+    @media (max-width: 600px) {
+	#left {
+            gap: 0.75em;
+	    margin-bottom: 0.25em;
+	}
+	margin-bottom: 2.5em;
     }
   }
 
@@ -406,30 +430,30 @@ body.blog {
     }
 
     .post-list {
-      margin-top: 25px;
+	margin-top: 15px;
     }
 
     .post {
 	padding: 15px 15px;
-      border-radius: 4px;
-      &:hover {
-        background-color: var(--primary-pale-color);
-      }
+	border-radius: 4px;
+	&:hover {
+            background-color: var(--primary-pale-color);
+	}
 
-      .tags-list>p {
-	  font-family: var(--code-font);
-	  margin: 0 5px;	  
-	  padding: 0 10px 0 0;	  
-          
-	  @media (max-width: 768px) {
-              & {
-		  font-size: 1em;
-		  margin: 0 0px 0 0;
-		  padding: 0px 0px 0 18px;		  
-		  font-size: 0.8em;		  
-              }
-	  }
-      }
+	.tags-list>p {
+	    font-family: var(--code-font);
+	    margin: 0 5px;	  
+	    padding: 0 10px 0 0;	  
+            
+	    @media (max-width: 768px) {
+		& {
+		    font-size: 1em;
+		    margin: 0 5px 0 0;		  
+		    padding: 0px 0px 0 18px;		  
+		    font-size: 0.8em;		  
+		}
+	    }
+	}
       
     }
 
@@ -451,7 +475,8 @@ body.blog {
       }
 
       .date {
-        white-space: nowrap;
+          white-space: nowrap;
+	  font-size: 0.8em;	  
       }
     }
 
@@ -459,7 +484,7 @@ body.blog {
 	margin: 0 5px;	  
 	padding: 0 10px 0 0;
 
-	  @media (max-width: 900px) {
+	  @media (max-width: 768px) {
               & {
 		  font-size: 1em;
 		  margin: 0 5px 0 0;

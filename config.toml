@@ -32,6 +32,9 @@ anchors = "on"
 name = "Dario Facchinetti, PhD"
 id = "Home" # Your id / username / handle
 bio = "Researcher @ University of Bergamo"
+biolinks = [
+    { name = "Resume", url = "https://drive.google.com/file/d/1cQji7DeukMcoQFjRU8TMIkE1x-ehXNge/view?usp=sharing" },
+]
 avatar = "img/me.webp"            # Your avatar
 links = [                             # Your links
     { name = "GitHub", icon = "github", url = "https://github.com/dariofad" },

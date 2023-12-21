@@ -14,8 +14,9 @@
       <div class="post">
 	<a href="{{ post.permalink }}">
 	  <span>{{ post.title }}</span>
-	  <span class="date">{{ post.date | date }}</span>
+	  <div class="date">{{ post.date | date }}</div>	  
 	</a>
+
 	<div class="post-description"> {{ post.summary | safe }} </div>
 	<div class="tags-list">
 	  <p>

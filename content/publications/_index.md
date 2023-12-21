@@ -2,10 +2,10 @@
 title = "Publications"
 +++
 
-<h3>
-	<a href="https://scholar.google.com/citations?user=OR7QNvoAAAAJ&hl=it">Google Scholar</a>
-</h3>
-	
+<h4>
+	<a href="https://drive.google.com/file/d/1cFWsv_MOsHkZ4QsZBRqE6vhfoYAOaFtb/view?usp=sharing">PDF Summary</a>
+</h4>
+
 # Conference and Journal Papers
 
 {{ 
