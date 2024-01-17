@@ -10,6 +10,17 @@ title = "Publications"
 
 {{ 
 publication(
+	title="Supporting Data Owner Control in IPFS Networks",
+	authors="Marco Abbadini, Michele Beretta, Sabrina De Capitani di Vimercati, Dario Facchinetti, Sara Foresti, Gianluca Oldani, Stefano Paraboschi, Matthew Rossi, Pierangela Samarati",
+	venue="Will be presented at IEEE ICC",
+	year="2024",
+	url="",
+	doi="tba"
+)
+}}
+
+{{ 
+publication(
 	title="Lightweight Cloud Application Sandboxing",
 	authors="Marco Abbadini, Michele Beretta, Dario Facchinetti, Gianluca Oldani, Matthew Rossi, Stefano Paraboschi",
 	venue="14th IEEE CLOUDCOM",
