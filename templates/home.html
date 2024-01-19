@@ -18,11 +18,11 @@
           {% endif -%}
         </div>
         <div id="bio"> {{ config.extra.bio }} </div>
-	{% for link in config.extra.biolinks -%}
 	<div id="biolink">
-	  <a href="{{ link.url }}" >{{ link.name }}</a>
-	</div>
+	{% for link in config.extra.biolinks -%}
+	  <a href="{{ link.url }}">{{ link.name }}</a>
 	{% endfor %}
+	</div>
       </div>
     </section>
     <section id="links">
