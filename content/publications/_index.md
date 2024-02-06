@@ -14,7 +14,7 @@ publication(
 	authors="Marco Abbadini, Michele Beretta, Sabrina De Capitani di Vimercati, Dario Facchinetti, Sara Foresti, Gianluca Oldani, Stefano Paraboschi, Matthew Rossi, Pierangela Samarati",
 	venue="Will be presented at IEEE ICC",
 	year="2024",
-	url="",
+	url="https://drive.google.com/file/d/1sD-o0g7pErM8BvmuFlDnF1APH0wp8G5I/view?usp=sharing",
 	doi="tba"
 )
 }}
