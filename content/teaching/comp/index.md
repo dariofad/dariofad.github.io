@@ -16,6 +16,7 @@ outdate_alert = false
 - Introduction to coding competitions
 - Python fundamentals
 - Data structures and common patterns
+- Introduction to Evolutionary Computing
 
 <!-- more -->
 
@@ -26,20 +27,22 @@ data structures, and common approaches (or patterns) to produce
 solutions with low computational complexity. We will also gradually
 learn Python.
 
+Starting from 2024, the course also provides an introduction to
+Evolutionary Computing by prof. Angelo Gargantini.
+
 ### General info
 
 - Email
   + <dario.facchinetti@unibg.it>
-- University [e-Learning platform](https://elearning15.unibg.it/course/view.php?id=3873)
+- University [e-Learning platform](https://elearning15.unibg.it/course/view.php?id=3873) (2023 course)
   + Official communications
-  + Exam results
   + Study material (copy)
 - Office hours (for students)
-  + Weekly on Tuesday, 16.00-17.00, Dalmine, Building B, room 3.05
+  + Weekly on Wednesday, 10.30-11.30, Dalmine, Building B, room 3.05
   + It is appreciated to make an appointment by mail  in advance
-- Timetable
-  + Tuesday **14.00-16.00**, room B003
-  + Friday **10.30-12.30**, room A104
+- Timetable (2024)
+  + Wednesday **8.30-10.30**, lab Galvani, 1st floor
+  + Friday **14.00-16.00**, room B005
 
   
 ### Unit 1
