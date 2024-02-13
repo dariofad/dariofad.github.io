@@ -34,7 +34,7 @@ Evolutionary Computing by prof. Angelo Gargantini.
 
 - Email
   + <dario.facchinetti@unibg.it>
-- University [e-Learning platform](https://elearning15.unibg.it/course/view.php?id=3873) (2023 course)
+- University [e-Learning platform](https://elearning15.unibg.it/course/view.php?id=5110)
   + Official communications
   + Study material (copy)
 - Office hours (for students)
