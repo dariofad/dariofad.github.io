@@ -39,40 +39,43 @@ Evolutionary Computing by prof. Angelo Gargantini.
   + Study material (copy)
 - Office hours (for students)
   + Weekly on Wednesday, 10.30-11.30, Dalmine, Building B, room 3.05
-  + It is appreciated to make an appointment by mail  in advance
+  + It is appreciated to make an appointment by mail in advance
 - Timetable (2024)
   + Wednesday **8.30-10.30**, lab Galvani, 1st floor
   + Friday **14.00-16.00**, room B005
 
-  
-### Unit 1
+### Unit 0
 
-* Course introduction [slides](https://drive.google.com/file/d/1mHj92Gi8cfvT38xX5UXzu2qafpQ3kNOe/view?usp=share_link)
+* Course introduction [slides](https://drive.google.com/file/d/1WHljX2AuZWjJmFZoQzXwqVVKd0eI2P_I/view?usp=sharing)
   * Program
   * Study material and official book
   * Exam and (optional) project
   * Weekly calendar
-* Computational complexity [slides](https://drive.google.com/file/d/1KbRMMFAQDuFA1GYQspxJGD7X3BimshLq/view?usp=share_link)
+  
+### Unit 1
+
+* Computational complexity [slides](https://drive.google.com/file/d/1fodxUC6mQm9MPXPnE0qR7pJ1KhG41dc_/view?usp=sharing)
   * Growth of functions
   * Big-Θ, Big-O, Big-Ω notation
   * Code examples
   
 ### Unit 2
 
-* Choice of the programming language [slides](https://drive.google.com/file/d/1W3Nl-b38PZ8JK172WJX1NPro73B-rJIJ/view?usp=share_link) 
+* Choice of the programming language [slides](https://drive.google.com/file/d/1_x-LnkFZGWg51sQ4T8rTInQhwJHcoh4E/view?usp=sharing) 
   * Advantages and drawbacks
-* Python programming fundamentals - pt.1 [slides](https://drive.google.com/file/d/1mh3XU2f7YMvf7pVMLvuV8qdJ6jZ7NE8v/view?usp=share_link), [practice](https://drive.google.com/file/d/1xFuGwA0GqzwybwG5yQzptr8evhARy073/view?usp=share_link)
+* Python programming fundamentals - pt.1 [slides](https://drive.google.com/file/d/1SKPpGVMWIKktkU0MACaLxEGF1tfTBQsA/view?usp=sharing)
   * Data model
   * Name resolution 
   * Containers - list vs tuple
   * Dynamic resizing
   * Range, enumerate and list comprehension
   * Functions
-* Python programming fundamentals - pt.2 [slides](https://drive.google.com/file/d/1EMdsXwuoOIFHvcTefmh1vUW-7Wq81dzp/view?usp=share_link), [practice](https://drive.google.com/file/d/1EbQ2FzPJT2BlDaMwTbxdykh2URuRWyLz/view?usp=share_link)
+* Python programming fundamentals - pt.2 [slides](https://drive.google.com/file/d/16Vw6arOF7znXr2DgGx7VFV1RDfF3qwAA/view?usp=sharing)
   * String
   * Containers - set vs dict
   * Zip, map and dictionary comprehension
   * Stdin and Stdout
+* Python programming [practice](https://drive.google.com/drive/folders/1u8lPGbGHYjfVb5tDTIm1iC820Ns9Pqut?usp=sharing) 
   
 ### Unit 3
 
