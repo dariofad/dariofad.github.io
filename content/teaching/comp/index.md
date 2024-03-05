@@ -75,6 +75,8 @@ Evolutionary Computing by prof. Angelo Gargantini.
   * Containers - set vs dict
   * Zip, map and dictionary comprehension
   * Stdin and Stdout
+* Coding strategies [slides](https://drive.google.com/file/d/1K95Itjt_b55Jc_x6EOh3-p_6gUnzYF60/view?usp=sharing)
+  * Sliding windows, two pointers, fast and slow pointers
 * Python programming [practice](https://drive.google.com/drive/folders/1u8lPGbGHYjfVb5tDTIm1iC820Ns9Pqut?usp=sharing) 
   
 ### Unit 3
@@ -86,8 +88,6 @@ Evolutionary Computing by prof. Angelo Gargantini.
   
 ### Unit 4
 
-* Coding strategies [slides](https://drive.google.com/file/d/1CGi_l7yDcNRaiKgK_GEiwYthQ3y4PU2g/view?usp=share_link), [practice](https://drive.google.com/file/d/19lygARH96Djfm3CopjAD_3BKNnMZ3LxX/view?usp=share_link)
-  * Sliding windows, two pointers, fast and slow pointers
 * Data structures
   * Linked list [slides](https://drive.google.com/file/d/186uvGDyeTec6gT7g_ozLG6Wnd_Aja07N/view?usp=share_link), [practice](https://drive.google.com/file/d/1bE9OL4pXVDFt-Q_vsVQGXQXYRS9B6mj4/view?usp=share_link)
     * reverse list, detect cycles
