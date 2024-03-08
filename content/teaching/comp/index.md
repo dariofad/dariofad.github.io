@@ -81,7 +81,7 @@ Evolutionary Computing by prof. Angelo Gargantini.
   
 ### Unit 3
 
-* Sorting [slides](https://drive.google.com/file/d/1QI2s73vFXOHgMgees4oGVu8Mbi-aGxNs/view?usp=share_link), [practice](https://drive.google.com/file/d/11vIaV6YA4SzrYnHhyLdGqDFM812e98u-/view?usp=share_link)
+* Sorting [slides](https://drive.google.com/file/d/16KMasNk5odPOGJ1frZVRrdN6C96DLQMX/view?usp=sharing)
   * Bubble sort, selection sort, insertion sort
   * Merge sort, quick sort, heap sort (max-heap), radix sort
   * Hybrid approaches
