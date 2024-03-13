@@ -77,7 +77,7 @@ Evolutionary Computing by prof. Angelo Gargantini.
   * Stdin and Stdout
 * Coding strategies [slides](https://drive.google.com/file/d/1K95Itjt_b55Jc_x6EOh3-p_6gUnzYF60/view?usp=sharing)
   * Sliding windows, two pointers, fast and slow pointers
-* Python programming [practice](https://drive.google.com/drive/folders/1u8lPGbGHYjfVb5tDTIm1iC820Ns9Pqut?usp=sharing) 
+* Python programming [practice](https://drive.google.com/drive/folders/1u8lPGbGHYjfVb5tDTIm1iC820Ns9Pqut?usp=sharing), [solutions](https://drive.google.com/drive/folders/1ukGkrfvFmWXWPCbPbtTYOZvl9F_JLIBV?usp=sharing) 
   
 ### Unit 3
 
@@ -85,6 +85,7 @@ Evolutionary Computing by prof. Angelo Gargantini.
   * Bubble sort, selection sort, insertion sort
   * Merge sort, quick sort, heap sort (max-heap), radix sort
   * Hybrid approaches
+* Python programming [practice](https://drive.google.com/drive/folders/1YaVMz9xfYXcSUhmedf41v2QhA22sqE1-?usp=sharing)
   
 ### Unit 4
 
