@@ -26,7 +26,7 @@ publication(
 	venue="14th IEEE CLOUDCOM",
 	year="2023",
 	url="https://drive.google.com/file/d/1MNB_LQg9c5m3H4ns-wQG3JOJ815RqoM-/view?usp=sharing",
-	doi="tba"
+	doi="https://doi.org/10.1109/CloudCom59040.2023.00033"
 )
 }}
 
