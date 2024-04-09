@@ -90,12 +90,12 @@ Evolutionary Computing by prof. Angelo Gargantini.
 ### Unit 4
 
 * Data structures
-  * Linked list [slides](https://drive.google.com/file/d/186uvGDyeTec6gT7g_ozLG6Wnd_Aja07N/view?usp=share_link), [practice](https://drive.google.com/file/d/1bE9OL4pXVDFt-Q_vsVQGXQXYRS9B6mj4/view?usp=share_link)
-    * reverse list, detect cycles
-  * Queue and stack [slides](https://drive.google.com/file/d/1jE5A7mDp6SfiyuLoKmSvRvyxCsHATgek/view?usp=share_link), [practice](https://drive.google.com/file/d/1jBSqSclWTzYE1i8yFSL5ld2Rtx0Ks0Qi/view?usp=share_link)
-    * push, pop, `deque`
-  * Heap [slides](https://drive.google.com/file/d/1JKnes0UeMj2PBKaC-u42XQZjwx12WtdD/view?usp=share_link), [practice](https://drive.google.com/file/d/1wkKV-dwXv_lZScMjy7EWFnGtuUwAj0Ls/view?usp=share_link)
-    * min-heap, max-heap, `heapq`, priority queue
+  * Linked list [slides](https://drive.google.com/file/d/1GGdKHxJY_rTgyq_mUyF7zz7ywtTrOiH_/view?usp=sharing)
+    * append, get, set\_at, delete\_at, reverse, detect cycles
+  * Queue and stack [slides](https://drive.google.com/file/d/1Qpj50yQoM3BWuO9M1SEbNb7N5-VSQ-G9/view?usp=sharing)
+    * push, pop, `deque` container
+  * Heap [slides](https://drive.google.com/file/d/1MHCTQ3YDGJmBXXN3SV_ekM7HRIGx_Lyy/view?usp=sharing)
+    * min-heap, max-heap, `heapq` module, priority queue
   * Binary tree [slides](https://drive.google.com/file/d/1z2fU9hMqdmiysVbm6USfa49ymFqQmWEH/view?usp=share_link), [practice](https://drive.google.com/file/d/1N_MifwYhhuHaP9UJX8xSW7KsipulrnFP/view?usp=share_link)
     * insert, search, in-order, pre-order, post-order, reverse tree, lowest common ancestor
   * AVL tree [slides](https://drive.google.com/file/d/1dsHpqaw-2yx1p6q8Bf5CkxJmrkHy7kFz/view?usp=share_link), [practice](https://drive.google.com/file/d/1xbx69HDDQCPfxMn-liAhTepW7is0qNMH/view?usp=share_link)
@@ -110,6 +110,7 @@ Evolutionary Computing by prof. Angelo Gargantini.
     * range minimum queries
   * LRU cache [slides](https://drive.google.com/file/d/1k1nP_ieMU1hDeVHiE8HWdqlQOLMJ9LYl/view?usp=share_link), [practice](https://drive.google.com/file/d/1Lcit1umH2EeZKUm_bZbqpuYo9Mldzdbi/view?usp=share_link)
     * get, put, functools
+* Python programming [practice](https://drive.google.com/drive/folders/1b37jfsOxeAYJ_twwnrW7rMrYcn7KxxSf?usp=sharing)	
 	
 ### Unit 5
 
