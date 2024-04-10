@@ -96,8 +96,8 @@ Evolutionary Computing by prof. Angelo Gargantini.
     * push, pop, `deque` container
   * Heap [slides](https://drive.google.com/file/d/1MHCTQ3YDGJmBXXN3SV_ekM7HRIGx_Lyy/view?usp=sharing)
     * min-heap, max-heap, `heapq` module, priority queue
-  * Binary tree [slides](https://drive.google.com/file/d/1z2fU9hMqdmiysVbm6USfa49ymFqQmWEH/view?usp=share_link), [practice](https://drive.google.com/file/d/1N_MifwYhhuHaP9UJX8xSW7KsipulrnFP/view?usp=share_link)
-    * insert, search, in-order, pre-order, post-order, reverse tree, lowest common ancestor
+  * Binary tree [slides](https://drive.google.com/file/d/1AK_Ra_FfEl-NdYhQ0PT1lS0dIL2yCXK3/view?usp=sharing)
+    * search, in-order, pre-order, post-order, reverse, lowest common ancestor, height, full tree
   * AVL tree [slides](https://drive.google.com/file/d/1dsHpqaw-2yx1p6q8Bf5CkxJmrkHy7kFz/view?usp=share_link), [practice](https://drive.google.com/file/d/1xbx69HDDQCPfxMn-liAhTepW7is0qNMH/view?usp=share_link)
     * rotate left and right, insert, delete
   * Graph [slides](https://drive.google.com/file/d/18j9eBGJc_iEMhIb7-6fwFW0kmoBNJvgE/view?usp=share_link), [practice](https://drive.google.com/file/d/1JrAcKQZfu9QbyeKromejhfqsK5NfKh8f/view?usp=share_link)
