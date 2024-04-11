@@ -98,8 +98,8 @@ Evolutionary Computing by prof. Angelo Gargantini.
     * min-heap, max-heap, `heapq` module, priority queue
   * Binary tree [slides](https://drive.google.com/file/d/1AK_Ra_FfEl-NdYhQ0PT1lS0dIL2yCXK3/view?usp=sharing)
     * search, in-order, pre-order, post-order, reverse, lowest common ancestor, height, full tree
-  * AVL tree [slides](https://drive.google.com/file/d/1dsHpqaw-2yx1p6q8Bf5CkxJmrkHy7kFz/view?usp=share_link), [practice](https://drive.google.com/file/d/1xbx69HDDQCPfxMn-liAhTepW7is0qNMH/view?usp=share_link)
-    * rotate left and right, insert, delete
+  * AVL tree [slides](https://drive.google.com/file/d/1rmh8H6tdu6DS2jNCvE5FPTqHR1Z1zx4O/view?usp=sharing)
+    * left and right rotations, balance factor, insert, delete
   * Graph [slides](https://drive.google.com/file/d/18j9eBGJc_iEMhIb7-6fwFW0kmoBNJvgE/view?usp=share_link), [practice](https://drive.google.com/file/d/1JrAcKQZfu9QbyeKromejhfqsK5NfKh8f/view?usp=share_link)
     * directed vs undirected, representations, acyclicity, shortest path, bridges 
   * Trie [slides](https://drive.google.com/file/d/1bmnaDSyNbAkkPe09DanvWe2Eo4dIIqbp/view?usp=share_link), [practice](https://drive.google.com/file/d/1gkPvsycHbDYk_mTsEJJC2JVMtRiFlfz2/view?usp=share_link)
