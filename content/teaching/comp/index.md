@@ -100,8 +100,8 @@ Evolutionary Computing by prof. Angelo Gargantini.
     * search, in-order, pre-order, post-order, reverse, lowest common ancestor, height, full tree
   * AVL tree [slides](https://drive.google.com/file/d/1rmh8H6tdu6DS2jNCvE5FPTqHR1Z1zx4O/view?usp=sharing)
     * left and right rotations, balance factor, insert, delete
-  * Graph [slides](https://drive.google.com/file/d/18j9eBGJc_iEMhIb7-6fwFW0kmoBNJvgE/view?usp=share_link), [practice](https://drive.google.com/file/d/1JrAcKQZfu9QbyeKromejhfqsK5NfKh8f/view?usp=share_link)
-    * directed vs undirected, representations, acyclicity, shortest path, bridges 
+  * Graph [slides](https://drive.google.com/file/d/1zQ9QWCWpEriGI1fjfuhBLBDKUpCLZ6Wj/view?usp=sharing)
+    * directed vs undirected, representations, bfs, dfs, acyclicity, shortest path, bridges 
   * Trie [slides](https://drive.google.com/file/d/1bmnaDSyNbAkkPe09DanvWe2Eo4dIIqbp/view?usp=share_link), [practice](https://drive.google.com/file/d/1gkPvsycHbDYk_mTsEJJC2JVMtRiFlfz2/view?usp=share_link)
     * construction, key lookup, autocompletion
   * Disjoint-set or union-find [slides](https://drive.google.com/file/d/1yUYElPgySFq97MdxJjm2ZSSHWLwLZ6Yg/view?usp=share_link), [practice](https://drive.google.com/file/d/12lghSfNKFvde7X1lqmq7tvOnHkLjgHUE/view?usp=share_link)
