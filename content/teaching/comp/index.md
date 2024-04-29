@@ -113,6 +113,6 @@ Evolutionary Computing by prof. Angelo Gargantini.
 	
 ### Unit 5
 
-* Dynamic programming (next)
+* Dynamic programming [slides](https://drive.google.com/file/d/1xyo-uuwDimJlx1tQl2WUW4xRibO22F60/view?usp=sharing)
   * Minimum edit distance, minimum number of coins, knapsack
-
+* Python programming [practice](https://drive.google.com/drive/folders/1hVJQ0XoPKVVONTnnO2OHEgQBrEbNe_jh?usp=sharing)
