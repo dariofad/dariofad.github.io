@@ -43,6 +43,7 @@ Evolutionary Computing by prof. Angelo Gargantini.
 - Timetable (2024)
   + Wednesday **8.30-10.30**, lab Galvani, 1st floor
   + Friday **14.00-16.00**, room B005
+- 40 hours of lesson 
 
 ### Unit 0
 
@@ -104,12 +105,10 @@ Evolutionary Computing by prof. Angelo Gargantini.
     * directed vs undirected, representations, bfs, dfs, acyclicity, shortest path, bridges 
   * Trie [slides](https://drive.google.com/file/d/1iOiNaUWsl6sATiJKdrg24tKQm3KRawfK/view?usp=sharing)
     * construction, key lookup, autocompletion
-  * Disjoint-set or union-find [slides](https://drive.google.com/file/d/1yUYElPgySFq97MdxJjm2ZSSHWLwLZ6Yg/view?usp=share_link), [practice](https://drive.google.com/file/d/12lghSfNKFvde7X1lqmq7tvOnHkLjgHUE/view?usp=share_link)
+  * Disjoint-set or union-find [slides](https://drive.google.com/file/d/1tPzhy5SPFiOvqe2cDaAEJOT-IB9cPeHJ/view?usp=sharing)
     * problem statement, union by rank, path compression
   * Sparse table [slides](https://drive.google.com/file/d/1hFeLsc3MTUI3N7iQMbVIFf1aiJNbl1hY/view?usp=sharing)
     * precomputation, range minimum queries
-  * LRU cache [slides](https://drive.google.com/file/d/1k1nP_ieMU1hDeVHiE8HWdqlQOLMJ9LYl/view?usp=share_link), [practice](https://drive.google.com/file/d/1Lcit1umH2EeZKUm_bZbqpuYo9Mldzdbi/view?usp=share_link)
-    * get, put, functools
 * Python programming [practice](https://drive.google.com/drive/folders/1b37jfsOxeAYJ_twwnrW7rMrYcn7KxxSf?usp=sharing)	
 	
 ### Unit 5
