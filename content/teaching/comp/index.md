@@ -43,7 +43,7 @@ Evolutionary Computing by prof. Angelo Gargantini.
 - Timetable (2024)
   + Wednesday **8.30-10.30**, lab Galvani, 1st floor
   + Friday **14.00-16.00**, room B005
-- 40 hours of lesson 
+  + 40 hours of lesson 
 
 ### Unit 0
 
