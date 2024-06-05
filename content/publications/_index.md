@@ -12,10 +12,10 @@ title = "Publications"
 publication(
 	title="Multi-Dimensional Flat Indexing for Encrypted Data",
 	authors="Sabrina De Capitani di Vimercati, Dario Facchinetti, Sara Foresti, Gianluca Oldani, Stefano Paraboschi, Matthew Rossi, Pierangela Samarati",
-	venue="Will be published on the Transactions on Cloud Computing",
+	venue="IEEE Transactions on Cloud Computing",
 	year="2024",
 	url="https://drive.google.com/file/d/18slCQuI60KCfxIbmK0itSucRXQWmmKey/view?usp=sharing",
-	doi="tba"
+	doi="https://doi.org/10.1109/TCC.2024.3408905"
 )
 }}
 
