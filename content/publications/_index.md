@@ -26,7 +26,7 @@ publication(
 	venue="Will be presented at IEEE ICC",
 	year="2024",
 	url="https://drive.google.com/file/d/1sD-o0g7pErM8BvmuFlDnF1APH0wp8G5I/view?usp=sharing",
-	doi="tba"
+	doi="https://doi.org/10.1109/ICC51166.2024.10623119"
 )
 }}
 
