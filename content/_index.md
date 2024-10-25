@@ -5,19 +5,12 @@ template = 'home.html'
 lang = 'en'
 +++
 
-I work as a [postdoc researcher](https://seclab.unibg.it/) at the
-University of Bergamo, Italy. The goal is the integration of security
-features in various systems like runtimes and cloud applications. I’m
-passionate about programming languages, backend programming, operating
-systems (Linux), and application sandboxing.
+I'm a [software engineer](https://seclab.unibg.it/) specializing in
+the integration of security features into various systems, including
+runtimes and cloud apps. I enjoy experimenting with programming
+languages, operating systems (Linux) and sandboxing tools. I've also
+had the opportunity to teach or assist at the university. In my spare
+time, I'm learning Japanese.
 
-In my career I served as teacher and assistant for several university
-courses. I recently completed an internship at HENNGE in Tokyo, where
-I worked on web application development with AWS and Terraform.
-
-I really enjoy Japanese culture, and I visited many places in the
-country. I’m also studying the Japanese language, currently getting
-closer to the JLPT N3 level.
-
-I’m a big supporter of [Emacs](https://www.gnu.org/software/emacs/),
-and I &#128155; [Ergodox-Ez](https://ergodox-ez.com/).
+&#128155; [Emacs](https://www.gnu.org/software/emacs/) and
+[Ergodox-Ez](https://ergodox-ez.com/).
