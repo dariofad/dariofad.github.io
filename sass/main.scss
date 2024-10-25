@@ -107,6 +107,8 @@ body.homepage {
       height: var(--avatar-size);
       width: var(--avatar-size);
       border-radius: 20%;
+      overflow: hidden;
+      perspective: 1px;
       aspect-ratio: 1 / 1;
     }
 
