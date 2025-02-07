@@ -5,7 +5,7 @@ template = 'home.html'
 lang = 'en'
 +++
 
-I'm a [software engineer](https://seclab.unibg.it/) specializing in
+I'm an [Assistant Professor](https://seclab.unibg.it/) specializing in
 the integration of security features into various systems, including
 runtimes and cloud apps. I enjoy experimenting with programming
 languages, operating systems (Linux) and sandboxing tools. I've also

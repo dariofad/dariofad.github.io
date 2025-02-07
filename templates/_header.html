@@ -8,9 +8,9 @@
     <div id="btns">
       {% if section.path != "/projects/" %}
       {% set rss_icon = load_data(path="static/icon/rss.svg") %}
-      {% if section.generate_feed -%}
+      {% if section.generate_feeds -%}
       <a href="/blog/{{ config.feed_filename }}" aria-label="rss feed">{{ rss_icon | safe }}</a>
-      {% elif config.generate_feed -%}
+      {% elif config.generate_feeds -%}
       <a href="/{{ config.feed_filename }}" aria-label="rss feed">{{ rss_icon | safe }}</a>
       {% endif %}
       {% endif %}

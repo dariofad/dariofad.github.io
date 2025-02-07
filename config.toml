@@ -6,8 +6,8 @@ output_dir = "docs"
 compile_sass = true
 minify_html = true
 build_search_index = false            # Keep this false, search is temporarily unsupported
-generate_feed = false
-feed_filename = "feed.xml"
+generate_feeds = false
+feed_filenames = ["feed.xml"]
 taxonomies = [{ name = "tags" }, { name = "categories" }]
 
 [markdown]
@@ -31,7 +31,7 @@ anchors = "on"
 
 name = "Dario Facchinetti, PhD"
 id = "Home" # Your id / username / handle
-bio = "Software engineer"
+bio = "Assistant Professor, Software engineer"
 biolinks = [
     { name = "Resume", url = "https://drive.google.com/file/d/1cQji7DeukMcoQFjRU8TMIkE1x-ehXNge/view?usp=sharing" },
     { name = "履歴書", url = "https://drive.google.com/file/d/1u08U_cjrOc1a42ib4Hf1s41PUbKu6nc1/view?usp=sharing" },    
