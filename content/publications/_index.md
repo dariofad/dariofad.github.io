@@ -165,6 +165,26 @@ publication(
 
 {{ 
 publication(
+	title="POSTER: Transparent Temporally-Specialized System Call Filters",
+	authors="Matthew Rossi, Michele Beretta, Dario Facchinetti, Stefano Paraboschi",
+	venue="20th ASIACCS",	
+	year="2025",
+	url=""
+)
+}}
+
+{{ 
+publication(
+	title="POSTER: Policy-driven security-aware scheduling in Kubernetes",
+	authors="Matthew Rossi, Michele Beretta, Dario Facchinetti, Stefano Paraboschi",
+	venue="20th ASIACCS",	
+	year="2025",
+	url=""
+)
+}}
+
+{{ 
+publication(
 	title="Enable seamless sandboxing of native components your web application most likely depends upon",
 	authors="Marco Abbadini, Dario Facchinetti, Gianluca Oldani, Matthew Rossi, Stefano Paraboschi",
 	venue="CSAW 2023",	
