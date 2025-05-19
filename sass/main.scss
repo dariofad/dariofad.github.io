@@ -35,7 +35,7 @@ body {
   --code-font: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --homepage-max-width: 650px;
   --main-max-width: 900px;
-  --avatar-size: 100px;
+  --avatar-size: 150px;
   --paragraph-font-size: 18px;
   --paragraph-line-height: 1.75;
   --img-border-radius: 4px;
@@ -87,7 +87,7 @@ html {
 
 body.homepage {
   #wrapper {
-    min-height: 100vh;
+    min-height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -98,26 +98,27 @@ body.homepage {
     padding: 2em 1em 6em;
   }
 
+  img {
+    height: var(--avatar-size);
+    width: var(--avatar-size);
+    border-radius: 20%;
+    overflow: hidden;
+    perspective: 1px;
+    aspect-ratio: 1 / 1;
+    display: block;
+    margin: auto;
+  }
 
   #info {
     display: flex;
     gap: 1em;
 
-    img {
-      height: var(--avatar-size);
-      width: var(--avatar-size);
-      border-radius: 20%;
-      overflow: hidden;
-      perspective: 1px;
-      aspect-ratio: 1 / 1;
-    }
-
     #text {
-
       font-size: 1.25em;
       display: flex;
       flex-direction: column;
-      justify-content: space-around;
+      justify-content: center;
+      margin: auto;
     }
 
     #id {
@@ -125,8 +126,19 @@ body.homepage {
       color: var(--primary-color);
     }
 
+    #bioname {
+	color: inherit;
+	font-size: 1em;
+	display: flex;	
+	gap: 0.5em 1em;
+	justify-content: center;
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+    }
+
     #bio {
 	font-size: 0.85em;
+	justify-content: center;	
     }
 
     #biolink {
@@ -134,7 +146,8 @@ body.homepage {
 	font-size: 0.85em;
 	display: flex;	
 	gap: 0.5em 1em;
-
+	justify-content: center;
+	
 	a,
 	button {
 	    text-decoration: none;
@@ -205,7 +218,7 @@ body.homepage {
             gap: 0.75em;
 	    margin-bottom: 0.25em;
 	}
-	margin-bottom: 2.5em;
+	margin-bottom: 3em;
     }
   }
 
@@ -213,11 +226,12 @@ body.homepage {
     font-size: 1.25em;
     line-height: 1.5;
     margin: 2em 0 0 0;          
-    
 
     p {
       word-wrap: break-word;
       margin: 0.5em 0;
+      word-wrap: break-word;
+      text-align: justify;
     }
 
     a {
