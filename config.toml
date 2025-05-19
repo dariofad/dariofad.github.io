@@ -52,7 +52,7 @@ nav_pages = [
     { name = "teaching", url = "/teaching" },    
 ]
 
-nav_separator = "-"
+nav_separator = ">"
 
 display_id = false                    # Display your id on homepage
 projects_page = true                  # Display projects page
@@ -66,5 +66,5 @@ outdate_alert_days = 120              # How many days will a post be outdated by
 outdate_alert_text_before = "This article was last updated "
 outdate_alert_text_after = " days ago and may be out of date."
 
-footer_copyright = "© 2023 Dario Facchinetti"
+footer_copyright = "© 2025 Dario Facchinetti"
 footer_credits = false
