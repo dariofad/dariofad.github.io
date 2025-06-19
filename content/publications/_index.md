@@ -10,7 +10,9 @@ publication(
 	authors="Matthew Rossi, Michele Beretta, Dario Facchinetti, Stefano Paraboschi",
 	venue="20th ASIACCS",	
 	year="2025",
-	url=""
+	url="https://drive.google.com/file/d/1FgSGNGPgBm7Twj-KKgeLuMe2AYJZbi0X/view?usp=sharing",
+    doi="https://doi.org/10.1145/3708821.3735342"
+	
 )
 }}
 
@@ -20,7 +22,8 @@ publication(
 	authors="Matthew Rossi, Michele Beretta, Dario Facchinetti, Stefano Paraboschi",
 	venue="20th ASIACCS",	
 	year="2025",
-	url=""
+	url="https://drive.google.com/file/d/1rlGk-k3syQKa1W50ekEC3NSl0QfFQ3Zk/view?usp=sharing",
+	doi="https://doi.org/10.1145/3708821.3735343"
 )
 }}
 
