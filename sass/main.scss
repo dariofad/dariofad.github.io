@@ -167,10 +167,10 @@ body.homepage {
 
   #links {
     max-height: 24px;
-    margin: 1.25em 0 1.25em;
+    margin: 1.25em 0 0 0;
+    margin-bottom: 0;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 0.5em 1em;
     font-size: 1.25em;
@@ -218,18 +218,21 @@ body.homepage {
             gap: 0.75em;
 	    margin-bottom: 0.25em;
 	}
-	margin-bottom: 3em;
+	margin-bottom: 1em;
     }
   }
 
   #brief {
     font-size: 1.25em;
     line-height: 1.5;
-    margin: 2em 0 0 0;          
+    margin: 2em 0 0 0;  
 
     p {
       word-wrap: break-word;
-      margin: 0.5em 0;
+      margin: 0.5em;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 95%;
       word-wrap: break-word;
       text-align: justify;
     }
