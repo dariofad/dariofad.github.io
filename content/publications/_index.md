@@ -84,26 +84,6 @@ publication(
 
 {{ 
 publication(
-	title="Enable seamless sandboxing of native components your web application most likely depends upon",
-	authors="Marco Abbadini, Dario Facchinetti, Gianluca Oldani, Matthew Rossi, Stefano Paraboschi",
-	venue="CSAW 2023",	
-	year="2023",
-	url="https://drive.google.com/file/d/1WGPT0BCUSNK3GoyWIBVeEZ1fPf3Wf2hv/view?usp=sharing"
-)
-}}
-
-{{ 
-publication(
-	title="WebAssembly runtime sandboxing using eBPF Linux Security Module",
-	authors="Marco Abbadini, Michele Beretta, Dario Facchinetti, Gianluca Oldani, Stefano Paraboschi, Matthew Rossi",
-	venue="18th ASIACCS",	
-	year="2023",
-	url="https://drive.google.com/file/d/15PRjbfZngHgPDB3E0iULsPpemh78YDe2/view?usp=sharing"
-)
-}}
-
-{{ 
-publication(
 	title="POSTER: Leveraging eBPF to enhance sandboxing of WebAssembly runtimes",
 	authors="Marco Abbadini, Michele Beretta, Dario Facchinetti, Gianluca Oldani, Matthew Rossi, Stefano Paraboschi",
 	venue="18th ASIACCS",
@@ -132,26 +112,6 @@ publication(
 	year="2022",
 	url="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9894678",
 	doi="https://doi.org/10.1109/TBDATA.2022.3207521"
-)
-}}
-
-{{ 
-publication(
-	title="Enhancing the security of WebAssembly runtimes using Linux Security Modules",
-	authors="Marco Abbadini, Dario Facchinetti, Gianluca Oldani, Stefano Paraboschi, Matthew Rossi",
-	venue="31st USENIX Security",	
-	year="2022",
-	url="https://drive.google.com/file/d/14isgPb5SAPyXdfttP5IkMMIvlquuaX8I/view?usp=sharing"
-)
-}}
-
-{{ 
-publication(
-	title="Giving developers the power to declare per-component access control policy for their apps",
-	authors="Matthew Rossi, Dario Facchinetti, Enrico Bacis, Marco Rosa, Stefano Paraboschi",
-	venue="31st USENIX Security",	
-	year="2022",
-	url="https://drive.google.com/file/d/1Yxg5MDNUechnVbQ5M27UK43K2rny8LrN/view?usp=sharing"
 )
 }}
 
@@ -189,16 +149,6 @@ publication(
 
 {{ 
 publication(
-	title="SEApp: Bringing Mandatory Access Control to Android Apps",
-	authors="Matthew Rossi, Dario Facchinetti, Enrico Bacis, Marco Rosa, Stefano Paraboschi",
-	venue="CSAW 2021",	
-	year="2021",
-	url="https://drive.google.com/file/d/1N33bqdcB6rgTQ53EOZHZIxs4hsPSIXYl/view?usp=sharing"
-)
-}}
-
-{{ 
-publication(
 	title="Scalable Distributed Data Anonymization",
 	authors="Sabrina De Capitani di Vimercati, Dario Facchinetti, Sara Foresti, Gianluca Oldani, Stefano Paraboschi, Matthew Rossi, Pierangela Samarati",
 	venue="19th IEEE PerCom",
@@ -218,6 +168,8 @@ publication(
 	doi="https://doi.org/10.1109/PerComWorkshops51409.2021.9431059"
 )
 }}
+
+## Technical reports
 
 {{ 
 publication(
@@ -286,5 +238,77 @@ publication(
 	year="2019",
 	url="https://drive.google.com/file/d/142nm_iQFGTAZaJ1apW6jSTzxXyFjeHmI/view?usp=sharing",
 	doi="https://doi.org/10.1109/PERCOMW.2019.8730707"
+)
+}}
+
+## Posters
+
+{{ 
+publication(
+	title="Redefining system call filtering with the use of eBPF",
+	authors="Matthew Rossi, Michele Beretta, Dario Facchinetti, Stefano Paraboschi",
+	venue="20th ASIACCS",	
+	year="2025",
+	url="https://drive.google.com/file/d/1dbkkio21nRWncNJYWy0LYjFF2Ki6SOES/view?usp=sharing"
+)
+}}
+
+{{ 
+publication(
+	title="Simple and secure: a security conscious K8s scheduling technique",
+	authors="Matthew Rossi, Michele Beretta, Dario Facchinetti, Stefano Paraboschi",
+	venue="20th ASIACCS",	
+	year="2025",
+	url="https://drive.google.com/file/d/1moBTymAK3lVEXjBuMv2JOrBlG85tDHcY/view?usp=sharing"
+)
+}}
+
+{{ 
+publication(
+	title="Enable seamless sandboxing of native components your web application most likely depends upon",
+	authors="Marco Abbadini, Dario Facchinetti, Gianluca Oldani, Matthew Rossi, Stefano Paraboschi",
+	venue="CSAW 2023",	
+	year="2023",
+	url="https://drive.google.com/file/d/1WGPT0BCUSNK3GoyWIBVeEZ1fPf3Wf2hv/view?usp=sharing"
+)
+}}
+
+{{ 
+publication(
+	title="WebAssembly runtime sandboxing using eBPF Linux Security Module",
+	authors="Marco Abbadini, Michele Beretta, Dario Facchinetti, Gianluca Oldani, Stefano Paraboschi, Matthew Rossi",
+	venue="18th ASIACCS",	
+	year="2023",
+	url="https://drive.google.com/file/d/15PRjbfZngHgPDB3E0iULsPpemh78YDe2/view?usp=sharing"
+)
+}}
+
+{{ 
+publication(
+	title="Enhancing the security of WebAssembly runtimes using Linux Security Modules",
+	authors="Marco Abbadini, Dario Facchinetti, Gianluca Oldani, Stefano Paraboschi, Matthew Rossi",
+	venue="31st USENIX Security",	
+	year="2022",
+	url="https://drive.google.com/file/d/14isgPb5SAPyXdfttP5IkMMIvlquuaX8I/view?usp=sharing"
+)
+}}
+
+{{ 
+publication(
+	title="Giving developers the power to declare per-component access control policy for their apps",
+	authors="Matthew Rossi, Dario Facchinetti, Enrico Bacis, Marco Rosa, Stefano Paraboschi",
+	venue="31st USENIX Security",	
+	year="2022",
+	url="https://drive.google.com/file/d/1Yxg5MDNUechnVbQ5M27UK43K2rny8LrN/view?usp=sharing"
+)
+}}
+
+{{ 
+publication(
+	title="SEApp: Bringing Mandatory Access Control to Android Apps",
+	authors="Matthew Rossi, Dario Facchinetti, Enrico Bacis, Marco Rosa, Stefano Paraboschi",
+	venue="CSAW 2021",	
+	year="2021",
+	url="https://drive.google.com/file/d/1N33bqdcB6rgTQ53EOZHZIxs4hsPSIXYl/view?usp=sharing"
 )
 }}
