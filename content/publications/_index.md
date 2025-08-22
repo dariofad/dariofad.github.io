@@ -2,7 +2,7 @@
 title = "Publications"
 +++
 
-# List of publications
+# Papers
 
 {{ 
 publication(

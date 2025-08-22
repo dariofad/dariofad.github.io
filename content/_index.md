@@ -5,11 +5,14 @@ template = 'home.html'
 lang = 'en'
 +++
 
-I'm an [assistant professor](https://seclab.unibg.it/) specializing in
-the integration of security features into various systems, including
-runtimes and cloud apps. I enjoy experimenting with programming
-languages and sandboxing tools. I've also had the opportunity to teach
-or assist at the university. In my spare time, I'm learning Japanese.
+I'm an [assistant professor](https://seclab.unibg.it/) at the
+University of Bergamo, and a visiting researcher at Kyushu
+University. My research field is the integration of security features
+into runtimes and cloud apps.
 
-&#128155; [emacs](https://www.gnu.org/software/emacs/) and
-[ergodox-ez](https://ergodox-ez.com/).
+I enjoy experimenting with programming languages, sandboxing tools,
+encryption techniques,
+[emacs](https://www.gnu.org/software/emacs), and my
+[ergodox-ez](https://ergodox-ez.com).
+
+I'm a japanese language learner.

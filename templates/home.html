@@ -11,14 +11,10 @@
     <img src="{{ config.extra.avatar }}" alt="avatar">
     <section id="info">
       <div id="text">
-	<div id="bioname"> {{ config.extra.name }} </div>	  
-	<div id="biolink">
-	{% for link in config.extra.biolinks -%}
-	  <a href="{{ link.url }}">{{ link.name }}</a>
-	{% endfor %}
-	</div>
+	{{ config.title }}
       </div>
     </section>
+
     <section id="links">
       <div id="right">
         {% for link in config.extra.links -%}
@@ -40,12 +36,13 @@
         <a href="/blog" id="blog">blog</a>
         {% if config.extra.projects_page -%}
 	<a href="/projects" id="projects">projects</a>
-	{% endif -%}
-		
+	{% endif -%}		
 	{% for link in config.extra.nav_pages -%}
 	<a href="{{ link.url }}" >{{ link.name }}</a>
 	{% endfor %}
-
+	{% for link in config.extra.biolinks -%}
+	<a href="{{ link.url }}">{{ link.name }}</a>
+	{% endfor %}
       </div>
       </section>
     <section id="brief">
