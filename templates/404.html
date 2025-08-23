@@ -7,55 +7,11 @@
 {% block content %}
 <div id="wrapper">
   <main>
-    <section id="info">
-      <img src="{{ config.extra.avatar }}" alt="avatar">
-      <div id="text">
-        <div>
-          <span id="name">{{ config.extra.name }}</span>
-          {% if config.extra.display_id -%}
-          <span id="id">@{{ config.extra.id }}</span>
-          {% endif -%}
-        </div>
-        <div id="bio"> {{ config.extra.bio }} </div>
-      </div>
+    <section id="brief">
+      <center>
+	Page not found, please go back to <a href="/">home</a>
+      </center>      
     </section>
-    <section id="links">
-      <div id="left">
-        <a href="/blog" id="blog">blog</a>
-        {% if config.extra.projects_page -%}
-	<a href="/projects" id="projects">projects</a>
-	{% endif -%}
-		
-	{% for link in config.extra.nav_pages -%}
-	<a href="{{ link.url }}" >{{ link.name }}</a>
-	{% endfor %}
-
-      </div>
-      <div id="right">
-        {% for link in config.extra.links -%}
-        <a href="{{ link.url }}" aria-label="{{ link.name }}" target="_blank" rel='noreferrer noopener'>
-          {% set icon_path = "static/icon/" ~ link.icon ~ ".svg" %}
-          {% set icon = load_data(path=icon_path) %}
-          {{ icon | safe }}
-        </a>
-        {% endfor %}
-        {% set moon_icon = load_data(path="static/icon/moon.svg") %}
-        {% set sun_icon = load_data(path="static/icon/sun.svg") %}
-	<button id="theme-toggle" aria-label="theme switch" data-moon-icon="{{ moon_icon }}" data-sun-icon="{{ sun_icon }}">
-		{{ moon_icon | safe }}
-	</button>
-	</div>
-    </section>
-
-	
-    <div style="text-align:center">
-      <br>
-      <h2>404 URL not found</h2>
-	<h3><a href="/">Go back to home</a></h3>
-    </div>
-</main>
-	
+  </main>
 </div>
-
-	
 {% endblock content %}
