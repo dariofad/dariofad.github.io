@@ -48,8 +48,8 @@ links = [                             # Your links
 
 
 nav_pages = [
-    { name = "publications", url = "/publications" },
-    { name = "teaching", url = "/teaching" },    
+    { name = "papers", url = "/publications" },
+    { name = "courses", url = "/teaching" },    
 ]
 
 nav_separator = ">"
