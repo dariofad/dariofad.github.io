@@ -48,11 +48,11 @@ links = [                             # Your links
 
 
 nav_pages = [
-    { name = "papers", url = "/publications" },
-    { name = "courses", url = "/teaching" },    
+    { name = "papers", url = "/papers" },
+    { name = "courses", url = "/courses" },    
 ]
 
-nav_separator = ">"
+nav_separator = "/"
 
 display_id = false                    # Display your id on homepage
 projects_page = false                 # Display projects page

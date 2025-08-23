@@ -2,7 +2,7 @@
 
 {% block page %}post{% endblock page %}
 {% block lang -%}
-{% set section = get_section(path="teaching/_index.md", metadata_only=true) %}
+{% set section = get_section(path="courses/_index.md", metadata_only=true) %}
 {%- if page.extra.lang %}{{page.extra.lang}}{% elif section.extra.lang %}{{section.extra.lang}}{% else %}{{page.lang}}{% endif -%}
 {%- endblock lang %}
 {% block title %}{{ page.title }}{% endblock title %}
