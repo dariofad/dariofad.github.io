@@ -445,16 +445,35 @@ body.blog {
 	    padding: 2px 0 2px 0;	    	    
 	    font-family: var(--code-font);
 	}
+	
+	a {
+          color: var(--primary-color);
+          text-decoration: underline var(--primary-pale-color) 1.5px;
+
+          &:hover {
+           text-decoration-color: var(--primary-color);
+          }
+        }
 
     }
 
     .post-list {
 	margin-top: 15px;
+	
+	a {
+          color: var(--primary-color);
+          text-decoration: underline var(--primary-pale-color) 1.5px;
+
+          &:hover {
+           text-decoration-color: var(--primary-color);
+          }
+        }
     }
 
     .post {
 	padding: 15px 15px;
 	border-radius: 4px;
+	
 	&:hover {
             background-color: var(--primary-pale-color);
 	}
@@ -484,6 +503,7 @@ body.blog {
       text-decoration: none;
       color: var(--primary-color);
       -webkit-tap-highlight-color: transparent;
+      text-decoration: underline var(--primary-pale-color) 1.5px;
 
       @media (max-width: 768px) {
         & {
@@ -565,11 +585,6 @@ body.post {
       display: flex;
       gap: 1em;
       flex-wrap: wrap;
-
-      a {
-        color: var(--primary-color);
-        text-decoration: none;
-      }
     }
 
     h1 {
@@ -935,11 +950,19 @@ body.tag-list {
     align-items: center;
     flex-wrap: wrap;
     font-size: 1.1em;
+    padding-right: 5px;
+    padding-left: 5px;
 
     a {
       color: var(--primary-color);
-      text-decoration: none;
-      margin: 2em;
+      text-decoration: underline var(--primary-pale-color) 1.5px;
+      padding-right: 16px;
+      padding-left: 16px;
+      padding-top: 5px;
+  
+      &:hover {
+        text-decoration-color: var(--primary-color);
+      }
     }
   }
 
@@ -977,6 +1000,11 @@ body.tag-single {
       margin-left: 30px;
       font-size: 0.4em;
       color: var(--primary-color);
+      text-decoration: underline var(--primary-pale-color) 1.5px;
+
+      &:hover {
+        text-decoration-color: var(--primary-color);
+      }
     }
   }
 
@@ -1007,6 +1035,14 @@ body.tag-single {
         margin-right: 5px;
         padding-left: 10px;
         padding-right: 10px;
+      }
+    }
+    a {
+      color: var(--primary-color);
+      text-decoration: underline var(--primary-pale-color) 1.5px;
+
+      &:hover {
+        text-decoration-color: var(--primary-color);
       }
     }
   }

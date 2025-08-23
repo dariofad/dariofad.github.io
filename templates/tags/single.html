@@ -11,16 +11,18 @@
 {% include "_header.html" %}
 <div id="tag-single-wrapper">
   <main>
-    <div class="title">
-      <span># {{ term.name }}</span>
-      <a href="{{ config.base_url ~ '/tags' }}">All Tags</a>
-    </div>
+    <center>
+      <h1>#{{ term.name }}</h1>
+    </center>
     <div class="post-list">
+      <div class="post">
+	<a href="{{ config.base_url ~ 'tags' }}">See all tags</a>
+      </div>
       {% for post in term.pages %}
-      <a class="post" href="{{ post.permalink }}">
-        <span>{{ post.title }}</span>
+      <div class="post">
+        <span><a href="{{ post.permalink }}">{{ post.title }}</a></span>
         <span class="date">{{ post.date | date }}</span>
-      </a>
+      </div>
       {% endfor %}
     </div>
   </main>

@@ -11,10 +11,12 @@
 {% include "_header.html" %}
 <div id="tag-list-wrapper">
   <main>
-    <div class="title">Tags</div>
+    <center>
+      <h1>Tags</h1>
+    </center>
     <div class="tags">
       {% for tag in terms -%}
-      <a href="{{ tag.permalink }}"># {{ tag.name | lower }}</a>
+      <a href="{{ tag.permalink }}">#{{ tag.name | lower }}</a>
       {%- endfor %}
     </div>
   </main>

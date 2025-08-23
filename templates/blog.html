@@ -18,8 +18,9 @@
 	<div class="post-description"> {{ post.summary | safe }} </div>
 	<div class="tags-list">
 	  <p>
-	    {% for tag in post.taxonomies.tags %}
-	    #{{ tag }}
+	    {% for tag in post.taxonomies.tags -%}
+            {% set tag_slugify = tag | slugify -%}
+            <a href="{{ config.base_url ~ '/tags/' ~ tag_slugify }}">#{{ tag }}</a>
 	    {% endfor %}
 	  </p>
 	</div>

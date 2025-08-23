@@ -2,8 +2,6 @@
 title = "Papers"
 +++
 
-# Papers
-
 {{ 
 publication(
 	title="POSTER: Transparent Temporally-Specialized System Call Filters",
@@ -169,8 +167,6 @@ publication(
 )
 }}
 
-## Technical reports
-
 {{ 
 publication(
 	title="D5.4 Final Versions of Tools for Data Sanitisation and Computation",
@@ -240,8 +236,6 @@ publication(
 	doi="https://doi.org/10.1109/PERCOMW.2019.8730707"
 )
 }}
-
-## Posters
 
 {{ 
 publication(
