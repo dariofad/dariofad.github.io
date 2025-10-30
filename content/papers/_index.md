@@ -4,6 +4,18 @@ title = "Papers"
 
 {{ 
 publication(
+	title="Secure Kubernetes Workload Deployment with Automated Enforcement of Cluster-Defined Policies",
+	authors="Matthew Rossi, Michele Beretta, Dario Facchinetti, Stefano Paraboschi",
+	venue="16th IEEE CloudCom",	
+	year="2025",
+	url="https://drive.google.com/file/d/1Y-Bw6NOqVFuL1GQ56DLZps19Zhh6evQO/view?usp=sharing",
+    doi="TBA"
+	
+)
+}}
+
+{{ 
+publication(
 	title="POSTER: Transparent Temporally-Specialized System Call Filters",
 	authors="Matthew Rossi, Michele Beretta, Dario Facchinetti, Stefano Paraboschi",
 	venue="20th ASIACCS",	
