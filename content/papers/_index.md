@@ -4,12 +4,24 @@ title = "Papers"
 
 {{ 
 publication(
+	title="RIVER: An eBPF-based Runtime Verification Platform for Cyber-Physical Systems",
+	authors="Dario Facchinetti, Matthew Rossi, Zhenya Zhang, Stefano Paraboschi, Paolo Arcaini",
+	venue="19th IEEE ICST Testing Tools",	
+	year="2026",
+	url="https://drive.google.com/file/d/1FOAazdwV8Sj8x5kWSP0n_3AShQE-LtZ-/view?usp=sharing",
+    doi="TBA"
+	
+)
+}}
+
+{{ 
+publication(
 	title="Secure Kubernetes Workload Deployment with Automated Enforcement of Cluster-Defined Policies",
 	authors="Matthew Rossi, Michele Beretta, Dario Facchinetti, Stefano Paraboschi",
 	venue="16th IEEE CloudCom",	
 	year="2025",
 	url="https://drive.google.com/file/d/1Y-Bw6NOqVFuL1GQ56DLZps19Zhh6evQO/view?usp=sharing",
-    doi="TBA"
+    doi="https://doi.org/10.1109/CloudCom67567.2025.11331483"
 	
 )
 }}
