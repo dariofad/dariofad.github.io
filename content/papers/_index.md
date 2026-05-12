@@ -4,13 +4,23 @@ title = "Papers"
 
 {{ 
 publication(
+	title="Blackbird: A Scalable and Resource-Efficient Framework for Distributed Network Monitoring",
+	authors="Elisa Arnoldi, Gabriele Merli, Marco Abbadini, Michele Beretta, Dario Facchinetti, Matthew Rossi, Stefano Paraboschi",
+	venue="46th ICDCS",	
+	year="2026",
+	url="https://drive.google.com/file/d/1Z8NU50NSqPjH4zkjdttL_akd3V-4Xi1H/view?usp=sharing",
+    doi="TBA"
+)
+}}
+
+{{ 
+publication(
 	title="RIVER: An eBPF-based Runtime Verification Platform for Cyber-Physical Systems",
 	authors="Dario Facchinetti, Matthew Rossi, Zhenya Zhang, Stefano Paraboschi, Paolo Arcaini",
 	venue="19th IEEE ICST Testing Tools",	
 	year="2026",
 	url="https://drive.google.com/file/d/1FOAazdwV8Sj8x5kWSP0n_3AShQE-LtZ-/view?usp=sharing",
     doi="TBA"
-	
 )
 }}
 
@@ -22,7 +32,6 @@ publication(
 	year="2025",
 	url="https://drive.google.com/file/d/1Y-Bw6NOqVFuL1GQ56DLZps19Zhh6evQO/view?usp=sharing",
     doi="https://doi.org/10.1109/CloudCom67567.2025.11331483"
-	
 )
 }}
 
@@ -34,7 +43,6 @@ publication(
 	year="2025",
 	url="https://drive.google.com/file/d/1FgSGNGPgBm7Twj-KKgeLuMe2AYJZbi0X/view?usp=sharing",
     doi="https://doi.org/10.1145/3708821.3735342"
-	
 )
 }}
 
