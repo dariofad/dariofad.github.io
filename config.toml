@@ -36,7 +36,6 @@ biolinks = [
 avatar = "img/me.webp"            # Your avatar
 links = [                             # Your links
     { name = "GitHub", icon = "github", url = "https://github.com/dariofad" },
-    { name = "Twitter", icon = "twitter-x", url = "https://www.twitter.com/dario_fad" },
     { name = "Email", icon = "email", url = "mailto:dario.fad@gmail.com" },
     { name = "LinkedIn", icon = "linkedin", url = "https://www.linkedin.com/in/dario-facchinetti" },
     { name = "Google Scholar", icon = "google-scholar", url = "https://scholar.google.com/citations?user=OR7QNvoAAAAJ&hl=it" },
