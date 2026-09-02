@@ -4,12 +4,23 @@ title = "Papers"
 
 {{ 
 publication(
+	title="SysComb: Fine-Grained Transparent System Call Filtering for Attack Surface Reduction",
+	authors="Matthew Rossi, Marco Abbadini, Michele Beretta, Dario Facchinetti, Stefano Paraboschi",
+	venue="arXiv",	
+	year="2026",
+	url="https://arxiv.org/pdf/2608.26871",
+    doi="https://doi.org/10.48550/arXiv.2608.26871"
+)
+}}
+
+{{ 
+publication(
 	title="Blackbird: A Scalable and Resource-Efficient Framework for Distributed Network Monitoring",
 	authors="Elisa Arnoldi, Gabriele Merli, Marco Abbadini, Michele Beretta, Dario Facchinetti, Matthew Rossi, Stefano Paraboschi",
 	venue="46th ICDCS",	
 	year="2026",
 	url="https://drive.google.com/file/d/1Z8NU50NSqPjH4zkjdttL_akd3V-4Xi1H/view?usp=sharing",
-    doi="TBA"
+    doi="https://doi.org/10.1109/ICDCSW72724.2026.00016"
 )
 }}
 
@@ -20,7 +31,7 @@ publication(
 	venue="19th IEEE ICST Testing Tools",	
 	year="2026",
 	url="https://drive.google.com/file/d/1FOAazdwV8Sj8x5kWSP0n_3AShQE-LtZ-/view?usp=sharing",
-    doi="TBA"
+    doi="https://doi.ieeecomputersociety.org/10.1109/ICST69053.2026.00035"
 )
 }}
 
