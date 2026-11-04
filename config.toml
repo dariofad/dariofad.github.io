@@ -33,7 +33,7 @@ biolinks = [
     { name = "cv", url = "https://drive.google.com/file/d/1cQji7DeukMcoQFjRU8TMIkE1x-ehXNge/view?usp=sharing" },
     { name = "履歴書", url = "https://drive.google.com/file/d/1u08U_cjrOc1a42ib4Hf1s41PUbKu6nc1/view?usp=sharing" },    
 ]
-avatar = "img/me.webp"            # Your avatar
+avatar = "img/me_processed.jpeg"            # Your avatar
 links = [                             # Your links
     { name = "GitHub", icon = "github", url = "https://github.com/dariofad" },
     { name = "Email", icon = "email", url = "mailto:dario.fad@gmail.com" },
