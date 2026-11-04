@@ -5,9 +5,11 @@ template = 'home.html'
 lang = 'en'
 +++
 
-I'm a software engineer currently working as an [assistant professor](https://seclab.unibg.it/) at the
-university. My research field is the integration of security features into runtimes and cloud apps.
+I'm a security researcher and software engineer currently working as an [assistant professor](https://seclab.unibg.it/) at the university.
+Research interests:
+- integration of security features into runtimes and cloud apps
+- use of eBPF to monitor and supervise apps
+- study of the trade off between security and performance
+- encryption techniques
 
-I like programming languages, sandboxing tools, encryption techniques, and split keyboards.
-
-I'm a japanese language learner.
+I'm a father, DIY builder, and japanese language learner.
