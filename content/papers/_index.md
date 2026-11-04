@@ -4,6 +4,17 @@ title = "Papers"
 
 {{ 
 publication(
+	title="Keymix: Protecting Large Resources from Key Exfiltration",
+	authors="Marco Abbadini, Michele Beretta, Sabrina De Capitani di Vimercati, Dario Facchinetti, Sara Foresti, Stefano Paraboschi, Matthew Rossi, Pierangela Samarati",
+	venue="12th NSS-SocialSec",
+	year="2026",
+	url="https://drive.google.com/file/d/1f28y_AYrlEQ739u5eqG3XNAvPdponqso/view?usp=drive_link",
+	doi="TBA"
+)
+}}
+
+{{ 
+publication(
 	title="SysComb: Fine-Grained Transparent System Call Filtering for Attack Surface Reduction",
 	authors="Matthew Rossi, Marco Abbadini, Michele Beretta, Dario Facchinetti, Stefano Paraboschi",
 	venue="arXiv",	
@@ -20,7 +31,9 @@ publication(
 	venue="46th ICDCS",	
 	year="2026",
 	url="https://drive.google.com/file/d/1Z8NU50NSqPjH4zkjdttL_akd3V-4Xi1H/view?usp=sharing",
-    doi="https://doi.org/10.1109/ICDCSW72724.2026.00016"
+  doi="https://doi.org/10.1109/ICDCSW72724.2026.00016",
+	prize="Best poster award winner",
+  prizelink="https://drive.google.com/file/d/1TXDXxBIKK1XMIQ_mF5hyomsEPQtDs2-V/view?usp=drive_link"
 )
 }}
 
@@ -83,7 +96,7 @@ publication(
 publication(
 	title="Supporting Data Owner Control in IPFS Networks",
 	authors="Marco Abbadini, Michele Beretta, Sabrina De Capitani di Vimercati, Dario Facchinetti, Sara Foresti, Gianluca Oldani, Stefano Paraboschi, Matthew Rossi, Pierangela Samarati",
-	venue="Will be presented at IEEE ICC",
+	venue="IEEE ICC",
 	year="2024",
 	url="https://drive.google.com/file/d/1sD-o0g7pErM8BvmuFlDnF1APH0wp8G5I/view?usp=sharing",
 	doi="https://doi.org/10.1109/ICC51166.2024.10623119"
@@ -207,6 +220,8 @@ publication(
 	year="2021",
 	url="https://drive.google.com/file/d/1vR8nVEQJH4fBL3AIMU1MINcmmymUOXw4/view?usp=sharing",
 	doi="https://doi.org/10.1109/PerComWorkshops51409.2021.9431059"
+	prize="Best artifact award winner",
+	prizelink="https://drive.google.com/file/d/1OOo-qi4lcS_xWO_HitdegfLVuVnOrqaY/view?usp=sharing"
 )
 }}
 

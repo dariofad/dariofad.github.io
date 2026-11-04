@@ -19,4 +19,11 @@
 	<br />
 	{% endif %}
 	{% if bib %}[<a href="{{ bib }}">BibTex</a>]{% endif %}
+	{% if prize %}
+     {% if prizelink %}
+		   {{ prize }}: <a href="{{ prizelink }}">certificate</a>
+		 {% else %}
+       {{ prize }}
+  {% endif %}
+  {% endif %}
 </div>
